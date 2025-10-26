@@ -1,0 +1,110 @@
+{
+  "company_name": "Schengen Visa Itinerary",
+  "services": [
+    "Flight Booking for Visa Process",
+    "Flight Booking for Travelling Purpose"
+  ],
+  "flight_booking_visa_process": {
+    "options": ["Enquiry", "Booking"],
+    "enquiry": {
+      "cancellation_refund": {
+        "cancellation_charges": "If cancelled before processing, 5% transaction fee applies. Once processed, cancellation may not be possible.",
+        "refund_policy": "Full refund if visa rejected due to our documentation/service (stamped embassy rejection letter required). Partial refund (95%) if cancelled before processing. Refunds within 7 days. Contact help@schengenvisaitinerary.com or WhatsApp +1 718 412 8918.",
+        "visa_rejection_refund": "Yes, full refund if rejection is due to provided documents and verified with embassy letter."
+      },
+      "rescheduling_changes": {
+        "can_reschedule": "Yes, before booking expires (24-72 hours).",
+        "charges": "Minor name corrections usually free if not ticketed. Rescheduling may have service charges depending on urgency."
+      },
+      "booking_passenger_details": {
+        "add_passengers": "Yes, charges apply: Base Pricing 1 traveller $50, 2 $60, 3 $70, 4+ $80 + $10 per additional. Additional passenger fee $10, children under 12 free. Urgent service fees: Standard $0, 8 hrs +$15, 6 hrs +$30. Extra flights: up to 12 +$20, 16 +$40, 20 +$60. Total = Base Price + Additional + Urgent + Extra flights.",
+        "name_corrections": "Minor corrections allowed before ticketing. Major changes may require new booking."
+      },
+      "visa_specific_concerns": {
+        "ticket_type": "Flight reservation for visa purposes, not ticketed unless requested.",
+        "verify_booking": "Yes, reservations verifiable with valid PNR.",
+        "booking_validity": "24-72 hours depending on airline."
+      },
+      "pricing_payment": {
+        "adjustable_cost": "No, itinerary and ticket bookings are separate.",
+        "hidden_fees": "No hidden charges, all costs transparent."
+      },
+      "other_queries": {
+        "official_confirmation": "Yes, confirmation and PNR via email.",
+        "multiple_visa_usage": "Yes, booking valid for multiple visa applications."
+      }
+    },
+    "booking": {
+      "required_details": [
+        "Departure City & Airport",
+        "Number of passengers (Adults & Kids; if kids, mention age)",
+        "Multiple destinations (if any)",
+        "Destination City & Airport",
+        "Preferred Time (Morning / Afternoon / Evening, if any)",
+        "One-way or Round-trip",
+        "Flexible dates? (Yes/No)",
+        "Preferred Airlines (if any)",
+        "Direct flight only or stopovers acceptable"
+      ],
+      "next_steps": [
+        "Proceed with Booking: Payment link generated, receipt sent, flight reservation shared.",
+        "Connect with Agent: Agent confirms booking."
+      ]
+    }
+  },
+  "flight_booking_travel_purpose": {
+    "options": ["Enquiry", "Booking"],
+    "enquiry": {
+      "ticket_booking": {
+        "seat_selection": "Yes, most airlines allow seat selection; premium seats may cost extra.",
+        "online_checkin": "Generally included; check airline website/app 24 hours before departure. Airport check-in also available.",
+        "eticket_pnr": "Yes, valid e-ticket and PNR via email after confirmation.",
+        "multi_city_booking": "Yes, allowed depending on airline availability."
+      },
+      "baggage": {
+        "free_allowance": "Economy 20-30kg checked + 7-10kg cabin; Business 30-40kg checked + 10-15kg cabin.",
+        "extra_charges": "Extra baggage $10-$30 per kg over allowance.",
+        "cabin_baggage": "Included in all fare types."
+      },
+      "cancellation_changes": {
+        "charges_after_booking": "Depends on airline/fare; some tickets non-refundable, refundable tickets may have $20-$100 fee.",
+        "ticket_type": "Depends on fare: non-refundable or refundable with possible credit.",
+        "date_changes": "Allowed with change fee + fare difference. Fees vary by airline/fare type.",
+        "name_changes": "Minor corrections usually allowed; major changes require new booking."
+      },
+      "payment_pricing": {
+        "hidden_fees": "No hidden fees; all charges displayed before payment.",
+        "installments": "Depends on payment gateway/airline; some support EMI.",
+        "taxes_surcharges": "Included in displayed prices unless stated otherwise."
+      },
+      "special_requests_services": {
+        "meal_preference": "Yes, can request veg/non-veg or special diet.",
+        "extra_legroom_priority": "Extra legroom seats or priority boarding can be added for a fee.",
+        "wheelchair_assistance": "Yes, request in advance.",
+        "travel_insurance": "Optional, can be added during booking."
+      },
+      "other_travel_concerns": {
+        "documents_checkin": "International: Passport + Visa + Airline ticket/PNR. Domestic: Government ID + ticket/PNR.",
+        "airport_arrival_time": "International: 3 hours prior. Domestic: 2 hours prior.",
+        "flight_delay_cancellation": "May be eligible for rebooking, refund, or compensation depending on airline rules.",
+        "automatic_rebooking": "Depends on airline/fare rules; usually provided automatically."
+      }
+    },
+    "booking": {
+      "required_details": [
+        "Departure City & Airport",
+        "Number of passengers (Adults & Kids; if kids, mention age)",
+        "Multiple destinations (if any)",
+        "Destination City & Airport",
+        "Preferred Time (Morning / Afternoon / Evening, if any)",
+        "One-way or Round-trip",
+        "Flexible dates? (Yes/No)",
+        "Preferred Airlines (if any)",
+        "Direct flight only or stopovers acceptable"
+      ],
+      "next_steps": [
+        "If actual booking details shared → Agent will confirm shortly."
+      ]
+    }
+  }
+}
