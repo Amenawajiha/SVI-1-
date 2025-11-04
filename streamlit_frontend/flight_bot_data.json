@@ -1,0 +1,263 @@
+{
+  "flight_bot": {
+    "categories": [
+      {
+        "section": "Flight Booking for Visa Process",
+        "options": [
+          {
+            "type": "Enquiry",
+            "topics": [
+              {
+                "topic": "Cancellation & Refund",
+                "questions": [
+                  {
+                    "question": "What will be the cancellation charges?",
+                    "answer": "If cancelled before processing, a 5% fee applies. After processing, cancellation may not be possible."
+                  },
+                  {
+                    "question": "What is the refund policy?",
+                    "answer": "Full refund if visa is rejected due to our documentation. Partial refund (95%) if cancelled before processing. Refunds processed within 7 days."
+                  },
+                  {
+                    "question": "If my visa is rejected, will I get any refund?",
+                    "answer": "Yes, full refund if rejection is due to our provided documents and verified with a stamped embassy letter."
+                  }
+                ]
+              },
+              {
+                "topic": "Rescheduling & Changes",
+                "questions": [
+                  {
+                    "question": "Can the flight reservation be rescheduled or changed?",
+                    "answer": "Yes, changes can be made before booking expiry (24–72 hours)."
+                  },
+                  {
+                    "question": "What are the charges for rescheduling or name corrections?",
+                    "answer": "Minor name corrections are free if not ticketed. Rescheduling may have standard service charges depending on urgency."
+                  }
+                ]
+              },
+              {
+                "topic": "Booking & Passenger Details",
+                "questions": [
+                  {
+                    "question": "Can I add additional passengers later?",
+                    "answer": "Yes, additional passengers can be added with extra charges based on the pricing table."
+                  },
+                  {
+                    "question": "Can I correct spelling mistakes in the passenger’s name?",
+                    "answer": "Yes, minor corrections before ticketing are allowed. Major changes require a new booking."
+                  }
+                ]
+              },
+              {
+                "topic": "Visa-Specific Concerns",
+                "questions": [
+                  {
+                    "question": "Will the ticket be a reservation or a confirmed booking?",
+                    "answer": "For visa purposes, it will be a reservation (not ticketed) unless otherwise requested."
+                  },
+                  {
+                    "question": "Is the booking verifiable on the airline’s website?",
+                    "answer": "Yes, all reservations are verifiable and include a valid PNR."
+                  },
+                  {
+                    "question": "How long is the booking valid?",
+                    "answer": "Typically valid for 24–72 hours depending on the airline."
+                  }
+                ]
+              },
+              {
+                "topic": "Pricing & Payment",
+                "questions": [
+                  {
+                    "question": "Is the booking cost adjustable if I confirm the actual ticket later?",
+                    "answer": "No, itinerary and ticket bookings are separate services."
+                  },
+                  {
+                    "question": "Are there any hidden fees?",
+                    "answer": "No hidden charges. All costs are shown before payment."
+                  }
+                ]
+              },
+              {
+                "topic": "Other Helpful Queries",
+                "questions": [
+                  {
+                    "question": "Will I receive an official booking confirmation with PNR?",
+                    "answer": "Yes, an official booking confirmation and PNR will be emailed."
+                  },
+                  {
+                    "question": "Can I use the same booking for multiple visa applications?",
+                    "answer": "Yes, as long as it remains valid."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Booking",
+            "required_details": [
+              "Departure City & Airport (From)",
+              "Number of passengers (Adults & Kids, mention age)",
+              "Destination City & Airport (To)",
+              "Preferred Time (Morning / Afternoon / Evening)",
+              "One-way or Round-trip",
+              "Flexible dates (Yes/No)",
+              "Preferred Airlines",
+              "Direct flight only or stopovers acceptable"
+            ],
+            "next_steps": [
+              "Proceed with Booking → Payment link generated → Payment completed → Receipt sent → Flight reservation shared shortly.",
+              "Connect with Agent → Agent follows up to confirm booking."
+            ]
+          }
+        ]
+      },
+      {
+        "section": "Flight Booking for Travelling Purpose",
+        "options": [
+          {
+            "type": "Enquiry",
+            "topics": [
+              {
+                "topic": "Ticket & Booking",
+                "questions": [
+                  {
+                    "question": "Can I choose my preferred seat while booking?",
+                    "answer": "Yes, most airlines allow seat selection. Premium seats may cost extra."
+                  },
+                  {
+                    "question": "Is online check-in included?",
+                    "answer": "Yes, online check-in is available via airline’s website or app, usually 24 hours before departure."
+                  },
+                  {
+                    "question": "Will I get an e-ticket and booking reference (PNR)?",
+                    "answer": "Yes, a valid e-ticket and PNR will be emailed after confirmation."
+                  },
+                  {
+                    "question": "Can I book a multi-city or connecting flight in one ticket?",
+                    "answer": "Yes, multi-city and connecting flights can be booked together depending on airline availability."
+                  }
+                ]
+              },
+              {
+                "topic": "Baggage",
+                "questions": [
+                  {
+                    "question": "What is the free baggage allowance?",
+                    "answer": "Depends on airline: Economy (20–30kg checked + 7–10kg cabin), Business (30–40kg checked + 10–15kg cabin)."
+                  },
+                  {
+                    "question": "What are the charges for extra baggage?",
+                    "answer": "Varies by airline and route, typically $10–$30 per kg."
+                  },
+                  {
+                    "question": "Is cabin baggage included?",
+                    "answer": "Yes, standard cabin baggage is included."
+                  }
+                ]
+              },
+              {
+                "topic": "Cancellation & Changes",
+                "questions": [
+                  {
+                    "question": "What are the cancellation charges after booking?",
+                    "answer": "Depends on fare rules. Non-refundable tickets can’t be refunded; refundable ones may have $20–$100 cancellation fee."
+                  },
+                  {
+                    "question": "Can I change travel dates?",
+                    "answer": "Yes, with change fee + fare difference."
+                  },
+                  {
+                    "question": "Can I change the passenger’s name after booking?",
+                    "answer": "Minor corrections allowed; major changes need new booking."
+                  }
+                ]
+              },
+              {
+                "topic": "Payment & Pricing",
+                "questions": [
+                  {
+                    "question": "Are there any hidden fees?",
+                    "answer": "No hidden fees. All applicable charges shown before payment."
+                  },
+                  {
+                    "question": "Can I pay in installments or EMI?",
+                    "answer": "Depends on payment gateway; some support EMI/credit card installments."
+                  },
+                  {
+                    "question": "Does the price include all taxes and surcharges?",
+                    "answer": "Yes, unless otherwise specified."
+                  }
+                ]
+              },
+              {
+                "topic": "Special Requests & Services",
+                "questions": [
+                  {
+                    "question": "Can I request a meal preference?",
+                    "answer": "Yes, meal preferences like veg/non-veg or special diet can be selected."
+                  },
+                  {
+                    "question": "Can I add extra legroom or priority boarding?",
+                    "answer": "Yes, available at extra cost."
+                  },
+                  {
+                    "question": "Are wheelchair assistance or special needs services available?",
+                    "answer": "Yes, advance notice required."
+                  },
+                  {
+                    "question": "Can I add travel insurance?",
+                    "answer": "Yes, usually offered as an optional service."
+                  }
+                ]
+              },
+              {
+                "topic": "Other Travel Concerns",
+                "questions": [
+                  {
+                    "question": "What documents are required at check-in?",
+                    "answer": "International: Passport + Visa + PNR; Domestic: Govt ID + PNR."
+                  },
+                  {
+                    "question": "How early should I reach the airport?",
+                    "answer": "International: 3 hours before; Domestic: 2 hours before."
+                  },
+                  {
+                    "question": "If my flight is delayed or canceled by the airline, what are my rights?",
+                    "answer": "You may be eligible for rebooking, refund, or compensation depending on airline and local regulations."
+                  },
+                  {
+                    "question": "Will I be rebooked automatically in case of cancellation?",
+                    "answer": "Usually yes, but depends on the airline."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Booking",
+            "required_details": [
+              "Departure City & Airport (From)",
+              "Number of passengers (Adults & Kids, mention age)",
+              "Destination City & Airport (To)",
+              "Preferred Time (Morning / Afternoon / Evening)",
+              "One-way or Round-trip",
+              "Flexible dates (Yes/No)",
+              "Preferred Airlines",
+              "Direct flight only or stopovers acceptable"
+            ],
+            "next_steps": [
+              "If booking details are shared, agent will confirm shortly."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+

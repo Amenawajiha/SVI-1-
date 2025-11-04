@@ -1,0 +1,447 @@
+[
+    {
+        "section_id": "visa_booking",
+        "section_title": "Flight Booking for Visa Process",
+        "subsections": [
+            {
+                "subsection_title": "Enquiry",
+                "topics": [
+                    {
+                        "topic": "Cancellation & Refund",
+                        "qna": [
+                            {
+                                "question": "What will be the cancellation charges?",
+                                "paraphrased_questions": [
+                                    "How much will it cost to cancel?",
+                                    "What fees will there be for cancellations?"
+                                ],  
+                                "answer": "If your request is cancelled before processing, a 5% transaction fee applies. Once processed, cancellation may not be possible."
+                            },
+                            {
+                                "question": "What is the refund policy?",
+                                "paraphrased_questions": [
+                                    "What is the policy regarding refunds?",
+                                    "What is the reimbursement policy?"
+                                ],
+                                "answer": "Full refund is available only if visa is rejected due to our documentation/service reasons (requires stamped embassy rejection letter). Partial refund (95%) available if cancelled before processing or mistakenly placed. Refund processed within 7 days."
+                            },
+                            {
+                                "question": "If my visa is rejected, will I get any refund?",
+                                "paraphrased_questions":[
+                                    "Will I receive a refund if my visa is denied?",
+                                    "Will I receive my money back if my visa is denied?"
+                                ],
+                                "answer": "Yes, full refund if rejection is related to provided documents and verified with stamped embassy rejection letter."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Rescheduling & Changes",
+                        "qna": [
+                            {
+                                "question": "Can the flight reservation be rescheduled or changed?",
+                                "paraphrased_questions": [
+                                    "Is it possible to alter or postpone the flight reservation?"
+                                ],
+                                "answer": "Yes, changes possible before booking expires (24-72 hours)."
+                            },
+                            {
+                                "question": "Charges for rescheduling or name corrections?",
+                                "paraphrased_questions": [
+                                    "Fees for name changes or rescheduling?"
+                                ],
+                                "answer": "Minor name corrections: usually free before ticketing. Rescheduling: standard service charges apply depending on urgency/complexity."
+                            },
+                            {
+                                "question": "What is the process to reschedule a flight reservation?",
+                                "paraphrased_questions": [
+                                    "How can I change the dates on my flight reservation?",
+                                    "What steps do I need to take to reschedule my flight booking?"
+                                ],
+                                "answer": "Contact support with booking details. Provide new dates/names. Pay any applicable fees. Confirmation sent via email."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Booking & Passenger Details",
+                        "qna": [
+                            {
+                                "question": "Can I add additional passengers later?",
+                                "paraphrased_questions": [
+                                    "Is it possible to include more passengers later on?",
+                                    "Can I include extra travellers at a later time?"
+                                ],
+                                "answer": "Yes, charges apply as follows: Base pricing 1 traveller=$50, 2 travellers=$60, 3=$70, 4+=$80+10 per extra. Additional passenger fee: $10, Children under 12 free. Urgent service fees: Standard 24h=$0, Urgent 8h=$15, Express 6h=$30. Extra flights: 12 flights=$20, 16=$40, 20=$60. Total cost = Base + Additional + Urgent + Extra flights."
+                            },
+                            {
+                                "question": "Can I correct spelling mistakes in passenger name?",
+                                "paraphrased_questions": [
+                                    "Is it possible to fix misspellings in passenger names?"
+                                ],
+                                "answer": "Yes, minor corrections allowed before ticketing. Major changes may require new booking."
+                            },
+                            {
+                                "question": "What is the booking process for flight itinerary for visa purpose?",
+                                "paraphrased_questions": [
+                                    "How does one go about making a reservation for flight for visa?",
+                                    "What is the procedure for making a reservation for flight for visa?"
+                                ],
+                                "answer": "Here's how you can easily complete your flight itinerary booking for your visa application:\n\n1. Visit the Booking Page\nGo to https://www.schengenvisaitinerary.com/flight-itinerary-service-form.php.\n\n2. Enter Visa Interview Details\nFill in your Tentative Visa Interview Date — the date you plan to visit the embassy or consulate for your visa appointment.\n\n3. Select the Consulate\nChoose which consulate or embassy you are applying to. A consulate is the official office of a country that handles visa applications in your region.\n\n4. Urgent Reservation Option\nIf you need your flight reservation quickly, tick the Urgent Reservation box to speed up processing.\n\n5. Provide Traveller Information\nEnter the personal details of the traveller(s): Full name (as per passport), Date of birth, Gender, Contact information (email and phone)\n\n6. Enter Flight Details\nDeparture date, From and To airports, Add more flights if multi-city.\n\n7. Optional: Add Special Instructions\nYou can list flights like: Delhi → Paris on 25/01/2025, Paris → Frankfurt on 30/01/2025, Frankfurt → Delhi on 10/02/2025\n\n8. Optional: Add Hotel and Travel Insurance\nBook hotels and travel insurance directly if required for visa.\n\n9. Check Order Summary and Discounts\nLook for coupon code in Order Summary to get 10% off.\n\n10. Payment and Confirmation\nPay via card or PayPal. Receive receipt and flight reservation by email.\n\nAlternative: Booking with an Agent\nIf you prefer assistance, share your travel details directly. After payment, you’ll receive your reservation shortly or an agent will confirm your booking personally.\n\nThat’s it! You’re done with your flight itinerary booking process for your visa."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Visa-Specific Concerns",
+                        "qna": [
+                            {
+                                "question": "Will the ticket be a reservation or confirmed booking?",
+                                "paraphrased_questions": [
+                                    "Is the ticket a reservation or a confirmed booking?"
+                                ],
+                                "answer": "For visa purposes, it will be a flight reservation unless otherwise requested."
+                            },
+                            {
+                                "question": "Is the flight booking verifiable on the airline's website?",
+                                "paraphrased_questions": [
+                                    "Can the airline's website confirm the flight reservation?",
+                                    "Is it possible to verify the flight ticket reservation on the airline's website?"
+                                ],
+                                "answer": "Yes, all reservations are verifiable and include a valid PNR."
+                            },
+                            {
+                                "question": "How long is the flight booking valid?",
+                                "paraphrased_questions": [
+                                    "What is the validity period of the flight reservation?",
+                                    "What is the duration of the flight reservation?"
+                                ],
+                                "answer": "Usually 24-72 hours depending on airline policy."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Pricing & Payment",
+                        "qna": [
+                            {
+                                "question": "What is the cost of the flight booking for visa?",
+                                "paraphrased_questions": [
+                                    "How much do you charge for flight booking for visa?",
+                                    "What is the price for flight itinerary for visa?"
+                                ],
+                                "answer": "Base Pricing: 1 traveller → $50, 2 travellers → $60, 3 travellers → $70, 4+ travellers → $80 + $10 for every additional traveller"
+                            },
+                            {
+                                "question":"What will I need to pay for adding more passengers?",
+                                "paraphrased_questions": [
+                                    "How much will it cost to add more passengers?",
+                                    "When I add extra passengers, how much will it cost?"
+                                ],
+                                "answer": "Each extra traveller → $10, Children (below 12 years) → Free"
+                            },
+                            {
+                                "question":"What are the urgent service charges?",
+                                "paraphrased_questions": [
+                                    "Do you charge more for express service?",
+                                    "What are the premium service rates?"
+                                ],
+                                "answer": "Urgent Service Fees (per booking): Standard (24 hrs) → $0, (8 hrs) → +$15, Express (6 hrs) → +$30"
+                            },
+                            {
+                                "question" : "Will it cost something to add more flights to my itinerary?",
+                                "paraphrased_questions": [
+                                    "Are there fees for adding extra flights to my itinerary?",
+                                    "Is there a charge for including additional flights in my itinerary?",
+                                    "Will adding more flights to my schedule incur any fees?"
+                                ],
+                                "answer": "Extra Flights in Itinerary: Up to 12 flights → +$20, Up to 16 flights → +$40, Up to 20 flights → +$60"
+                            },
+                            {
+                                "question": "Is booking cost adjustable if I confirm actual ticket later?",
+                                "paraphrased_questions": [
+                                    "Can I modify the booking cost if I later confirm the real ticket?"
+                                ],
+                                "answer": "No, itinerary and ticket bookings are separate services."
+                            },
+                            {
+                                "question": "Are there any hidden/unknown fees or charges?",
+                                "answer": "No hidden charges. All costs are transparent."
+                            },
+                            {
+                                "question": "How is the final cost calculated for a flight itinerary?",
+                                "paraphrased_questions": [
+                                    "How do you determine the total cost for a flight itinerary?"
+                                ],
+                                "answer": "Final Cost Formula: Total = Base Price + Additional Passengers + Urgent Fee + Extra Flight Charges (if itinerary >8 flights)"
+                            },
+                            {
+                                "question":"What are the payment methods available for flight itinerary booking?",
+                                "paraphrased_questions": [
+                                    "What modes of payment do you accept for flight itinerary booking?",
+                                    "Which payment options are available for booking flight itinerary?"
+                                ],
+                                "answer": "We accept credit/debit cards and PayPal."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Other Helpful Queries",
+                        "qna": [
+                            {
+                                "question": "Will I receive an official booking confirmation with PNR?",
+                                "paraphrased_questions": [
+                                    "Will I get a confirmation of my reservation with my PNR?"
+                                ],
+                                "answer": "Yes, confirmation and PNR sent via email."
+                            },
+                            {
+                                "question": "Can I use the same booking for multiple visa applications?",
+                                "paraphrased_questions": [
+                                    "Can I apply for more than one visa using the same reservation?",
+                                    "Can I submit more than one visa application using the same reservation?"
+                                ],
+                                "answer": "Yes, as long as it remains valid."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Customer Support",
+                        "qna": [
+                            {
+                                "question": "Can you connect me with a real person?",
+                                "paraphrased_questions": [
+                                    "I need to speak to someone",
+                                    "I need to contact customer support"
+                                ],
+                                "answer": "I can connect you to our support team. Contact details: Email: help@schengenvisaitinerary.com, WhatsApp: +1 718 412 8918"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subsection_title": "Booking",
+                "topics": [
+                    {
+                        "topic": "Required Details",
+                        "qna": [
+                            {
+                                "question": "What information is required to book?",
+                                "paraphrased_questions": [
+                                    "What documents do I need for a visa flight itinerary?",
+                                    "What papers, IDs or passports are needed for travel bookings?"
+                                ],
+                                "answer": "Departure city & airport, number of passengers (adults & kids + age), multiple destinations, destination city & airport, preferred time, one-way/round-trip, flexible dates, preferred airlines, direct or stopovers."
+                            },
+                            {
+                                "question": "What do I do after providing travel details?",
+                                "paraphrased_questions": [
+                                    "What are the next steps after sharing my travel information?",
+                                    "How do I confirm the booking after submitting travel details?"
+                                ],
+                                "answer": " Proceed with Booking (payment link generated → receipt → flight reservation shared) or Connect with Agent using customer support portals like - Email - help@schengenvisaitinerary.com, WhatsApp: +1 718 412 8918."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section_id": "travel_booking",
+        "section_title": "Flight Booking for Travelling Purpose",
+        "subsections": [
+            {
+                "subsection_title": "Enquiry",
+                "topics": [
+                    {
+                        "topic": "Ticket & Booking",
+                        "qna": [
+                            {
+                                "question": "Can I choose preferred seat?",
+                                "paraphrased_questions": [
+                                    "Is it possible to select my preferred seat?",
+                                    "Can I pick my seat in advance?"
+                                ],
+                                "answer": "Yes, most airlines allow seat selection; premium seats may cost extra."
+                            },
+                            {
+                                "question": "Is online check-in included for the flight booking?",
+                                "paraphrased_questions": [
+                                    "Is it possible to check in online?",
+                                    "Is web check-in part of the service of flight itinerary?"
+                                ],
+                                "answer": "Yes, generally included. Airport check-in also available."
+                            },
+                            {
+                                "question": "Will I get an e-ticket and PNR?",
+                                "answer": "Yes, valid e-ticket and PNR sent via email after booking confirmation."
+                            },
+                            {
+                                "question": "Can I book multi-city or connecting flights in one ticket?",
+                                "paraphrased_questions": [
+                                    "Is it possible to book connecting or multi-city flights on a single ticket?"
+                                ],
+                                "answer": "Yes, depending on airline availability."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Baggage",
+                        "qna": [
+                            {
+                                "question": "What is the free baggage allowance?",
+                                "paraphrased_questions": [
+                                    "What is the free luggage allowance?",
+                                    "What is the free carry-on luggage allowance?"
+                                ],
+                                "answer": "Depends on airline & fare. Economy: 20-30kg checked + 7-10kg cabin. Business/Premium: 30-40kg checked + 10-15kg cabin."
+                            },
+                            {
+                                "question": "What are the fees for additional luggage?",
+                                "paraphrased_questions": [
+                                    "How much do you charge for extra baggage?",
+                                    "What is the cost for excess luggage?"
+                                ],
+                                "answer": "Extra baggage charges vary $10-30/kg over allowance."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Cancellation & Changes",
+                        "qna": [
+                            {
+                                "question": "What are cancellation charges after booking?",
+                                "paraphrased_questions": [
+                                    "What fees apply for cancelling after booking?",
+                                    "How much will it cost to cancel after booking?"
+                                ],
+                                "answer": "Charges depend on airline/fare rules. Some tickets non-refundable, refundable tickets have fees ($20-$100)."
+                            },
+                            {
+                                "question": "Can I change travel dates or passenger name?",
+                                "paraphrased_questions": [
+                                    "Is it possible to modify travel dates or correct passenger name?",
+                                    "Can I update my travel dates or change the name on the ticket?"
+                                ],
+                                "answer": "Date changes allowed with fee + fare difference. Minor name corrections allowed; major changes require new booking."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Payment & Pricing",
+                        "qna": [
+                            {
+                                "question": "Are there hidden fees?",
+                                "paraphrased_questions": [
+                                    "Are there any concealed charges?",
+                                    "Will there be any undisclosed fees?"
+                                ],
+                                "answer": "No hidden fees; all displayed before payment."
+                            },
+                            {
+                                "question": "Can I pay in installments?",
+                                "paraphrased_questions": [
+                                    "Is it possible to pay in EMIs?",
+                                    "Can I split the payment into installments?"
+                                ],
+                                "answer": "Depends on payment gateway/airline. Many support credit card EMI."
+                            },
+                            {
+                                "question": "Does price include taxes & surcharges?",
+                                "paraphrased_questions": [
+                                    "Are taxes included in the ticket price?",
+                                    "Is the fare inclusive of all taxes and fees?"
+                                ],
+                                "answer": "Yes, unless otherwise noted."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Special Requests & Services",
+                        "qna": [
+                            {
+                                "question": "Can I request meal preference?",
+                                "paraphrased_questions": [
+                                    "Would it be possible for me to request my preferred meal on the flight?",
+                                    "Can I select my meal option?"
+                                ],
+                                "answer": "Yes, most airlines allow meal selection."
+                            },
+                            {
+                                "question": "Can I add extra legroom or priority boarding?",
+                                "paraphrased_questions": [
+                                    "Is it possible to upgrade to extra legroom?",
+                                    "Can I get priority boarding?"
+                                ],
+                                "answer": "Yes, extra cost applies."
+                            },
+                            {
+                                "question": "Are wheelchair or special needs services available?",
+                                "paraphrased_questions": [
+                                    "Can I request assistance for special needs or wheelchair?",
+                                    "Are there services for people with special needs or those in wheelchairs?"
+                                ],
+                                "answer": "Yes, request in advance."
+                            },
+                            {
+                                "question": "Can I add travel insurance with flight itinerary for visa?",
+                                "paraphrased_questions": [
+                                    "Is it possible to include travel insurance with flight itinerary for visa?"
+                                ],
+                                "answer": "Yes, optional."
+                            }
+                        ]
+                    },
+                    {
+                        "topic": "Other Travel Concerns",
+                        "qna": [
+                            {
+                                "question": "What documents required at check-in?",
+                                "paraphrased_questions": [
+                                    "What paperwork is needed for check-in?"
+                                ],
+                                "answer": "International: Passport + Visa + Airline ticket/PNR. Domestic: Government ID + ticket/PNR."
+                            },
+                            {
+                                "question": "How early should I reach airport?",
+                                "answer": "International: 3 hours. Domestic: 2 hours."
+                            },
+                            {
+                                "question": "Rights if flight delayed or cancelled?",
+                                "paraphrased_questions": [
+                                    "Rights in the event of a flight cancellation or delay?"
+                                ],
+                                "answer": "May be eligible for rebooking, refund, or compensation depending on airline and local regulations."
+                            },
+                            {
+                                "question": "Will my flight be automatically rescheduled if it is cancelled?",
+                                "paraphrased_questions": [
+                                    "If my flight is cancelled, will I be rebooked automatically?",
+                                    "In case of flight cancellation, do they rebook me automatically?"
+                                ],
+                                "answer": "Usually, but depends on airline/fare rules."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "subsection_title": "Booking",
+                "topics": [
+                    {
+                        "topic": "Required Details",
+                        "qna": [
+                            {
+                                "question": "What information is required to book travel flight tickets?",
+                                "paraphrased_questions":[
+                                    "Which details do I need to provide for a booking of flight tickets?",
+                                    "What traveler and flight information is needed for visa itinerary?"
+                                ],
+                                "answer": "Departure city & airport, number of passengers, multiple destinations, destination city & airport, preferred time, one-way/round-trip, flexible dates, preferred airlines, direct or stopovers. Agent will follow up with confirmation after actual booking details shared."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,698 @@
+[
+  {
+    "section_id": "hotel_booking",
+    "section_title": "Visa Hotel Reservation",
+    "subsections": [
+      {
+        "subsection_title": "Enquiry",
+        "topics": [
+          {
+            "topic": "Validity & Acceptance",
+            "qna": [
+              {
+                "question": "Is the hotel booking valid for embassy or visa submission?",
+                "paraphrased_questions": [
+                  "Will the embassy or consulate accept this hotel booking for visa processing?",
+                  "Can I use this hotel reservation for my visa submission?"
+                ],
+                "answer": "Yes. Our hotel confirmation letters are fully valid for visa applications and are accepted by all embassies and consulates worldwide. The confirmation clearly shows your accommodation details and stays duration, serving as official proof of lodging for your visa application."
+              },
+              {
+                "question": "Will this hotel reservation be verifiable by the embassy or consulate?",
+                "paraphrased_questions": [
+                  "Is my hotel reservation verifiable for visa purposes?"
+                ],
+                "answer": "Yes. Each hotel confirmation includes a unique reservation identifier or booking reference number, which can be verified on major hotel booking platforms such as Expedia, Orbitz, or directly with the hotel."
+              },
+              {
+                "question": "How many days of validity does the hotel booking have?",
+                "paraphrased_questions": [
+                  "For how long will my visa hotel reservation remain valid?",
+                  "What is the validity period of the hotel booking?"
+                ],
+                "answer": "Your hotel confirmation remains valid until your travel start date and covers your entire stay duration as per your itinerary.We also offer 24-hour, 48-hour, 72-hour, or full-stay validity options, depending on your travel plan and embassy requirements."
+              }
+            ]
+          },
+          {
+            "topic": "Reservation Type",
+            "qna": [
+              {
+                "question": "Is it a real confirmed hotel reservation, and will it appear as confirmed online?",
+                "paraphrased_questions": [
+                  "Will my visa hotel booking be a genuine confirmed stay and visible on the hotel or OTA website?",
+                  "Is this a verified hotel reservation that shows as confirmed on booking platforms?",
+                  "Will the confirmation reflect as an active booking on the hotel or travel site?"
+                ],
+                "answer": "Yes. We provide genuine, confirmed hotel reservations — not dummy or temporary holds. Each booking includes a valid confirmation number and will display as 'Confirmed' when verified on the hotel’s website or recognized travel platforms such as Expedia, Orbitz, or Booking.com."
+              },
+              {
+                "question": "Is it cancellable or just a hold hotel reservation for visa?",
+                "paraphrased_questions": [
+                  "Can I cancel my visa hotel booking if plans change?",
+                  "Is the hotel booking refundable or fixed?"
+                ],
+                "answer": "Yes, the booking can be cancelled upon request. However, the service charge for hotel confirmation is generally non-refundable unless your visa is rejected specifically due to our hotel document (see refund policy below)."
+              }
+            ]
+          },
+          {
+            "topic": "Pricing & Refund Policy",
+            "qna": [
+              {
+                "question": "What are the charges for hotel reservation for visa purposes?",
+                "paraphrased_questions": [
+                  "How much does it cost to get a hotel booking for visa application?",
+                  "What is the price for hotel confirmation for my visa process?"
+                ],
+                "answer": "Hotel reservation charges for visa purposes depend on the package you choose:\n• Hotel Only (Single Hotel): $30 — covers one hotel for any number of travelers.\n• Hotel Only (2+ Hotels): $60 + $30 for each additional hotel — for multi-hotel itineraries.\n• Hotel + Flight Package (Single Hotel): $20 — includes one hotel booking with flight itinerary.\n• Hotel + Flight Package (2+ Hotels): $40 + $20 for each additional hotel — for multi-hotel + flight itinerary.\nUrgent service fees apply if faster processing is required. There are no hidden or service charges; the quoted price includes all booking documentation and support."
+              },
+              {
+                "question": "Is there any extra or hidden fee for visa hotel reservations?",
+                "paraphrased_questions": [
+                  "Do you charge any additional service fees for visa hotel bookings?",
+                  "Are there any hidden costs apart from the listed visa hotel reservation prices?"
+                ],
+                "answer": "No, there are no hidden or additional service fees. The quoted prices cover all documentation, verification, and assistance needed for your visa hotel reservation."
+              },
+              {
+                "question": "What is your refund and cancellation policy for hotel reservations?",
+                "paraphrased_questions": [
+                  "How do refunds work for hotel booking for visa purposes?",
+                  "What are the cancellation terms for hotel confirmation letters?"
+                ],
+                "answer": "Our refund and cancellation policy for hotel reservations related to visa purposes includes full, partial, and non-refundable cases depending on the situation:\n\n• Full Refund — Available only if your visa is denied due to errors or issues in our provided documents. You must submit a stamped and signed embassy or consulate rejection letter that clearly shows the beneficiary name. Refunds are processed within 7 working days.\n\n• Partial Refund — If you cancel your hotel booking request before it is processed (for example, a mistaken request or change of plans), you are eligible for a 95% refund. A 5% transaction fee is deducted. Notify us via help@schengenvisaitinerary.com or WhatsApp +1 718 412 8918.\n\n• Non-Refundable — Once the hotel booking request has been processed, or if the visa rejection is not related to our documentation, no refund can be issued. This also applies to services outside hotel and flight reservation categories.\n\nIf you don't receive your refund within 7 working days, please contact help@schengenvisaitinerary.com or WhatsApp +1 718 412 8918 for assistance."
+              },
+              {
+                "question": "How do I apply for a refund after my visa rejection?",
+                "paraphrased_questions": [
+                  "What documents are required to claim a refund if my visa is denied?",
+                  "How do I submit proof for a visa-related refund request?"
+                ],
+                "answer": "If your visa is rejected due to documentation from our side, you can claim a full refund by emailing a **scanned copy of your visa rejection letter** (stamped and signed by the embassy or consulate, showing your full name) to **help@schengenvisaitinerary.com**. The refund will be processed within 7 business days."
+              },
+              {
+                "question": "Can I get a partial refund if I cancel my hotel reservation request before it's processed?",
+                "paraphrased_questions": [
+                  "Will I get money back if I withdraw my visa hotel booking request early before booking is processed?",
+                  "Is there a small fee deduction if I cancel before the reservation is made?"
+                ],
+                "answer": "Yes, if you cancel your hotel reservation request before it is processed, you can get a partial refund. A 5% transaction fee is deducted, and the remaining 95% will be refunded. You can request the cancellation by emailing help@schengenvisaitinerary.com or messaging WhatsApp +1 718 412 8918. Refunds are usually processed within 7 working days."
+              },
+              {
+                "question": "Are there cases where the hotel booking fee is non-refundable?",
+                "paraphrased_questions": [
+                  "In what situations can't I get a refund for my visa hotel reservation?",
+                  "When is the hotel reservation fee not eligible for refund?"
+                ],
+                "answer": "The hotel reservation fee becomes non-refundable if your request has already been processed or if your visa is rejected for reasons unrelated to our documents. Refunds are also not available for services outside hotel and flight reservation categories. Once processed, the booking confirmation is considered final and non-cancellable."
+              },
+              {
+                "question": "When will I receive my refund for a visa hotel reservation?",
+                "paraphrased_questions": [
+                  "How long does it take to get a refund for my hotel booking?",
+                  "What is the usual processing time for refunds after visa rejection?"
+                ],
+                "answer": "Refunds for visa hotel reservations are typically processed within **7 working days** of receiving your valid request and supporting documents. If you do not receive an update within that time, please contact us via **help@schengenvisaitinerary.com** or **WhatsApp: +1 718 412 8918**."
+              }
+            ]
+          },
+          {
+            "topic": "Changes & Flexibility",
+            "qna": [
+              {
+                "question": "Can my hotel booking be changed or reissued if travel dates or itinerary change?",
+                "paraphrased_questions": [
+                  "Is it possible to modify or reissue my hotel confirmation if my trip plan changes?",
+                  "Can I update my travel dates or destination after booking?"
+                ],
+                "answer": "Yes. We offer flexible reissuance if your itinerary changes — including updates to travel dates, destinations, or hotel choices."
+              },
+              {
+                "question": "Can guests be added or removed after booking?",
+                "paraphrased_questions": [
+                  "Is it possible to update the guest list for my hotel reservation?",
+                  "Can I modify the number of travelers in my booking?"
+                ],
+                "answer": "Yes, guest details (names, number of travellers) can be updated before your travel date. The updated confirmation will reflect all corrected details."
+              }
+            ]
+          },
+          {
+            "topic": "Documents & Proof",
+            "qna": [
+              {
+                "question": "What details are included in the hotel confirmation?",
+                "paraphrased_questions": [
+                  "Does the hotel booking confirmation show all necessary information?",
+                  "What specific details are mentioned in the visa hotel reservation?"
+                ],
+                "answer": "We can provide separate hotel confirmations for each destination in your itinerary, ideal for Schengen or multi-country visa applications. Each hotel confirmation document includes: Guest name(s) exactly as per passport, Hotel name, address, and contact information, Check-in and check-out dates, Total duration of stay, Unique booking reference or confirmation number, Reservation status (“Confirmed”), Signatures or stamps (if required by the embassy)."
+              },
+              {
+                "question": "Will the booking confirmation include hotel details?",
+                "paraphrased_questions": [
+                  "Does the confirmation mention the hotel name and details?",
+                  "What information does the hotel booking confirmation contain?"
+                ],
+                "answer": "Each hotel confirmation document includes: Guest name(s) exactly as per passport, Hotel name, address, and contact information, Check-in and check-out dates, Total duration of stay, Unique booking reference or confirmation number, Reservation status (“Confirmed”), Signatures or stamps (if required by the embassy)."
+              },
+              {
+                "question": "Will the document include hotel name, address, and contact info?",
+                "paraphrased_questions": [
+                  "Does the booking voucher show the hotel's full address and contact information?",
+                  "Will the confirmation document have hotel contact details?"
+                ],
+                "answer": "Yes the hotel confirmation will include the hotel's full name, address, and contact information (phone number and email). This ensures that the document meets embassy requirements for valid proof of accommodation."
+              },
+              {
+                "question": "Will a confirmation number or booking reference be provided?",
+                "paraphrased_questions": [
+                  "Do I get a PNR or booking reference number?",
+                  "Will there be a reference ID for my hotel reservation?"
+                ],
+                "answer": "Yes, a unique booking reference or confirmation number will be provided in your hotel confirmation document. This allows for easy verification of your reservation on official platforms."
+              },
+              {
+                "question": "Can multiple hotel reservations be provided for multi-country visas?",
+                "paraphrased_questions": [
+                  "Is it possible to get multiple hotel bookings for a Schengen or multi-country visa?",
+                  "Can I request more than one hotel confirmation for different destinations?"
+                ],
+                "answer": "Yes. We can provide separate hotel confirmations for each destination in your itinerary, ideal for Schengen or multi-country visa applications."
+              }
+            ]
+          },
+          {
+            "topic": "Embassy Requirements",
+            "qna": [
+              {
+                "question": "Does the booking include all necessary details for visa submission?",
+                "paraphrased_questions": [
+                  "Are all required hotel details mentioned for embassy purposes?",
+                  "Does the confirmation meet embassy criteria for hotel proof?",
+                  "What exactly is included in the hotel confirmation for visa?"
+                ],
+                "answer": "Yes. The hotel confirmation document clearly mentions the traveller's full name (as per passport), check-in and check-out dates, hotel address, contact number, and booking reference number. This ensures compliance with all embassy and consulate requirements for valid visa proof of accommodation."
+              },
+              {
+                "question": "Does the booking mention check-in and check-out dates?",
+                "paraphrased_questions": [
+                  "Are check-in and check-out dates visible on the confirmation?",
+                  "Does the hotel proof clearly display the stay period?"
+                ],
+                "answer": "Yes. The hotel confirmation clearly shows both check-in and check-out dates along with other key details like hotel address, contact number, and booking reference. This format ensures it is accepted as valid accommodation proof for embassy and consulate visa applications."
+              },
+              {
+                "question": "Will it show the traveller's name exactly as per passport?",
+                "paraphrased_questions": [
+                  "Does the confirmation mention my full name as on passport?",
+                  "Will my passport name appear exactly on the hotel booking?"
+                ],
+                "answer": "Yes. The traveller's full name appears on the hotel confirmation exactly as it is written on the passport. Along with name, the document also includes check-in/check-out dates, hotel details, and booking reference to meet embassy and consulate verification standards."
+              }
+            ]
+          },
+          {
+            "topic": "Discounts and Offers",
+            "qna": [
+              {
+                "question": "Do you offer any discounts on hotel bookings?",
+                "paraphrased_questions": [
+                  "Are there any special offers for visa hotel reservations?",
+                  "Can I get a discount if I book multiple hotels?"
+                ],
+                "answer": "Yes. As part of our Customer Appreciation Program, you'll receive a 10% discount on your hotel booking amount when you share your experience with us on Google Reviews. Your feedback helps us improve our documentation and support services for future travellers."
+              }
+            ]
+          },
+          {
+            "topic": "Availability and Alternatives",
+            "qna": [
+              {
+                "question": "What if the mentioned hotel is fully booked?",
+                "paraphrased_questions": [
+                  "Is there an alternative if my preferred hotel is unavailable?",
+                  "What happens if the selected hotel has no rooms left?"
+                ],
+                "answer": "If your chosen hotel is unavailable, we will assist you in selecting an equivalent 4- or 5-star hotel with a good rating. We ensure your replacement hotel meets your requirements and embassy standards."
+              },
+              {
+                "question": "Do you offer global coverage for hotel bookings?",
+                "paraphrased_questions": [
+                  "Can I book hotels in any country for visa purposes?",
+                  "Is hotel reservation service available worldwide?"
+                ],
+                "answer": "Yes. Our hotel reservation services are available for all countries worldwide, regardless of your location or nationality."
+              }
+            ]
+          },
+          {
+            "topic": "Required Information",
+            "qna": [
+              {
+                "question": "What information do I need to provide for hotel booking?",
+                "paraphrased_questions": [
+                  "What details are required to book a hotel for visa?",
+                  "Which information should I share to reserve a hotel?"
+                ],
+                "answer": "Full Name(s) (as per passport), Phone Number, Email Address, Number of Guests, City / Location of Stay, Hotel Name (optional, if preferred), Number of Hotels Needed. Once received, our booking specialists will arrange and send your verified hotel confirmation document promptly."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subsection_title": "Proceed with Reservation",
+        "topics": [
+          {
+            "topic": "Proceed with Reservation",
+            "qna": [
+              {
+                "question": "What travel dates do I need to provide when making a hotel reservation?",
+                "paraphrased_questions": [
+                  "Which dates are required to complete my hotel booking?",
+                  "Do I need to share my check-in and check-out dates while booking a hotel?"
+                ],
+                "answer": "You need to provide your check-in and check-out dates when booking a hotel. These dates help confirm your stay duration and availability for the selected property."
+              },
+              {
+                "question": "Can I include multiple hotel stays in one reservation?",
+                "paraphrased_questions": [
+                  "Is it possible to add multiple locations under one hotel booking?",
+                  "Can I make one reservation for several stays in different cities?"
+                ],
+                "answer": "Yes, you can include multiple hotel stays in a single reservation. Please mention all the locations along with their respective check-in and check-out dates so that separate confirmations can be arranged for each property."
+              },
+              {
+                "question": "How should I specify the number of guests while booking a hotel?",
+                "paraphrased_questions": [
+                  "Do I need to mention how many adults and children will be staying in the room?",
+                  "Should I include the ages of children when reserving a hotel room?",
+                  "Why is it important to share the number of guests accurately during booking?"
+                ],
+                "answer": "You must provide the number of adults and children staying in the room. For children, please include their ages to help confirm bed and occupancy requirements. Accurate guest details ensure the booking is valid for visa or travel purposes."
+              },
+              {
+                "question": "Can I specify my preferred hotel or room type when booking?",
+                "paraphrased_questions": [
+                  "Is it possible to choose a specific hotel or room category during the booking process?",
+                  "Can I mention my preferred hotel name and room type before payment?"
+                ],
+                "answer": "Yes, you can mention your preferred hotel name if you have one. You can also select a hotel category (3★, 4★, or 5★) and choose your room type — such as single, double, suite, or family room — depending on your needs and budget."
+              },
+              {
+                "question": "Can I make additional requests for my hotel stay?",
+                "paraphrased_questions": [
+                  "Is it possible to add services like breakfast or airport pickup while booking?",
+                  "Can I request special arrangements such as early check-in or connecting rooms?"
+                ],
+                "answer": "Yes, you can add extra services and preferences while booking. These include meal options (Breakfast, Half Board, or Full Board), airport transfers, parking, extra beds, or other special requests like early check-in, late check-out, or connecting rooms — subject to availability and possible additional charges."
+              },
+              {
+                "question": "How is payment handled for hotel reservations?",
+                "paraphrased_questions": [
+                  "Do I need to pay before confirming a hotel booking?",
+                  "When and how should I make the payment for my hotel reservation?"
+                ],
+                "answer": "After verifying your details, you will receive a secure payment link to complete your hotel booking. Payment should be made before the reservation is processed to confirm your stay."
+              },
+              {
+                "question": "What happens after I make the payment for my hotel booking for visa?",
+                "paraphrased_questions": [
+                  "Do I get a confirmation after successful payment for the hotel booking for visa?",
+                  "What documents are shared once the hotel reservation is completed?"
+                ],
+                "answer": "Once the payment is completed, you will receive a receipt immediately, followed by your hotel booking confirmation. The confirmation includes hotel details, stay dates, guest information, and the booking reference, which can be used for embassy or travel verification."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section_id": "hotel_booking_nonvisa",
+    "section_title": "Hotel Reservation (Non-Visa)",
+    "subsections": [
+      {
+        "subsection_title": "Enquiry",
+        "topics": [
+          {
+            "topic": "General Enquiry",
+            "qna": [
+              {
+                "question": "What types of hotel rooms are available for booking?",
+                "paraphrased_questions": [
+                  "Which room categories can I choose from when booking a hotel?",
+                  "What kinds of rooms do you offer at your hotels?"
+                ],
+                "answer": "We offer a variety of comfortable and well-furnished rooms to suit different travel needs. Our available categories include: Single Room - ideal for one guest, featuring a single bed; Double Room - perfect for two guests with a queen or twin beds; Family Room - spacious and suitable for 3-4 guests; and Suite Room - premium accommodation with a separate living area, enhanced amenities, and optional city or pool views."
+              },
+              {
+                "question": "Do you provide suite or family room options for larger groups?",
+                "paraphrased_questions": [
+                  "Can families or groups book larger rooms or suites?",
+                  "Are there spacious or premium room options available?"
+                ],
+                "answer": "Yes, we provide both Family Rooms and Suite Rooms. Family Rooms comfortably accommodate up to four guests, while Suite Rooms offer additional space, premium amenities, and separate living areas—ideal for travelers who prefer extra comfort or privacy."
+              },
+              {
+                "question": "What are the standard check-in and check-out times for hotel reservations?",
+                "paraphrased_questions": [
+                  "When can I check into my hotel and what time should I check out?",
+                  "What are the usual hotel check-in and check-out timings?"
+                ],
+                "answer": "Standard hotel check-in time is usually between 2:00 PM and 3:00 PM, while check-out is at 12:00 Noon. These timings may slightly vary depending on the hotel's policies. Guests are advised to confirm timing in advance for a smooth stay experience."
+              },
+              {
+                "question": "Does the hotel allow early check-in or late check-out, and what are the conditions?",
+                "paraphrased_questions": [
+                  "Is early check-in or late check-out offered by the hotel?",
+                  "Can I check in early or extend my stay beyond the standard timing?",
+                  "What are the rules or conditions for early check-in or late check-out?"
+                ],
+                "answer": "Yes, early check-in and late check-out are available at most hotels, subject to room availability and management approval. Early check-in is generally allowed from 9:00 AM onward, while late check-out can be extended until around 4:00 PM. Additional charges may apply, depending on the hotel's policy and booking type."
+              },
+              {
+                "question": "How can I request an early check-in or late check-out for my stay?",
+                "paraphrased_questions": [
+                  "What is the process to request early arrival or late departure at the hotel?",
+                  "How do I inform the hotel if I need early check-in or late check-out?",
+                  "When should I contact the hotel to arrange an early check-in or delayed check-out?"
+                ],
+                "answer": "To request early check-in or late check-out, you can mention it while booking or contact the hotel directly at least 24 hours before arrival or departure. The hotel will confirm based on room availability and inform you of any applicable fees before finalizing the arrangement."
+              }
+            ]
+          },
+          {
+            "topic": "Pricing & Payment",
+            "qna": [
+              {
+                "question": "Are hotel room rates inclusive of taxes and service charges?",
+                "paraphrased_questions": [
+                  "Do the hotel prices include all taxes and additional fees?",
+                  "Is the total room cost inclusive of service charges?"
+                ],
+                "answer": "Yes, all hotel room rates are inclusive of applicable taxes and service charges. The amount shown at the time of booking is the final payable price, with no hidden fees."
+              },
+              {
+                "question": "What meal plans are offered with hotel reservations?",
+                "paraphrased_questions": [
+                  "Which dining options are available when booking a hotel?",
+                  "Do hotel packages include breakfast or dinner?"
+                ],
+                "answer": "Our hotel bookings offer multiple meal plans depending on your preference. Most packages include a complimentary continental breakfast. You can also upgrade to Half Board (breakfast + dinner) or Full Board (breakfast, lunch, and dinner) for added convenience."
+              },
+              {
+                "question": "What are the available payment options for hotel reservations?",
+                "paraphrased_questions": [
+                  "How can I pay for my hotel booking?",
+                  "What payment methods are accepted for hotel reservations?"
+                ],
+                "answer": "We offer flexible payment options for your convenience. You can pay online using Credit/Debit Card, UPI, or Net Banking. Some hotels also allow 'Pay at Hotel' depending on their policy. Please check availability of this option during checkout."
+              },
+              {
+                "question": "Can I choose between flexible and non-refundable hotel rates?",
+                "paraphrased_questions": [
+                  "Are there refundable and non-refundable pricing options for hotels?",
+                  "Can I select a flexible booking plan for my stay?"
+                ],
+                "answer": "Yes, both flexible and non-refundable hotel rate options are available. Flexible bookings allow date or cancellation changes before check-in, while non-refundable rates offer lower prices but do not permit refunds after confirmation."
+              },
+              {
+                "question": "Does the hotel charge extra for special services or amenities?",
+                "paraphrased_questions": [
+                  "Are there any additional costs for facilities like Wi-Fi or parking?",
+                  "Do I have to pay extra for amenities or upgrades?"
+                ],
+                "answer": "Most standard amenities such as Wi-Fi and basic services are included in the booking rate. However, some premium facilities — such as parking, airport transfer, or special room preferences — may incur additional charges based on the hotel’s policy."
+              }
+            ]
+          },
+          {
+            "topic": "Cancellation & Refund Policy",
+            "qna": [
+              {
+                "question": "How does the free cancellation policy for hotel bookings work?",
+                "paraphrased_questions": [
+                  "Until when can I cancel my hotel booking without any charge?",
+                  "Are flexible rate hotel bookings eligible for free cancellation?"
+                ],
+                "answer": "Most hotel bookings allow free cancellation up to 48 hours before check-in, depending on the property's specific terms. The exact cancellation window and fees, if any, will be clearly stated during booking and reconfirmed once your reservation is processed."
+              },
+              {
+                "question": "What happens if I cancel my hotel booking after it has been confirmed and paid for?",
+                "paraphrased_questions": [
+                  "Do I get a refund if I cancel a prepaid hotel reservation?",
+                  "Are confirmed or non-refundable hotel bookings eligible for reimbursement?"
+                ],
+                "answer": "Once a hotel booking is confirmed and payment is processed, it becomes non-refundable in most cases. Cancellations after confirmation typically result in 100% charge, and refunds are not issued unless specified otherwise in the hotel's policy."
+              },
+              {
+                "question": "Can I modify my hotel booking dates after confirmation?",
+                "paraphrased_questions": [
+                  "Is it possible to change check-in or check-out dates after booking?",
+                  "Can I reschedule my hotel stay if my plans change?"
+                ],
+                "answer": "Date modifications are allowed up to 48 hours before arrival, subject to availability and any applicable difference in room rate."
+              },
+              {
+                "question": "How long does it take to receive a refund for a cancelled hotel booking?",
+                "paraphrased_questions": [
+                  "When will I get my refund after cancelling a hotel reservation?",
+                  "What is the refund timeline for cancelled bookings?"
+                ],
+                "answer": "If a refund applies, it will typically be processed within 7-10 working days. The exact duration may vary depending on the hotel's policy, and detailed refund timelines will be shared once your booking is processed."
+              },
+              {
+                "question": "How will I know the exact cancellation terms for my hotel booking?",
+                "paraphrased_questions": [
+                  "When will I receive the detailed cancellation policy for my booking?",
+                  "Where can I find the specific refund and cancellation conditions for my hotel?"
+                ],
+                "answer": "Exact cancellation and refund terms, including applicable timelines and fees, will be communicated when your booking is processed and confirmed."
+              },
+              {
+                "question": "Can I choose to pay at the hotel instead of paying online?",
+                "paraphrased_questions": [
+                  "Is it possible to make the payment directly at the hotel during check-in or checkout?",
+                  "Do you allow pay-on-arrival hotel reservations when a visa confirmation letter is needed?",
+                  "Can I book a room without upfront payment and pay at the property instead?",
+                  "Is the pay-at-hotel option valid for bookings requiring embassy verification or visa proof?"
+                ],
+                "answer": "Yes, some hotels allow the 'Pay at Hotel' option depending on their individual policy. When you select this option, your booking is confirmed without upfront payment, but you must settle the charges at the hotel during check-in or checkout. However, not all properties accept pay-on-arrival bookings, especially for visa documentation purposes. It is recommended to verify the payment option before confirming your reservation to ensure it meets embassy requirements for a valid hotel confirmation letter."
+              },
+              {
+                "question": "Are there any conditions for using the pay-at-hotel option?",
+                "paraphrased_questions": [
+                  "What are the rules or payment conditions for selecting the pay-at-hotel option?",
+                  "Do I need to provide a credit card or pre-authorization for a pay-on-arrival booking?",
+                  "What are the pay-on-arrival policies for securing hotel reservations?",
+                  "Are there specific booking terms or card requirements for using pay-at-hotel for visa-related stays?"
+                ],
+                "answer": "Yes. The pay-at-hotel option is subject to each property's booking and cancellation policy. Some hotels may require a valid credit or debit card to secure the booking, while others may charge a pre-authorization amount. For visa-related reservations, we usually recommend prepaid bookings since some embassies do not accept unpaid or tentative reservations as valid proof of accommodation."
+              },
+              {
+                "question": "Does pay-at-hotel affect my visa documentation?",
+                "paraphrased_questions": [
+                  "Can a pay-on-arrival hotel booking be used as valid proof of stay for my visa application?",
+                  "Will embassies or consulates accept a hotel confirmation letter if payment is made at check-in?",
+                  "Is a prepaid hotel confirmation required for visa processing or embassy submission?",
+                  "Does a pay-at-hotel booking count as a confirmed reservation for visa verification?"
+                ],
+                "answer": "In most cases, embassies prefer prepaid hotel confirmations as proof of stay because they ensure the booking is guaranteed. Pay-at-hotel reservations are sometimes considered tentative and may not always meet visa verification standards. For visa purposes, it's best to opt for a confirmed prepaid hotel reservation to avoid rejection or additional document requests."
+              }
+            ]
+          },
+          {
+            "topic": "Facilities & Inclusions",
+            "qna": [
+              {
+                "question": "What facilities are provided at the hotel?",
+                "paraphrased_questions": [
+                  "Does the hotel offer Wi-Fi, parking, or meals?",
+                  "Are amenities like pool or airport transfers available?"
+                ],
+                "answer": "The facilities and inclusions depend on the hotel and its specific offerings. Exact details will be clearly communicated when your booking is processed, as each property may provide different amenities."
+              }
+            ]
+          },
+          {
+            "topic": "Guests & Special Requests",
+            "qna": [
+              {
+                "question": "Can I add more guests after the hotel booking is confirmed?",
+                "paraphrased_questions": [
+                  "Is it possible to include additional travelers later ?",
+                  "Can extra guests be added after making the reservation?"
+                ],
+                "answer": "Adding guests later is possible, subject to room capacity and any applicable tariff adjustments."
+              },
+              {
+                "question": "What is the child policy for hotel bookings?",
+                "paraphrased_questions": [
+                  "Are there any special rules for children staying at the hotel?",
+                  "Do kids stay free with parents?"
+                ],
+                "answer": "Children below 6 years can stay free with parents without an extra bed. Extra beds or cribs are available on request at an additional charge."
+              },
+              {
+                "question": "Can I request a specific room view or type?",
+                "paraphrased_questions": [
+                  "Is it possible to choose a room with a city, garden, or pool view?",
+                  "Can I select a preferred view or room location?"
+                ],
+                "answer": "You can request a preferred view such as city, garden, or pool view — all subject to availability."
+              },
+              {
+                "question": "Is the hotel wheelchair accessible?",
+                "paraphrased_questions": [
+                  "Do you offer accessible rooms for wheelchair users?",
+                  "Is the property suitable for guests with mobility needs?"
+                ],
+                "answer": "Yes, the property is wheelchair accessible, and accessible rooms are available upon request."
+              },
+              {
+                "question": "Can I make special requests like connecting rooms or extra beds?",
+                "paraphrased_questions": [
+                  "Is it possible to ask for adjoining rooms or additional bedding?",
+                  "Can I include special arrangements such as early check-in or an extra bed?"
+                ],
+                "answer": "Yes, you may request special arrangements like connecting rooms, early check-in, or an extra bed. These are subject to availability and may incur additional charges."
+              }
+            ]
+          },
+          {
+            "topic": "Confirmation & Documents",
+            "qna": [
+              {
+                "question": "Will I receive a booking voucher?",
+                "paraphrased_questions": [
+                  "Do I get a confirmation document for the hotel reservation?",
+                  "Is a proof of booking sent after payment?"
+                ],
+                "answer": "A booking confirmation voucher will be sent to your registered email immediately after payment/booking."
+              },
+              {
+                "question": "What details are included in the booking confirmation?",
+                "paraphrased_questions": [
+                  "Does the voucher show hotel name, address, and contact info?",
+                  "What information is provided in the hotel booking document?"
+                ],
+                "answer": "The booking confirmation includes - Hotel name and address, Contact details (phone, email), Check-in and check-out dates, Room type and number of guests, Booking reference or confirmation number"
+              },
+              {
+                "question": "Is the booking verifiable online?",
+                "paraphrased_questions": [
+                  "Can I check my hotel reservation status online?",
+                  "Is there a way to verify my booking on the hotel's website?"
+                ],
+                "answer": "Yes, the booking can be verified online using the unique booking reference number provided in the confirmation voucher. You can check it on the hotel's official website or through major OTA platforms."
+              },
+              {
+                "question": "What documents are needed at check-in?",
+                "paraphrased_questions": [
+                  "What should I bring when I check into the hotel?",
+                  "Are there any ID requirements for hotel check-in?"
+                ],
+                "answer": "At check-in, guests must present a valid government ID (passport, Aadhaar, or driver's license) along with the booking confirmation voucher."
+              },
+              {
+                "question": "Can the booking be verified with the hotel?",
+                "paraphrased_questions": [
+                  "Is my hotel booking verifiable directly with the property?",
+                  "Can the hotel confirm my reservation on request?"
+                ],
+                "answer": "At check-in, guests must present a valid government ID (passport, Aadhaar, or driver's license). You may verify your booking directly with the hotel using the reservation number provided on the voucher."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subsection_title": "Proceed with Reservation",
+        "topics": [
+          {
+            "topic": "Reservation Process Overview",
+            "qna": [
+              {
+                "question": "How do I proceed with the hotel reservation for visa purposes?",
+                "paraphrased_questions": [
+                  "What information do I need to provide to book a hotel for visa application?",
+                  "How can I start the process of reserving a hotel for my visa?"
+                ],
+                "answer": "To proceed with your visa hotel reservation, please share the following details: destination city, check-in and check-out dates, number of adults and children (with their ages), hotel category or specific preference, and any special requests like meals or transfers. Once details are submitted, our agent will review and confirm the booking shortly."
+              }
+            ]
+          },
+          {
+            "topic": "Travel Dates & Multiple Stays",
+            "qna": [
+              {
+                "question": "How do I specify my travel dates or multiple hotel stays?",
+                "paraphrased_questions": [
+                  "Where should I mention my check-in and check-out dates for the visa hotel booking?",
+                  "Can I include multiple cities or hotel stays in one reservation request?"
+                ],
+                "answer": "You'll need to provide your check-in and check-out dates for each hotel stay. If you are visiting multiple cities, please mention all destinations along with respective stay dates so we can create a valid multi-hotel reservation for your visa submission."
+              }
+            ]
+          },
+          {
+            "topic": "Guest Information",
+            "qna": [
+              {
+                "question": "How do I mention guest details when booking a hotel for visa?",
+                "paraphrased_questions": [
+                  "Do I need to include children's ages in the reservation form?",
+                  "How do I specify the number of travelers for the hotel booking?"
+                ],
+                "answer": "Please mention the number of adults and the number of children, along with each child's age. This helps ensure the hotel booking document matches the visa application details and complies with embassy requirements."
+              }
+            ]
+          },
+          {
+            "topic": "Hotel Preferences",
+            "qna": [
+              {
+                "question": "Can I choose a specific hotel or room category for my visa reservation?",
+                "paraphrased_questions": [
+                  "Is it possible to select hotel rating or room type before booking?",
+                  "Can I request a particular hotel name for visa documentation?"
+                ],
+                "answer": "Yes, you can specify your preferences such as hotel name, star category (3★ / 4★ / 5★), and room type (single, double, suite, or family). We’ll accommodate these requests based on availability while ensuring the booking meets embassy verification standards."
+              }
+            ]
+          },
+          {
+            "topic": "Additional Requests",
+            "qna": [
+              {
+                "question": "Can I include meal plans, transfers, or other special requests?",
+                "paraphrased_questions": [
+                  "Is it possible to add breakfast or airport transfer in my visa hotel booking?",
+                  "Can I request early check-in or connected rooms for my reservation?"
+                ],
+                "answer": "Yes, you can include additional services such as meal preferences (Breakfast / Half Board / Full Board), airport transfers, parking, or extra beds. You may also request early check-in, late check-out, or connecting rooms, which will be arranged subject to hotel policy and availability."
+              }
+            ]
+          },
+          {
+            "topic": "Confirmation",
+            "qna": [
+              {
+                "question": "What happens after I share my hotel booking details?",
+                "paraphrased_questions": [
+                  "When will I receive confirmation for my visa hotel reservation?",
+                  "How long does it take for the agent to confirm my booking?"
+                ],
+                "answer": "Once you share your booking details, our agent reviews them and proceeds with the reservation. You'll receive a confirmation voucher shortly after — it will include hotel name, address, check-in/check-out dates, and booking reference, all formatted for embassy submission."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -51,7 +51,7 @@ Answer:"""
 
 def main():
     test_questions = [
-        "What do I require for booking?",
+        "Do you think rescheduling is possible my visa appointment got postponed?",
         "How is the weather like in New York in December?",
         "Waht is the earliest I need to get to the airport before my flight?"
     ]
