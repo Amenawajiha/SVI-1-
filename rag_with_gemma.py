@@ -1,5 +1,15 @@
 from retriever import retrieve_docs
-import requests
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
+
+client = OpenAI(
+    api_key=os.environ.get("GROQ_API_KEY"),
+    base_url="https://api.groq.com/openai/v1",
+)
+
 
 def format_context(results):
     context_parts = []
@@ -11,8 +21,9 @@ A: {result['content']}
 Relevance: {result['relevance_score']:.4f}
 """
         context_parts.append(context_part)
-    
+
     return "\n".join(context_parts)
+
 
 def query_gemma(question, context):
 
@@ -33,47 +44,42 @@ User Question: {question}
 
 Answer:"""
 
-    response = requests.post(
-        "http://127.0.0.1:11434/v1/completions",
-        json={
-            "model": "gemma3:1b",
-            "prompt": prompt,
-            "temperature": 0.7,  
-            "top_p": 0.95       
-        }
-    )
-    
-    if response.status_code == 200:
-        data = response.json()
-        return data["choices"][0]["text"]
-    else:
-        return f"Error querying Gemma API: {response.status_code}"
+    try:
+        response = client.responses.create(
+            input=prompt,
+            model="openai/gpt-oss-20b",
+        )
+        return response.output_text
+    except Exception as error:
+        return f"Error querying Groq API: {error}"
+
 
 def main():
     test_questions = [
         "Do you think rescheduling is possible my visa appointment got postponed?",
         "How is the weather like in New York in December?",
-        "Waht is the earliest I need to get to the airport before my flight?"
+        "What is the earliest I need to get to the airport before my flight?",
     ]
-    
+
     print("Testing RAG Pipeline with Gemma:\n")
     for question in test_questions:
-        print("\n" + "="*80)
+        print("\n" + "=" * 80)
         print(f"\nQuestion: {question}")
-        
+
         print("\nRetrieving relevant information...")
         results = retrieve_docs(question, top_k=3)
-        
+
         context = format_context(results)
         print("\nRetrieved Context:")
         print(context)
-        
+
         print("\nGenerating response...")
         response = query_gemma(question, context)
-        
+
         print("\nGemma's Response:")
         print(response)
-        print("\n" + "="*80)
+        print("\n" + "=" * 80)
+
 
 if __name__ == "__main__":
     main()
