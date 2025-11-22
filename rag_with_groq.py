@@ -1,7 +1,9 @@
-from retriever import retrieve_docs
 import os
+
 from dotenv import load_dotenv
 from openai import OpenAI
+
+from retriever import retrieve_docs
 
 load_dotenv()
 
@@ -25,7 +27,7 @@ Relevance: {result['relevance_score']:.4f}
     return "\n".join(context_parts)
 
 
-def query_gemma(question, context):
+def query_groq(question, context):
 
     prompt = f"""
 You are an AI assistant for a flight booking service. Understand user's question. Generate the response based on the information relevent to the user question:
@@ -61,7 +63,7 @@ def main():
         "What is the earliest I need to get to the airport before my flight?",
     ]
 
-    print("Testing RAG Pipeline with Gemma:\n")
+    print("Testing RAG Pipeline with Groq:\n")
     for question in test_questions:
         print("\n" + "=" * 80)
         print(f"\nQuestion: {question}")
@@ -74,9 +76,9 @@ def main():
         print(context)
 
         print("\nGenerating response...")
-        response = query_gemma(question, context)
+        response = query_groq(question, context)
 
-        print("\nGemma's Response:")
+        print("\nGroq's Response:")
         print(response)
         print("\n" + "=" * 80)
 
