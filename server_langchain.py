@@ -10,8 +10,64 @@ from typing import Optional, List, Dict
 import uvicorn
 from langchain_utils import generate_answer
 import os
+import time
+import csv
+import json
+from datetime import datetime
+import numpy as np
+from sentence_transformers import SentenceTransformer
 
 app = FastAPI()
+
+# ------------------------
+# Logging Configuration
+# ------------------------
+LOG_DIR = os.environ.get("LOG_DIR", "./logs")
+os.makedirs(LOG_DIR, exist_ok=True)
+JSONL_PATH = os.path.join(LOG_DIR, "relevance_logs.jsonl")
+CSV_PATH = os.path.join(LOG_DIR, "relevance_logs.csv")
+
+# Embedding model to compute similarities (same as your retriever's embedder)
+EMBED_MODEL_NAME = os.environ.get("EMBED_MODEL", "all-MiniLM-L6-v2")
+embed_model = SentenceTransformer(EMBED_MODEL_NAME)
+
+# CSV column definitions
+CSV_FIELDS = [
+    "timestamp",
+    "conversation_id",
+    "user_text",
+    "bot_text",
+    "llm_latency_ms",
+    "retriever_scores",   # JSON array
+    "top_k_sources",      # JSON array
+    "embedding_similarity" # top1
+]
+
+# Utility: cosine similarity
+def cosine_sim(a: np.ndarray, b: np.ndarray) -> float:
+    """Calculate cosine similarity between two vectors"""
+    if np.linalg.norm(a) == 0 or np.linalg.norm(b) == 0:
+        return 0.0
+    return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b)))
+
+def append_logs_row(row: dict):
+    """Append log entry to both JSONL and CSV files"""
+    # JSONL
+    with open(JSONL_PATH, "a", encoding="utf-8") as jf:
+        jf.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+    # CSV: write header if CSV doesn't exist
+    write_header = not os.path.exists(CSV_PATH)
+    with open(CSV_PATH, "a", newline="", encoding="utf-8") as cf:
+        writer = csv.DictWriter(cf, fieldnames=CSV_FIELDS)
+        if write_header:
+            writer.writeheader()
+        # Convert lists to JSON strings for CSV fields
+        csv_row = {
+            k: (json.dumps(row[k], ensure_ascii=False) if isinstance(row[k], (list, dict)) else row[k]) 
+            for k in CSV_FIELDS
+        }
+        writer.writerow(csv_row)
 
 class QueryReq(BaseModel):
     conversation_id: Optional[int] = None
@@ -47,12 +103,13 @@ def is_ambiguous_rule(text: str) -> bool:
     # domain keywords often ambiguous
     ambiguous_keywords = {
         "flight", "booking", "visa", "itinerary", "hotel", "pnr",
-        "book", "reservation", "ticket", "cancel", "refund"
+        "book", "reservation", "ticket", "cancel", "refund",
+        "room", "stay", "accommodation", "check-in", "checkout"
     }
     tokens = t.split()
 
-    # If it's a single token and short, treat ambiguous ("flight", "visa", "pnr")
-    if len(tokens) == 1 and len(t) <= 12:
+    # If it's a single token and short, treat ambiguous ("flight", "visa", "pnr", "hotel")
+    if len(tokens) == 1 and len(t) <= 15:
         return True
 
     # If short (<= 3 tokens) and contains any ambiguous keyword
@@ -69,15 +126,19 @@ def clarification_payload_for(text: str) -> Dict:
     The returned structure matches what the /query endpoint expects.
     """
     message = (
-        "I might need a little more detail. We provide two main services:\n\n"
+        "I might need a little more detail. We provide the following services:\n\n"
         "• Flight itinerary for visa purposes (a reservation/PNR you can use for visa applications)\n"
-        "• Flight booking for actual travel (confirmed e-ticket)\n\n"
+        "• Flight booking for actual travel (confirmed e-ticket)\n"
+        "• Hotel reservations for visa applications\n"
+        "• Hotel bookings for actual stays\n\n"
         "Which of these would you like help with?"
     )
 
     suggested_buttons = [
-        {"label": "Flight itinerary for visa", "value": "choose_visa", "type": "flow"},
-        {"label": "Flight booking for travel", "value": "choose_travel", "type": "flow"},
+        {"label": "Flight itinerary for visa", "value": "choose_visa_flight", "type": "flow"},
+        {"label": "Flight booking for travel", "value": "choose_travel_flight", "type": "flow"},
+        {"label": "Hotel reservation for visa", "value": "choose_visa_hotel", "type": "flow"},
+        {"label": "Hotel booking", "value": "choose_hotel", "type": "flow"},
         {"label": "Talk to an agent", "value": "connect_agent", "type": "flow"},
     ]
 
@@ -139,12 +200,57 @@ def query(req: QueryReq):
             prompt=(None if not os.environ.get("DEBUG_PROMPT") else None)
         )
 
-    # 2) Not ambiguous -> run RAG/LLM as before
+    # 2) Compute query embedding for similarity tracking
+    query_emb = embed_model.encode(user_text, convert_to_numpy=True)
+    
+    # 3) Run RAG/LLM with timing
+    start_time = time.perf_counter()
     out = generate_answer(user_text, top_k=req.top_k or 3)
+    end_time = time.perf_counter()
+    llm_latency_ms = int((end_time - start_time) * 1000)
 
-    # 3) Generate contextual (rule-based) follow-ups for the UI
+    # 4) Compute relevance scores for retrieved documents
+    retriever_scores = []
+    top_k_sources = []
+    
+    for doc in out.get("source_documents", []):
+        # Build source identifier
+        source_id = f"{doc.get('section', 'unknown')} > {doc.get('subsection', 'unknown')} > {doc.get('topic', 'unknown')}"
+        top_k_sources.append(source_id)
+        
+        # Compute embedding similarity
+        doc_content = doc.get("content", "")
+        if doc_content:
+            doc_emb = embed_model.encode(doc_content, convert_to_numpy=True)
+            sim = cosine_sim(query_emb, doc_emb)
+            retriever_scores.append(sim)
+        else:
+            retriever_scores.append(0.0)
+    
+    embedding_similarity = retriever_scores[0] if len(retriever_scores) > 0 else 0.0
+
+    # 5) Generate contextual (rule-based) follow-ups for the UI
     suggested_buttons = generate_suggestions(user_text, out["answer"])
 
+    # 6) Log the interaction
+    log_row = {
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "conversation_id": req.conversation_id,
+        "user_text": user_text,
+        "bot_text": out["answer"],
+        "llm_latency_ms": llm_latency_ms,
+        "retriever_scores": retriever_scores,
+        "top_k_sources": top_k_sources,
+        "embedding_similarity": embedding_similarity
+    }
+    
+    try:
+        append_logs_row(log_row)
+    except Exception as e:
+        # Don't break main flow on logging error
+        print(f"Logging error: {e}")
+
+    # 7) Return response
     return QueryResp(
         conversation_id=req.conversation_id,
         answer=out["answer"],

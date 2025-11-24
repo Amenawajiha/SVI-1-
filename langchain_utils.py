@@ -31,13 +31,14 @@ def build_prompt(question: str, retrieved: List[Dict]) -> str:
     context_parts = []
     for r in retrieved:
         md = r.get("metadata", {})
+        data_type = md.get("data_type", "flight")
         section = md.get("section", "unknown_section")
         subsection = md.get("subsection", "unknown_subsection")
         topic = md.get("topic", "unknown_topic")
         q = md.get("question", "")
         a = r.get("content", "")
         score = r.get("relevance_score", 0.0)
-        part = f"""Source: {section} > {subsection} > {topic}
+        part = f"""Source [{data_type.upper()}]: {section} > {subsection} > {topic}
 Q: {q}
 A: {a}
 Relevance: {score:.4f}
@@ -47,7 +48,7 @@ Relevance: {score:.4f}
     context = "\n".join(context_parts)
 
     prompt = f"""
-You are an AI assistant for a flight booking service. Understand the user's question and then answer using the provided relevant information. 
+You are an AI assistant for a travel booking service that handles both flight and hotel reservations. Understand the user's question and then answer using the provided relevant information. 
 
 Relevant Information: 
 {context} 
@@ -59,6 +60,7 @@ Instructions:
 4. Format numeric values clearly. 
 5. If multiple sources are relevant, combine them coherently and cite where helpful. 
 6. Provide a clear, direct and informational answer but it should be relevant to user question.
+7. Pay attention to whether the user is asking about flights or hotels, and answer accordingly.
 
 User Question: 
 {question} 
@@ -129,6 +131,7 @@ def generate_answer(question: str, top_k: int = 3) -> Dict:
     for r in retrieved:
         md = r.get("metadata", {})
         doc = {
+            "data_type": md.get("data_type", "flight"),
             "section": md.get("section"),
             "subsection": md.get("subsection"),
             "topic": md.get("topic"),
@@ -147,16 +150,22 @@ def generate_answer(question: str, top_k: int = 3) -> Dict:
 # Quick CLI test
 if __name__ == "__main__":
     tests = [
-        "for visa purpose",
+        # Flight queries
+        "What are the cancellation charges for flight booking?",
         "Will I receive a PNR after booking?",
-        "How long is my flight itinerary valid?"
+        "How long is my flight itinerary valid?",
+        # Hotel queries
+        "Is the hotel booking valid for visa submission?",
+        "What are hotel cancellation charges?",
+        "Can I modify my hotel reservation dates?"
     ]
     for q in tests:
-        print("\n" + "="*60)
+        print("\n" + "="*80)
         print("QUESTION:", q)
         out = generate_answer(q, top_k=3)
         print("\nANSWER:\n", out["answer"])
         print("\nSOURCES:")
         for s in out["source_documents"]:
-            print("-", f"{s['section']} > {s['subsection']} > {s['topic']} (score {s['relevance_score']:.3f})")
-        print("="*60)
+            data_type = s.get('data_type', 'flight')
+            print(f"- [{data_type.upper()}] {s['section']} > {s['subsection']} > {s['topic']} (score {s['relevance_score']:.3f})")
+        print("="*80)

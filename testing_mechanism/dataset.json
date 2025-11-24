@@ -1,0 +1,1047 @@
+[
+  {
+  "id": "test_001",
+  "question": "What is the validity period of hotel bookings?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know how long the visa hotel reservation remains valid and what validity options are available.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "validity",
+      "stay duration",
+      "travel start date",
+      "24-hour",
+      "48-hour",
+      "72-hour",
+      "full-stay"
+    ],
+    "required_phrases": [
+      "remains valid until your travel start date",
+      "covers your entire stay duration",
+      "24-hour, 48-hour, 72-hour, or full-stay validity options"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "no expiration",
+        "permanent",
+        "lifetime validity",
+        "valid indefinitely"
+      ],
+      "phrases": [
+        "the booking never expires",
+        "valid for unlimited time"
+      ],
+      "hallucination_indicators": [
+        "usually hotel bookings stay valid",
+        "in general, validity depends on hotels",
+        "industry standard validity period"
+      ]
+    }
+  },
+  "expected_answer_summary": "The hotel reservation remains valid until the travel start date and covers the full stay duration. Additional validity options such as 24-hour, 48-hour, 72-hour, or full-stay validity are also available based on itinerary and embassy requirements.",
+  "notes": "The answer should emphasize both default validity (until travel date) and optional short-term validity durations.",
+  "source_references": [
+    {
+      "file": "hotel_data.json",
+      "section_id": "hotel_booking",
+      "subsection_title": "Enquiry",
+      "topic": "Validity & Acceptance"
+    }
+  ]
+},
+  {
+    "id": "test_002",
+    "question": "How do I cancel a flight booking that was made through a travel agent compared to one made directly with the airline?",
+    "category": "comparative",
+    "difficulty": "medium",
+    "intent": "User wants to understand the differences in cancellation procedures and policies between travel agent bookings and direct airline bookings",
+    "evaluation_criteria": {
+      "required_keywords": [
+        "travel agent",
+        "airline",
+        "cancellation",
+        "direct booking",
+        "refund"
+      ],
+      "required_phrases": [
+        "contact travel agent",
+        "directly with airline",
+        "cancellation policy differs"
+      ],
+      "min_similarity_threshold": 0.65,
+      "source_document_requirements": {
+        "must_retrieve": [
+          "flight_data (1).json",
+          "hotel_data.json"
+        ],
+        "should_retrieve": [
+          "flight_data (1).json",
+          "hotel_data.json"
+        ],
+        "min_documents_retrieved": 2
+      },
+      "forbidden_content": {
+        "keywords": [
+          "instant refund",
+          "no fee",
+          "same process"
+        ],
+        "phrases": [
+          "both are identical",
+          "no difference between",
+          "cancellation is always free"
+        ],
+        "hallucination_indicators": [
+          "usually you can",
+          "most airlines allow",
+          "I recommend",
+          "based on general practices"
+        ]
+      },
+      "response_structure_requirements": {
+        "must_include_sections": [
+          "travel_agent_process",
+          "direct_airline_process",
+          "key_differences"
+        ],
+        "must_compare": true,
+        "must_explain_both_scenarios": true
+      }
+    },
+    "expected_answer_summary": "For travel agent bookings, you must contact the travel agent first as they control the booking - they will process the cancellation and handle refunds according to their terms. For direct airline bookings, you can cancel directly through the airline's website or customer service. Travel agent bookings may have additional service fees and longer processing times, while direct bookings typically offer more flexibility and faster refunds.",
+    "notes": "This is a comparative question requiring multi-document retrieval. The answer must clearly distinguish between both processes and highlight the differences. Watch for hallucinations that make general claims not specific to the company's policies."
+  ,"source_references": [
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Cancellation & Refund"},
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Pricing & Refund Policy"}
+  ]
+  },
+  {
+  "id": "test_003",
+  "question": "Will this hotel reservation be accepted for embassy or visa processing?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to confirm whether the provided hotel reservation is valid and acceptable for embassy or visa application procedures.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "embassy",
+      "visa processing",
+      "accepted",
+      "hotel reservation",
+      "proof of accommodation"
+    ],
+    "required_phrases": [
+      "accepted for visa processing",
+      "valid for embassy submission",
+      "official proof of lodging"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "not accepted",
+        "invalid",
+        "rejected",
+        "unofficial"
+      ],
+      "phrases": [
+        "cannot be used for visa purposes",
+        "embassy does not accept"
+      ],
+      "hallucination_indicators": [
+        "typically accepted",
+        "in most visa cases",
+        "as far as I know"
+      ]
+    }
+  },
+  "expected_answer_summary": "Yes, the hotel reservation is accepted for embassy or visa processing. It includes all required accommodation and stay details, making it valid proof of lodging for visa applications.",
+  "notes": "The answer should clearly confirm acceptance by embassies, emphasize validity for visa procedures, and state that it serves as official proof of accommodation."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Validity & Acceptance"}
+  ]
+  },
+{
+  "id": "test_004",
+  "question": "Is this hotel reservation acceptable for embassy or visa application purposes?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to confirm whether the provided hotel booking is acceptable for embassy or visa application submissions.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "embassy",
+      "visa submission",
+      "hotel booking",
+      "valid",
+      "confirmation letter"
+    ],
+    "required_phrases": [
+      "valid for visa applications",
+      "accepted by embassies",
+      "official proof of accommodation"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "invalid",
+        "not accepted",
+        "unusable",
+        "fake booking"
+      ],
+      "phrases": [
+        "cannot be used for visa",
+        "embassy does not accept this"
+      ],
+      "hallucination_indicators": [
+        "usually accepted",
+        "as far as I know",
+        "generally speaking"
+      ]
+    }
+  },
+  "expected_answer_summary": "Yes. The hotel confirmation letter is fully valid for visa applications and accepted by all embassies and consulates. It contains clear accommodation details and stay duration, serving as official proof of lodging for the visa process.",
+  "notes": "The answer must clearly confirm acceptance by embassies, highlight that the booking acts as official proof of stay, and avoid vague generalizations or unsupported claims.",
+  "source_references": [
+    {
+      "file": "hotel_data.json",
+      "section_id": "hotel_booking",
+      "subsection_title": "Enquiry",
+      "topic": "Validity & Acceptance"
+    }
+  ]
+},
+{
+  "id": "test_005",
+  "question": "For how many days is the hotel reservation valid?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know the validity duration of the hotel reservation before it expires or needs confirmation.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "valid",
+      "duration",
+      "days",
+      "reservation",
+      "confirmation"
+    ],
+    "required_phrases": [
+      "valid for 24–72 hours",
+      "must be confirmed within 24–72 hours",
+      "reservation validity period"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json",
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json",
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 2
+    },
+    "forbidden_content": {
+      "keywords": [
+        "no expiration",
+        "permanent",
+        "unlimited",
+        "30 days",
+        "7 days"
+      ],
+      "phrases": [
+        "valid indefinitely",
+        "never expires"
+      ],
+      "hallucination_indicators": [
+        "usually reservations",
+        "industry standard",
+        "from my experience"
+      ]
+    }
+  },
+  "notes": "The answer should specify the validity duration clearly and mention the consequence of not confirming in time.",
+  "expected_answer_summary": "The hotel reservation is typically valid for 24–72 hours and must be confirmed within that period, after which it may be automatically cancelled.",
+  "source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Validity & Acceptance"},
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Visa-Specific Concerns"}
+  ]
+},
+{
+  "id": "test_006",
+  "question": "What is the validity duration of this hotel booking?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know how long their hotel booking remains valid and what validity options are available before or during visa submission.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "validity",
+      "duration",
+      "hotel booking",
+      "travel start date",
+      "stay duration"
+    ],
+    "required_phrases": [
+      "valid until your travel start date",
+      "covers your entire stay",
+      "24-hour, 48-hour, 72-hour validity options"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "no limit",
+        "permanent validity",
+        "never expires",
+        "unlimited"
+      ],
+      "phrases": [
+        "valid indefinitely",
+        "has no expiration date"
+      ],
+      "hallucination_indicators": [
+        "industry norm",
+        "typically hotels give",
+        "in general cases"
+      ]
+    }
+  },
+  "expected_answer_summary": "The hotel booking is valid until the travel start date and includes the entire stay as per the itinerary. There are also flexible validity options such as 24-hour, 48-hour, 72-hour, or full-stay validity depending on travel and embassy requirements.",
+  "notes": "The answer should mention both full-stay validity and the shorter validity options, clearly explaining how long the booking remains valid."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Validity & Acceptance"}
+  ]
+},
+{
+  "id": "test_007",
+  "question": "Is this hotel reservation fully confirmed and visible as an active booking online?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to verify whether the hotel reservation is genuine, fully confirmed, and appears as an active booking on hotel or OTA websites.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "confirmed",
+      "real reservation",
+      "online visibility",
+      "confirmation number",
+      "genuine booking"
+    ],
+    "required_phrases": [
+      "visible as confirmed online",
+      "genuine confirmed reservation",
+      "shows as an active booking"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "dummy booking",
+        "temporary hold",
+        "fake reservation",
+        "not visible online"
+      ],
+      "phrases": [
+        "reservation will not appear online",
+        "it may not show as confirmed"
+      ],
+      "hallucination_indicators": [
+        "usually shows online",
+        "most hotels display",
+        "in general practice"
+      ]
+    }
+  },
+  "expected_answer_summary": "Yes, the reservation is genuine and fully confirmed. It includes a valid confirmation number and will appear as a confirmed, active booking on the hotel’s website or major travel platforms such as Expedia, Orbitz, or Booking.com.",
+  "notes": "The answer must clearly emphasize authenticity, online visibility, and the presence of a valid confirmation number. It should avoid vague claims or unverifiable general statements."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Reservation Type"}
+  ]
+},
+{
+  "id": "test_008",
+  "question": "Is this hotel reservation cancelable, or is it only a temporary hold for visa purposes?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know whether the hotel reservation can be cancelled or if it is provided only as a non-cancellable hold specifically for visa applications.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "cancellable",
+      "hold reservation",
+      "visa",
+      "service charge",
+      "refund policy"
+    ],
+    "required_phrases": [
+      "booking can be cancelled",
+      "service charge is non-refundable",
+      "visa rejection refund policy"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "fully refundable",
+        "free cancellation always",
+        "non-cancellable permanently",
+        "cannot cancel under any condition"
+      ],
+      "phrases": [
+        "always refundable without conditions",
+        "cannot be cancelled at all"
+      ],
+      "hallucination_indicators": [
+        "usually cancellable",
+        "in most cases",
+        "as far as hotels allow"
+      ]
+    }
+  },
+  "expected_answer_summary": "Yes, the hotel reservation can be cancelled upon request. However, the service charge for the hotel confirmation is generally non-refundable unless a visa is rejected specifically due to the hotel documentation.",
+  "notes": "The answer should clearly state cancellability, mention the non-refundable service charge, and reference the conditional refund in case of visa rejection."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Reservation Type"},
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Pricing & Refund Policy"}
+  ]
+},
+{
+  "id": "test_009",
+  "question": "What is the cost of obtaining a hotel reservation for visa processing?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know the pricing structure and charges for getting a hotel reservation specifically for visa application purposes.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "charges",
+      "cost",
+      "hotel reservation",
+      "visa purposes",
+      "package"
+    ],
+    "required_phrases": [
+      "depends on the package",
+      "no hidden charges",
+      "includes all booking documentation"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "free",
+        "no cost",
+        "zero charge",
+        "unlimited hotels"
+      ],
+      "phrases": [
+        "completely free of charge",
+        "no fees at all"
+      ],
+      "hallucination_indicators": [
+        "typically costs",
+        "usually priced at",
+        "in general pricing"
+      ]
+    }
+  },
+  "expected_answer_summary": "The charges for hotel reservations for visa purposes vary based on the package selected. Options include: Hotel Only single hotel for $30, multi-hotel starting at $60 plus $30 per additional hotel, Hotel + Flight packages starting at $20, and multi-hotel combinations at $40 plus additional fees. Urgent processing fees apply when required, and all prices include complete documentation with no hidden charges.",
+  "notes": "The answer should clearly break down each package cost, mention multi-hotel pricing, and emphasize that there are no hidden fees."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Pricing & Refund Policy"}
+  ]
+},
+{
+  "id": "test_010",
+  "question": "Are there any additional or undisclosed charges for visa hotel reservations?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to confirm whether the visa hotel reservation price includes everything or if there are extra or hidden fees involved.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "hidden fees",
+      "extra charges",
+      "additional costs",
+      "visa hotel reservations",
+      "quoted prices"
+    ],
+    "required_phrases": [
+      "no hidden or additional fees",
+      "quoted prices cover all documentation",
+      "no extra service charges"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "extra fees apply",
+        "hidden charges exist",
+        "unexpected costs",
+        "service fees added"
+      ],
+      "phrases": [
+        "additional fees may apply",
+        "prices do not include documentation"
+      ],
+      "hallucination_indicators": [
+        "usually there are no fees",
+        "in most services",
+        "according to industry norms"
+      ]
+    }
+  },
+  "expected_answer_summary": "No, there are no extra or hidden fees. The quoted prices include all documentation, verification, and support required for your visa hotel reservation.",
+  "notes": "The answer should clearly reassure that there are no hidden charges and that everything needed for the booking is included in the listed price."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Pricing & Refund Policy"}
+  ]
+},
+{
+  "id": "test_011",
+  "question": "What meal plan options are available with the hotel booking?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know which meal plans are included or available when booking a hotel reservation.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "meal plans",
+      "breakfast",
+      "half board",
+      "full board",
+      "dining options"
+    ],
+    "required_phrases": [
+      "complimentary continental breakfast",
+      "upgrade to Half Board",
+      "Full Board options"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "no meals",
+        "meals not available",
+        "unlimited dining",
+        "free lunch and dinner for all"
+      ],
+      "phrases": [
+        "all meals are always included",
+        "hotels do not offer meal plans"
+      ],
+      "hallucination_indicators": [
+        "usually hotels provide",
+        "most hotels include",
+        "in general hospitality standards"
+      ]
+    }
+  },
+  "expected_answer_summary": "Hotel bookings offer a variety of meal plans. Most include a complimentary continental breakfast, with optional upgrades to Half Board (breakfast and dinner) or Full Board (breakfast, lunch, and dinner).",
+  "notes": "The answer should clearly list available meal plan types and clarify that breakfast is commonly included while other plans are optional upgrades."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking_nonvisa","subsection_title":"Enquiry","topic":"Pricing & Payment"}
+  ]
+},
+{
+  "id": "test_012",
+  "question": "What is the refund policy if I cancel a confirmed and prepaid hotel reservation?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know whether they can receive a refund after cancelling a hotel booking that has already been confirmed and paid for.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "cancel",
+      "confirmed booking",
+      "prepaid",
+      "non-refundable",
+      "refund policy"
+    ],
+    "required_phrases": [
+      "non-refundable once confirmed",
+      "cancellations result in 100% charge",
+      "refunds not issued unless stated in policy"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "full refund guaranteed",
+        "always refundable",
+        "free cancellation",
+        "automatic refund"
+      ],
+      "phrases": [
+        "you will always get a refund",
+        "cancellations are free"
+      ],
+      "hallucination_indicators": [
+        "usually hotels refund",
+        "most hotels provide refunds",
+        "in general cancellation rules"
+      ]
+    }
+  },
+  "expected_answer_summary": "Most confirmed and prepaid hotel bookings are non-refundable. Cancelling after confirmation typically results in a full charge, and refunds are only provided if explicitly allowed under the specific hotel's policy.",
+  "notes": "The answer should stress the non-refundable nature of prepaid bookings and clarify that refunds depend strictly on the hotel’s formal policy."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking_nonvisa","subsection_title":"Enquiry","topic":"Cancellation & Refund Policy"}
+  ]
+},
+{
+  "id": "test_014",
+  "question": "How much will I be charged if I decide to cancel my request?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to understand the applicable fees when cancelling their request.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "cancellation",
+      "charges",
+      "fee",
+      "before processing",
+      "non-cancellable"
+    ],
+    "required_phrases": [
+      "5% transaction fee",
+      "before processing",
+      "cancellation may not be possible once processed"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json",
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json",
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 2
+    },
+    "forbidden_content": {
+      "keywords": [
+        "free cancellation",
+        "no charges",
+        "guaranteed refund",
+        "zero fee"
+      ],
+      "phrases": [
+        "cancellation is always free",
+        "you will not be charged anything"
+      ],
+      "hallucination_indicators": [
+        "usually cancellations are free",
+        "most services waive the fee",
+        "in general you can cancel anytime"
+      ]
+    }
+  },
+  "expected_answer_summary": "A 5% transaction fee applies if the request is cancelled before it is processed. After processing begins, the request generally cannot be cancelled.",
+  "notes": "Response must clearly state the 5% fee for cancellations made before processing and highlight that cancellation is not allowed once processing has started."
+  ,"source_references": [
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Cancellation & Refund"},
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Pricing & Refund Policy"}
+  ]
+},
+{
+  "id": "test_015",
+  "question": "Is it allowed to modify or update the flight reservation details?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know whether a flight reservation can be changed or rescheduled before it expires.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "modify",
+      "change",
+      "reschedule",
+      "flight reservation",
+      "before expiry"
+    ],
+    "required_phrases": [
+      "changes possible",
+      "before the booking expires",
+      "24–72 hours"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "unlimited changes",
+        "always changeable",
+        "free modification anytime",
+        "permanent booking"
+      ],
+      "phrases": [
+        "you can change it anytime",
+        "no restrictions on changes"
+      ],
+      "hallucination_indicators": [
+        "usually airlines allow free changes",
+        "most reservations are flexible",
+        "in general changes are easy"
+      ]
+    }
+  },
+  "expected_answer_summary": "Flight reservations can be modified or rescheduled as long as the booking has not expired, typically within a 24–72 hour validity window.",
+  "notes": "Answer must clarify that changes are only allowed before the reservation expires and specify the 24–72 hour duration."
+  ,"source_references": [
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Rescheduling & Changes"}
+  ]
+},
+{
+  "id": "test_016",
+  "question": "Is it allowed to add more travellers to the booking later?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know if additional passengers can be added after the initial flight reservation is created.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "add passengers",
+      "additional travellers",
+      "later",
+      "charges",
+      "booking"
+    ],
+    "required_phrases": [
+      "yes, charges apply",
+      "additional passenger fee",
+      "total cost",
+      "base pricing"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "free for everyone",
+        "no charges always",
+        "unlimited passengers",
+        "automatically included"
+      ],
+      "phrases": [
+        "adding passengers is always free",
+        "no fees for any additions"
+      ],
+      "hallucination_indicators": [
+        "usually adding people is free",
+        "most companies allow free additions",
+        "in general passenger changes cost nothing"
+      ]
+    }
+  },
+  "expected_answer_summary": "Yes, more travellers can be added later, but additional charges apply based on the base pricing, passenger count, child policy, urgent service fees, and extra flight additions.",
+  "notes": "Answer must clearly list base pricing, extra passenger fee, urgent service fees, and additional flight charges."
+  ,"source_references": [
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Booking & Passenger Details"},
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Pricing & Payment"}
+  ]
+},
+{
+  "id": "test_017",
+  "question": "Will the flight document be issued as a reservation or a fully confirmed ticket?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know whether the provided flight ticket for visa application will be a reservation or a confirmed booking.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "reservation",
+      "confirmed booking",
+      "visa purposes",
+      "flight ticket",
+      "issued as"
+    ],
+    "required_phrases": [
+      "for visa purposes",
+      "issued as a reservation",
+      "confirmed ticket only upon request"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "always confirmed",
+        "guaranteed confirmed ticket",
+        "automatic confirmation",
+        "free upgrade"
+      ],
+      "phrases": [
+        "we always provide confirmed tickets",
+        "confirmation is guaranteed"
+      ],
+      "hallucination_indicators": [
+        "usually tickets are confirmed",
+        "most agencies provide confirmations",
+        "in general confirmations are automatic"
+      ]
+    }
+  },
+  "expected_answer_summary": "For visa applications, the flight document will be a reservation unless the user specifically requests a fully confirmed ticket.",
+  "notes": "Response must emphasize that the default output is a flight reservation used for visa purposes, not a confirmed booking."
+  ,"source_references": [
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Visa-Specific Concerns"}
+  ]
+},
+{
+  "id": "test_018",
+  "question": "How much does a flight itinerary for visa processing cost?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know the pricing structure for obtaining a flight booking or itinerary required for visa applications.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "cost",
+      "pricing",
+      "flight booking",
+      "visa",
+      "traveller"
+    ],
+    "required_phrases": [
+      "base pricing",
+      "per traveller",
+      "visa flight itinerary cost"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "free",
+        "complimentary",
+        "no cost",
+        "unlimited discount"
+      ],
+      "phrases": [
+        "we provide free flight itineraries",
+        "pricing always includes discounts"
+      ],
+      "hallucination_indicators": [
+        "usually agencies charge",
+        "in general the cost is",
+        "most agencies provide it for"
+      ]
+    }
+  },
+  "expected_answer_summary": "Flight itinerary pricing depends on the number of travelers, with base rates increasing based on group size.",
+  "notes": "The answer should clearly outline the pricing tier for 1, 2, 3, and 4+ travelers without adding unsupported discounts or benefits."
+  ,"source_references": [
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Pricing & Payment"}
+  ]
+},
+{
+  "id": "test_019",
+  "question": "Will the flight reservation come with an official confirmation and PNR number?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to know whether they will receive an official booking confirmation that includes a valid PNR.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "PNR",
+      "official confirmation",
+      "booking confirmation",
+      "reservation",
+      "email"
+    ],
+    "required_phrases": [
+      "official booking confirmation",
+      "PNR will be provided",
+      "sent via email"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "no PNR",
+        "not provided",
+        "temporary code",
+        "fake confirmation"
+      ],
+      "phrases": [
+        "we do not issue PNRs",
+        "confirmation is not official"
+      ],
+      "hallucination_indicators": [
+        "usually PNRs are optional",
+        "in general airlines issue PNRs later",
+        "most agencies don't give PNR"
+      ]
+    }
+  },
+  "expected_answer_summary": "Users will receive an official booking confirmation along with a valid PNR, delivered directly to their email.",
+  "notes": "The answer must clearly state that the PNR and confirmation are legitimate and provided via email."
+  ,"source_references": [
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Other Helpful Queries"}
+  ]
+},
+{
+  "id": "test_020",
+  "question": "Can you connect me with a human support representative?",
+  "category": "factual",
+  "difficulty": "easy",
+  "intent": "User wants to speak directly with a real human agent for assistance.",
+  "evaluation_criteria": {
+    "required_keywords": [
+      "human support",
+      "real person",
+      "contact",
+      "customer support",
+      "connect"
+    ],
+    "required_phrases": [
+      "speak to a real person",
+      "contact our support team",
+      "reach us via email or WhatsApp"
+    ],
+    "min_similarity_threshold": 0.70,
+    "source_document_requirements": {
+      "must_retrieve": [
+        "hotel_data.json",
+        "flight_data (1).json"
+      ],
+      "should_retrieve": [
+        "hotel_data.json",
+        "flight_data (1).json"
+      ],
+      "min_documents_retrieved": 1
+    },
+    "forbidden_content": {
+      "keywords": [
+        "no human support",
+        "no contact available",
+        "cannot connect",
+        "automated only"
+      ],
+      "phrases": [
+        "we do not provide human assistance",
+        "no customer support available"
+      ],
+      "hallucination_indicators": [
+        "usually support is unavailable",
+        "in general we don't connect customers",
+        "most companies don't offer human agents"
+      ]
+    }
+  },
+  "expected_answer_summary": "The user can contact a real human support agent through the provided email or WhatsApp support channels.",
+  "notes": "The answer should clearly state the available support channels and confirm that a real human representative is accessible."
+  ,"source_references": [
+    {"file":"hotel_data.json","section_id":"hotel_booking","subsection_title":"Enquiry","topic":"Pricing & Refund Policy"},
+    {"file":"flight_data (1).json","section_id":"visa_booking","subsection_title":"Enquiry","topic":"Customer Support"}
+  ]
+}
+]

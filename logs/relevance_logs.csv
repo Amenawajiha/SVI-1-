@@ -1,0 +1,121 @@
+timestamp,conversation_id,user_text,bot_text,llm_latency_ms,retriever_scores,top_k_sources,embedding_similarity
+2025-11-05T09:56:03.260531Z,,What is the cancellation policy?,"Question: What is the cancellation policy?
+
+Answer: The cancellation policy depends on the airline and fare rules. Some tickets are non-refundable, and tickets with fees ($20â€“$100) may apply. Please refer to the specific terms and conditions for your booking for detailed information.",28992,"[0.5466188192367554, 0.45743560791015625, 0.4082925617694855]","[""Flight Booking for Visa Process > Enquiry > Cancellation & Refund"", ""Flight Booking for Travelling Purpose > Enquiry > Other Travel Concerns"", ""Flight Booking for Travelling Purpose > Enquiry > Cancellation & Changes""]",0.5466188192367554
+2025-11-05T09:58:13.516999Z,,"My visa was rejected because of your documents, I need a refund","Okay, I understand you're inquiring about a refund due to a rejected visa.
+
+Yes, if your visa is rejected due to issues with the provided documents and verified with a stamped embassy rejection letter, you will receive a full refund. Partial refunds (95%) are available if you cancel before processing or mistakenly placed the request. Refunds are processed within 7 days.
+
+**Please note:** The specific details of the refund process depend on the circumstances of the rejection.
+
+Do you have any further questions?",19983,"[0.7318438291549683, 0.6697689294815063, 0.33547165989875793]","[""Flight Booking for Visa Process > Enquiry > Cancellation & Refund"", ""Flight Booking for Visa Process > Enquiry > Cancellation & Refund"", ""Flight Booking for Visa Process > Enquiry > Cancellation & Refund""]",0.7318438291549683
+2025-11-05T10:00:26.353372Z,,I am not able to understand how booking is done for visa application,"Okay, I understand you’re having difficulty understanding how booking is handled for visa applications. Let me clarify.
+
+For visa-specific purposes, the ticket will be a flight reservation unless otherwise requested. As long as the ticket remains valid, you can use it for multiple visa applications.
+
+Let me know if you have any further questions.",16572,"[0.6764795780181885, 0.6234311461448669, 0.5345500707626343]","[""Flight Booking for Visa Process > Enquiry > Visa-Specific Concerns"", ""Flight Booking for Visa Process > Enquiry > Other Helpful Queries"", ""Flight Booking for Travelling Purpose > Booking > Required Details""]",0.6764795780181885
+2025-11-05T10:02:14.603112Z,,How do I do a booking,"Okay, here’s a response to your question about how to do a booking, based on the provided information:
+
+“To book a flight, you’ll go through the following steps:
+
+1.  **Proceed with Booking:** Click the “Proceed with Booking” button.
+2.  **Payment Link:** You’ll receive a payment link to complete your booking.
+3.  **Flight Reservation:** This will be shared with you.
+4.  **Agent Follow-up:** Your agent will follow up with confirmation after you’ve shared the details of your flight reservation.”
+
+Let me know if you’d like me to elaborate on any of these steps!",20547,"[0.5878064632415771, 0.5453514456748962, 0.49474281072616577]","[""Flight Booking for Visa Process > Booking > Required Details"", ""Flight Booking for Travelling Purpose > Booking > Required Details"", ""Flight Booking for Travelling Purpose > Booking > Required Details""]",0.5878064632415771
+2025-11-05T10:06:52.384643Z,,What details are required for booking?,"To book a flight, we need the following details:
+
+*   **Departure city & airport:** Where you are departing from.
+*   **Number of passengers:** How many adults and children (including age) will be traveling.
+*   **Multiple destinations:** Specify the destinations you wish to travel to.
+*   **Destination city & airport:** Where you want to go.
+*   **Preferred time:** When you'd like to travel.
+*   **One-way/round-trip:** Indicate whether the flight is one-way or round-trip.
+*   **Flexible dates:** Are your dates flexible?
+*   **Preferred airlines:** Do you have a preference for specific airlines?
+*   **Direct or stopovers:** Do you prefer a direct flight or are you open to stopovers?
+
+Once you provide these details, our agent will follow up with confirmation after you share the actual booking details.",30505,"[0.6180100440979004, 0.615145742893219, 0.5173775553703308]","[""Flight Booking for Visa Process > Booking > Required Details"", ""Flight Booking for Travelling Purpose > Booking > Required Details"", ""Flight Booking for Travelling Purpose > Booking > Required Details""]",0.6180100440979004
+2025-11-12T09:56:21.042478Z,,Can I make additional requests for my hotel stay?,"Yes, you can add extra services and preferences while booking. These include meal options (Breakfast, Half Board, or Full Board), airport transfers, parking, extra beds, or other special requests like early check-in, late check-out, or connecting rooms. These are subject to availability and may incur additional charges.",31388,"[0.8603215217590332, 0.6626444458961487, 0.6042038798332214]","[""Visa Hotel Reservation > Proceed with Reservation > Proceed with Reservation"", ""Hotel Reservation (Non-Visa) > Enquiry > Guests & Special Requests"", ""Hotel Reservation (Non-Visa) > Proceed with Reservation > Additional Requests""]",0.8603215217590332
+2025-11-12T09:57:39.708789Z,,Does the booking mention check-in and check-out dates,"Yes, the booking does mention check-in and check-out dates. The confirmation clearly shows both check-in and check-out dates along with other key details like hotel address, contact number, and booking reference.",18126,"[0.8017537593841553, 0.6537134051322937, 0.6490160226821899]","[""Visa Hotel Reservation > Enquiry > Embassy Requirements"", ""Flight Booking for Travelling Purpose > Enquiry > Ticket & Booking"", ""Hotel Reservation (Non-Visa) > Enquiry > General Enquiry""]",0.8017537593841553
+2025-11-13T10:12:18.143253Z,,I want to do a hotel booking,"To proceed with your hotel booking, we need the following information:
+
+*   **Full Name(s)** (as per passport)
+*   **Phone Number**
+*   **Email Address**
+*   **Number of Guests**
+*   **City / Location of Stay**
+*   **Hotel Name (optional)**
+*   **Number of Hotels Needed**
+
+Once we receive this information, our booking specialists will arrange and send your verified hotel confirmation document promptly.",20250,"[0.6547552347183228, 0.643222451210022, 0.6268426179885864]","[""Visa Hotel Reservation > Enquiry > Required Information"", ""Hotel Reservation (Non-Visa) > Proceed with Reservation > Reservation Process Overview"", ""Hotel Reservation (Non-Visa) > Enquiry > General Enquiry""]",0.6547552347183228
+2025-11-13T10:13:08.537648Z,,How do I do cancellation of a hotel booking,"Okay, here’s a response to your question about hotel cancellation:
+
+“Most hotel bookings allow for free cancellation up to 48 hours before check-in, depending on the property’s specific terms. The exact cancellation window and any applicable fees will be clearly stated during booking and reconfirmed once your reservation is processed.  You’ll receive detailed cancellation terms when your booking is confirmed.”
+
+Let me know if you’d like me to elaborate on anything further!",12116,"[0.7242498397827148, 0.7039700150489807, 0.6809110045433044]","[""Visa Hotel Reservation > Enquiry > Reservation Type"", ""Hotel Reservation (Non-Visa) > Enquiry > Cancellation & Refund Policy"", ""Hotel Reservation (Non-Visa) > Enquiry > Cancellation & Refund Policy""]",0.7242498397827148
+2025-11-13T10:15:35.775880Z,,Iwant to get flight documents for visa purpose only,"Okay, I understand you’re looking for flight documents specifically for your visa application. Here’s a breakdown of what’s required:
+
+**For international flights, you’ll need:**
+
+*   **Passport:** Please ensure your passport is valid for at least six months beyond your intended stay in the destination country.
+*   **Visa:** You’ll need your visa to travel to the destination country.
+*   **Airline Ticket/PNR:** This is the official flight itinerary you’ll receive from the airline.
+
+**For domestic flights, you’ll need:**
+
+*   **Government ID:** Your national ID card.
+*   **Ticket/PNR:** The official travel document issued by the government.
+
+**Regarding payment methods:**
+
+We accept credit/debit cards and PayPal for your flight itinerary booking.
+
+Do you have any further questions about the specific requirements for your visa application?",29605,"[0.55855792760849, 0.4599973261356354, 0.4027179181575775]","[""Flight Booking for Travelling Purpose > Enquiry > Other Travel Concerns"", ""Flight Booking for Visa Process > Enquiry > Booking & Passenger Details"", ""Flight Booking for Visa Process > Enquiry > Pricing & Payment""]",0.55855792760849
+2025-11-13T10:15:49.173317Z,,How much for flight itinerary?,"Question: How much for flight itinerary?
+
+Answer: Base Pricing: 1 traveller â†’ $50, 2 travellers â†’ $60, 3 travellers â†’ $70, 4+ travellers â†’ $80 + $10 for every additional traveller.",28776,"[0.6350417733192444, 0.6231520771980286, 0.6155555248260498]","[""Flight Booking for Visa Process > Enquiry > Pricing & Payment"", ""Flight Booking for Visa Process > Enquiry > Pricing & Payment"", ""Flight Booking for Visa Process > Enquiry > Pricing & Payment""]",0.6350417733192444
+2025-11-13T10:21:11.344534Z,,What if I want to do actual hotel booking? Do you guys do that?,"Yes, we do! If you’re looking to book a hotel, you can proceed with a hotel reservation through our platform. Once you share your booking details, our agent reviews them and proceeds with the reservation. You’ll receive a confirmation voucher shortly after — it will include hotel name, address, check-in/check-out dates, and booking reference, all formatted for embassy submission.",30212,"[0.5923059582710266, 0.5817519426345825, 0.5582640171051025]","[""Hotel Reservation (Non-Visa) > Proceed with Reservation > Confirmation"", ""Visa Hotel Reservation > Enquiry > Required Information"", ""Visa Hotel Reservation > Proceed with Reservation > Proceed with Reservation""]",0.5923059582710266
+2025-11-13T10:24:22.688819Z,,How quickly will I get my flight itinerary for visa appointment??,"For visa appointment purposes, it will be a flight reservation unless otherwise requested. The booking process typically takes 24-72 hours, depending on the airline policy.",19736,"[0.6403558850288391, 0.46777209639549255, 0.44651108980178833]","[""Flight Booking for Visa Process > Enquiry > Booking & Passenger Details"", ""Flight Booking for Visa Process > Enquiry > Visa-Specific Concerns"", ""Flight Booking for Visa Process > Enquiry > Visa-Specific Concerns""]",0.6403558850288391
+2025-11-17T09:59:03.406538Z,,I need refund for hotel cancellation,"Okay, here’s the information regarding refund policies for hotel cancellations:
+
+If you cancel your hotel booking request before it’s processed, you are eligible for a partial refund of 95%. A 5% transaction fee is deducted. You can request the cancellation by emailing help@schengenvisaitinerary.com or messaging WhatsApp +1 718 412 8918. Refunds are usually processed within 7 working days.
+
+Let me know if you have any other questions.",45399,"[0.6564498543739319, 0.6448110342025757, 0.6384375691413879]","[""None > Enquiry > Pricing & Refund Policy"", ""None > Enquiry > Pricing & Refund Policy"", ""None > Enquiry > Cancellation & Refund Policy""]",0.6564498543739319
+2025-11-17T10:00:26.692305Z,,"I need to do a hotel booking, how?","To proceed with your hotel reservation, we need the following details:
+
+*   Full Name(s) (as per passport)
+*   Phone Number
+*   Email Address
+*   Number of Guests
+*   City / Location of Stay
+*   Hotel Name (optional)
+*   Number of Hotels Needed
+
+Once we receive this information, our booking specialists will arrange and send your verified hotel confirmation document promptly.",23559,"[0.6663946509361267, 0.6362032294273376, 0.6084877848625183]","[""None > Enquiry > Required Information"", ""None > Proceed with Reservation > Reservation Process Overview"", ""None > Enquiry > General Enquiry""]",0.6663946509361267
+2025-11-17T10:03:19.044421Z,,Can you book the hotel for me,"Okay, I can help you book your hotel. To proceed, could you please tell me which hotel you'd like to book?",25424,"[0.5142765045166016, 0.504164457321167, 0.4992901384830475]","[""None > Enquiry > Guests & Special Requests"", ""None > Enquiry > General Enquiry"", ""None > Proceed with Reservation > Proceed with Reservation""]",0.5142765045166016
+2025-11-17T10:05:25.692701Z,,How can I book hotel?,"Okay, here’s a response to your question about booking a hotel:
+
+“You can book a hotel with us! We offer a variety of comfortable and well-furnished rooms to suit different travel needs. Our available categories include:
+
+*   **Single Room:** Ideal for one guest, featuring a single bed.
+*   **Double Room:** Perfect for two guests with a queen or twin bed.
+*   **Family Room:** Spacious and suitable for 3-4 guests.
+*   **Suite Room:** Premium accommodation with a separate living area, enhanced amenities, and optional city or pool views.
+
+We offer flexible payment options, including Credit/Debit Card, UPI, and Net Banking. Some hotels also allow ‘Pay at Hotel’ depending on their policy.
+
+To proceed with your booking, we’ll need the following information: Full Name(s), Phone Number, Email Address, Number of Guests, City / Location of Stay, Hotel Name (optional), and the number of hotels you need. Once we have this information, our booking specialists will arrange and send you a verified hotel confirmation document promptly.”",41256,"[0.5834710597991943, 0.5543115139007568, 0.5479750633239746]","[""None > Enquiry > General Enquiry"", ""None > Enquiry > Required Information"", ""None > Enquiry > Pricing & Payment""]",0.5834710597991943
+2025-11-17T10:09:39.779940Z,,Can you help me with hotel reservation for visa?,"To proceed with your visa hotel reservation, please share the following details: destination city, check-in and check-out dates, number of adults and children (with their ages), hotel category or specific preference, and any special requests like meals or transfers. Once details are submitted, our agent will review and confirm the booking shortly.",22901,"[0.8580832481384277, 0.680988609790802, 0.6761816740036011]","[""None > Proceed with Reservation > Reservation Process Overview"", ""None > Proceed with Reservation > Hotel Preferences"", ""None > Proceed with Reservation > Travel Dates & Multiple Stays""]",0.8580832481384277
+2025-11-17T12:23:41.294826Z,,What is the validity of a hotel booking?,"At check-in, guests must present a valid government ID (passport, Aadhaar, or driver's license). You may verify your booking directly with the hotel using the reservation number provided on the voucher.
+
+The hotel booking is valid until your travel start date and covers your entire stay duration as per your itinerary. We offer 24-hour, 48-hour, 72-hour, or full-stay validity options, depending on your travel plan and embassy requirements.",48737,"[0.7791965007781982, 0.6010552048683167, 0.5977601408958435]","[""None > Enquiry > Validity & Acceptance"", ""None > Enquiry > Confirmation & Documents"", ""None > Enquiry > Validity & Acceptance""]",0.7791965007781982
+2025-11-17T12:24:43.816134Z,,Waht is the vaildity of hotel booking?,"Q: What is the validity of hotel booking?
+A: The validity of a hotel booking depends on the hotel’s specific policies. Generally, most standard amenities such as Wi-Fi and basic services are included in the booking rate. However, some premium facilities — such as parking, airport transfer, or special room preferences — may incur additional charges based on the hotel’s policy. Please refer to the hotel’s booking details for the most accurate information.",27446,"[0.5726190209388733, 0.571019172668457, 0.560905396938324]","[""None > Proceed with Reservation > Proceed with Reservation"", ""None > Enquiry > Pricing & Payment"", ""None > Enquiry > General Enquiry""]",0.5726190209388733
+2025-11-17T12:25:53.914226Z,,What is the validity of a flight itinerary?,"Q: How long is the flight booking valid?
+
+A: Usually 24-72 hours depending on airline policy.",19696,"[0.6309285759925842, 0.4854494333267212, 0.478202223777771]","[""None > Enquiry > Visa-Specific Concerns"", ""None > Booking > Required Details"", ""None > Enquiry > Validity & Acceptance""]",0.6309285759925842
+2025-11-17T12:43:49.171530Z,,How long is a hotel booking valid,"Okay, here’s the answer to your question:
+
+The hotel booking remains valid until your travel start date and covers your entire stay duration as per your itinerary. Most hotel bookings allow free cancellation up to 48 hours before check-in, depending on the property’s specific terms. The exact cancellation window and fees, if any, will be clearly stated during booking and reconfirmed once your reservation is processed.",27017,"[0.7902235388755798, 0.6308577656745911, 0.5770793557167053]","[""None > Enquiry > Validity & Acceptance"", ""None > Enquiry > Visa-Specific Concerns"", ""None > Enquiry > Cancellation & Refund Policy""]",0.7902235388755798
