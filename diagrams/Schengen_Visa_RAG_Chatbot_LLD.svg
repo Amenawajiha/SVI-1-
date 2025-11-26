@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1806px" preserveAspectRatio="none" style="width:5624px;height:1806px;" version="1.1" viewBox="0 0 5624 1806" width="5624px" zoomAndPan="magnify"><defs><filter height="300%" id="f7dk2cw6ydaye" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[70111191a764443d788a8690134af264]
+cluster API Layer--><polygon fill="#FFFFFF" filter="url(#f7dk2cw6ydaye)" points="1531,6.602,1603,6.602,1610,31.6699,2043,31.6699,2043,589.102,1531,589.102,1531,6.602" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="1531" x2="1610" y1="31.6699" y2="31.6699"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="1535" y="23.5679">API Layer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="78" x="1752" y="48.6358">«Controller»</text><!--MD5=[77ad1d435882acc81d38a146ac479c8a]
+cluster Business Logic Layer--><polygon fill="#FFFFFF" filter="url(#f7dk2cw6ydaye)" points="2067,352.102,2216,352.102,2223,377.1699,4306,377.1699,4306,1799.602,2067,1799.602,2067,352.102" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="2067" x2="2223" y1="377.1699" y2="377.1699"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="143" x="2071" y="369.0679">Business Logic Layer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="58" x="3161.5" y="394.1358">«Service»</text><!--MD5=[56cc9772b90f37a1677d73ff27f4b14c]
+cluster RAG Pipeline--><polygon fill="#FFFFFF" filter="url(#f7dk2cw6ydaye)" points="4330,6.602,4424,6.602,4431,31.6699,5607,31.6699,5607,913.602,4330,913.602,4330,6.602" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="4330" x2="4431" y1="31.6699" y2="31.6699"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="88" x="4334" y="23.5679">RAG Pipeline</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="58" x="4943.5" y="48.6358">«Service»</text><!--MD5=[2d151aad49eae49bf9018c369155df76]
+cluster Domain Models--><polygon fill="#FFFFFF" filter="url(#f7dk2cw6ydaye)" points="16,307.602,130,307.602,137,332.6699,1507,332.6699,1507,1629.602,16,1629.602,16,307.602" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="137" y1="332.6699" y2="332.6699"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108" x="20" y="324.5679">Domain Models</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="50" x="740.5" y="349.6358">«Entity»</text><!--MD5=[f69319bf837e5ebaeaeb0167264f2010]
+cluster Configuration Models--><polygon fill="#FFFFFF" filter="url(#f7dk2cw6ydaye)" points="4840,1014.602,4996,1014.602,5003,1039.6699,5052,1039.6699,5052,1310.602,4840,1310.602,4840,1014.602" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="4840" x2="5003" y1="1039.6699" y2="1039.6699"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="150" x="4844" y="1031.5679">Configuration Models</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="68" x="4916" y="1056.6358">«Pydantic»</text><!--MD5=[0b7db6fcd588f8499928e45a474751dc]
+cluster Utilities--><polygon fill="#FFFFFF" filter="url(#f7dk2cw6ydaye)" points="4330,1051.602,4390,1051.602,4397,1076.6699,4815,1076.6699,4815,1273.602,4330,1273.602,4330,1051.602" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="4330" x2="4397" y1="1076.6699" y2="1076.6699"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54" x="4334" y="1068.5679">Utilities</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="52" x="4550.5" y="1093.6358">«Utility»</text><!--MD5=[d882df5981bf0da50176e76fa31f5fea]
+class ChatController--><rect codeLine="34" fill="#FFF9C4" filter="url(#f7dk2cw6ydaye)" height="178.5433" id="ChatController" style="stroke:#424242;stroke-width:1.5;" width="340" x="1687" y="63.602"/><ellipse cx="1811.75" cy="84.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M1814.7188,90.5867 Q1814.1406,90.8836 1813.5,91.0242 Q1812.8594,91.1805 1812.1563,91.1805 Q1809.6563,91.1805 1808.3281,89.5398 Q1807.0156,87.8836 1807.0156,84.7586 Q1807.0156,81.6336 1808.3281,79.9773 Q1809.6563,78.3211 1812.1563,78.3211 Q1812.8594,78.3211 1813.5,78.4773 Q1814.1563,78.6336 1814.7188,78.9305 L1814.7188,81.6492 Q1814.0938,81.0711 1813.5,80.8055 Q1812.9063,80.5242 1812.2813,80.5242 Q1810.9375,80.5242 1810.25,81.6023 Q1809.5625,82.6648 1809.5625,84.7586 Q1809.5625,86.8523 1810.25,87.9305 Q1810.9375,88.993 1812.2813,88.993 Q1812.9063,88.993 1813.5,88.7273 Q1814.0938,88.4461 1814.7188,87.868 L1814.7188,90.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="66" x="1840.25" y="81.4301">«Controller»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="1832.25" y="97.7742">ChatController</text><line style="stroke:#424242;stroke-width:1.5;" x1="1688" x2="2026" y1="106.2902" y2="106.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="1693" y="122.0491">-chat_service: ChatService</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="188" x="1693" y="137.031">-auth_middleware: AuthMiddleware</text><line style="stroke:#424242;stroke-width:1.5;" x1="1688" x2="2026" y1="144.254" y2="144.254"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="209" x="1693" y="160.0129">+__init__(chat_service, auth_middleware)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="279" x="1693" y="174.9948">+send_message(request: ChatRequest): ChatResponse</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="328" x="1693" y="189.9767">+get_conversation_history(user_id: str, limit: int): List[Message]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="260" x="1693" y="204.9586">+websocket_handler(websocket: WebSocket): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="243" x="1693" y="219.9404">-_validate_request(request: ChatRequest): bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="218" x="1693" y="234.9223">-_log_request(request: ChatRequest): void</text><!--MD5=[06781a53d152b74966533a6255748241]
+class AuthMiddleware--><rect codeLine="45" fill="#FFF9C4" filter="url(#f7dk2cw6ydaye)" height="88.652" id="AuthMiddleware" style="stroke:#424242;stroke-width:1.5;" width="169" x="1546.5" y="446.602"/><ellipse cx="1581.75" cy="467.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M1584.7188,473.5867 Q1584.1406,473.8836 1583.5,474.0242 Q1582.8594,474.1805 1582.1563,474.1805 Q1579.6563,474.1805 1578.3281,472.5398 Q1577.0156,470.8836 1577.0156,467.7586 Q1577.0156,464.6336 1578.3281,462.9773 Q1579.6563,461.3211 1582.1563,461.3211 Q1582.8594,461.3211 1583.5,461.4773 Q1584.1563,461.6336 1584.7188,461.9305 L1584.7188,464.6492 Q1584.0938,464.0711 1583.5,463.8055 Q1582.9063,463.5242 1582.2813,463.5242 Q1580.9375,463.5242 1580.25,464.6023 Q1579.5625,465.6648 1579.5625,467.7586 Q1579.5625,469.8523 1580.25,470.9305 Q1580.9375,471.993 1582.2813,471.993 Q1582.9063,471.993 1583.5,471.7273 Q1584.0938,471.4461 1584.7188,470.868 L1584.7188,473.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="66" x="1613.25" y="464.4301">«Controller»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92" x="1600.25" y="480.7742">AuthMiddleware</text><line style="stroke:#424242;stroke-width:1.5;" x1="1547.5" x2="1714.5" y1="489.2902" y2="489.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="1552.5" y="505.0491">-jwt_secret: str</text><line style="stroke:#424242;stroke-width:1.5;" x1="1547.5" x2="1714.5" y1="512.2721" y2="512.2721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="1552.5" y="528.031">+authenticate(token: str): User</text><!--MD5=[668d62f5c321ea8c3babe56a0cab5a18]
+class WebSocketManager--><rect codeLine="50" fill="#FFF9C4" filter="url(#f7dk2cw6ydaye)" height="163.5614" id="WebSocketManager" style="stroke:#424242;stroke-width:1.5;" width="276" x="1751" y="409.102"/><ellipse cx="1828.25" cy="430.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M1831.2188,436.0867 Q1830.6406,436.3836 1830,436.5242 Q1829.3594,436.6805 1828.6563,436.6805 Q1826.1563,436.6805 1824.8281,435.0398 Q1823.5156,433.3836 1823.5156,430.2586 Q1823.5156,427.1336 1824.8281,425.4773 Q1826.1563,423.8211 1828.6563,423.8211 Q1829.3594,423.8211 1830,423.9773 Q1830.6563,424.1336 1831.2188,424.4305 L1831.2188,427.1492 Q1830.5938,426.5711 1830,426.3055 Q1829.4063,426.0242 1828.7813,426.0242 Q1827.4375,426.0242 1826.75,427.1023 Q1826.0625,428.1648 1826.0625,430.2586 Q1826.0625,432.3523 1826.75,433.4305 Q1827.4375,434.493 1828.7813,434.493 Q1829.4063,434.493 1830,434.2273 Q1830.5938,433.9461 1831.2188,433.368 L1831.2188,436.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="66" x="1872.25" y="426.9301">«Controller»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="113" x="1848.75" y="443.2742">WebSocketManager</text><line style="stroke:#424242;stroke-width:1.5;" x1="1752" x2="2026" y1="451.7902" y2="451.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="213" x="1757" y="467.5491">-active_connections: Dict[str, WebSocket]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="245" x="1757" y="482.531">-connection_repository: ConnectionRepository</text><line style="stroke:#424242;stroke-width:1.5;" x1="1752" x2="2026" y1="489.754" y2="489.754"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="264" x="1757" y="505.5129">+connect(websocket: WebSocket, user_id: str): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="1757" y="520.4948">+disconnect(user_id: str): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="245" x="1757" y="535.4767">+send_message(user_id: str, message: str): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="1757" y="550.4586">+broadcast(message: str): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="212" x="1757" y="565.4404">-_handle_reconnection(user_id: str): void</text><!--MD5=[34b2f0f7407082ec51a775b6d59284b9]
+class ChatService--><rect codeLine="71" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="163.5614" id="ChatService" style="stroke:#424242;stroke-width:1.5;" width="389" x="2487.5" y="409.102"/><ellipse cx="2644.25" cy="430.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M2647.2188,436.0867 Q2646.6406,436.3836 2646,436.5242 Q2645.3594,436.6805 2644.6563,436.6805 Q2642.1563,436.6805 2640.8281,435.0398 Q2639.5156,433.3836 2639.5156,430.2586 Q2639.5156,427.1336 2640.8281,425.4773 Q2642.1563,423.8211 2644.6563,423.8211 Q2645.3594,423.8211 2646,423.9773 Q2646.6563,424.1336 2647.2188,424.4305 L2647.2188,427.1492 Q2646.5938,426.5711 2646,426.3055 Q2645.4063,426.0242 2644.7813,426.0242 Q2643.4375,426.0242 2642.75,427.1023 Q2642.0625,428.1648 2642.0625,430.2586 Q2642.0625,432.3523 2642.75,433.4305 Q2643.4375,434.493 2644.7813,434.493 Q2645.4063,434.493 2646,434.2273 Q2646.5938,433.9461 2647.2188,433.368 L2647.2188,436.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="2673.75" y="426.9301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="67" x="2664.75" y="443.2742">ChatService</text><line style="stroke:#424242;stroke-width:1.5;" x1="2488.5" x2="2875.5" y1="451.7902" y2="451.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="213" x="2493.5" y="467.5491">-query_orchestrator: QueryOrchestrator</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="247" x="2493.5" y="482.531">-conversation_manager: ConversationManager</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="198" x="2493.5" y="497.5129">-confidence_scorer: ConfidenceScorer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="217" x="2493.5" y="512.4948">-response_formatter: ResponseFormatter</text><line style="stroke:#424242;stroke-width:1.5;" x1="2488.5" x2="2875.5" y1="519.7178" y2="519.7178"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="361" x="2493.5" y="535.4767">+process_message(message: ChatMessage, user: User): ChatResponse</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="256" x="2493.5" y="550.4586">-_build_context(user: User): ConversationContext</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="377" x="2493.5" y="565.4404">-_log_interaction(message: ChatMessage, response: ChatResponse): void</text><!--MD5=[9e9b6f12bd376d6309d77b2a8513a0ec]
+class QueryOrchestrator--><rect codeLine="82" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="118.6158" id="QueryOrchestrator" style="stroke:#424242;stroke-width:1.5;" width="384" x="2465" y="763.602"/><ellipse cx="2599.75" cy="784.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M2602.7188,790.5867 Q2602.1406,790.8836 2601.5,791.0242 Q2600.8594,791.1805 2600.1563,791.1805 Q2597.6563,791.1805 2596.3281,789.5398 Q2595.0156,787.8836 2595.0156,784.7586 Q2595.0156,781.6336 2596.3281,779.9773 Q2597.6563,778.3211 2600.1563,778.3211 Q2600.8594,778.3211 2601.5,778.4773 Q2602.1563,778.6336 2602.7188,778.9305 L2602.7188,781.6492 Q2602.0938,781.0711 2601.5,780.8055 Q2600.9063,780.5242 2600.2813,780.5242 Q2598.9375,780.5242 2598.25,781.6023 Q2597.5625,782.6648 2597.5625,784.7586 Q2597.5625,786.8523 2598.25,787.9305 Q2598.9375,788.993 2600.2813,788.993 Q2600.9063,788.993 2601.5,788.7273 Q2602.0938,788.4461 2602.7188,787.868 L2602.7188,790.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="2648.75" y="781.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="106" x="2620.25" y="797.7742">QueryOrchestrator</text><line style="stroke:#424242;stroke-width:1.5;" x1="2466" x2="2848" y1="806.2902" y2="806.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="2471" y="822.0491">#rag_pipeline: RAGPipeline</text><line style="stroke:#424242;stroke-width:1.5;" x1="2466" x2="2848" y1="829.2721" y2="829.2721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="372" x="2471" y="845.031">+process_query(query: str, context: ConversationContext): QueryResult</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="2471" y="860.0129">+validate_query(query: str): bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="325" x="2471" y="874.9948">+enhance_query(query: str, context: ConversationContext): str</text><!--MD5=[43f2d8db59d4b8705718cbd8797cff97]
+class ConfidenceChecker--><rect codeLine="90" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="118.6158" id="ConfidenceChecker" style="stroke:#424242;stroke-width:1.5;" width="321" x="3484.5" y="763.602"/><ellipse cx="3590.25" cy="784.9461" fill="#A9DCDF" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M3590.3594,780.2898 L3589.2031,785.368 L3591.5313,785.368 L3590.3594,780.2898 Z M3588.875,778.0555 L3591.8594,778.0555 L3595.2188,790.4461 L3592.7656,790.4461 L3592,787.3836 L3588.7188,787.3836 L3587.9688,790.4461 L3585.5313,790.4461 L3588.875,778.0555 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="3636.75" y="781.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="101" x="3610.75" y="797.7742">ConfidenceChecker</text><line style="stroke:#424242;stroke-width:1.5;" x1="3485.5" x2="3804.5" y1="806.2902" y2="806.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="3490.5" y="822.0491">#next_checker: ConfidenceChecker</text><line style="stroke:#424242;stroke-width:1.5;" x1="3485.5" x2="3804.5" y1="829.2721" y2="829.2721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="309" x="3490.5" y="845.031">+set_next(checker: ConfidenceChecker): ConfidenceChecker</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="270" x="3490.5" y="860.0129">+check(scores: ConfidenceScores): ConfidenceResult</text><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="201" x="3490.5" y="874.9948">#do_check(scores: ConfidenceScores): bool</text><!--MD5=[57b5fe19c9ec2e64e0da9241291acf87]
+class RetrievalConfidenceChecker--><rect codeLine="97" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="88.652" id="RetrievalConfidenceChecker" style="stroke:#424242;stroke-width:1.5;" width="234" x="3356" y="1138.602"/><ellipse cx="3390.8" cy="1159.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M3393.7688,1165.5867 Q3393.1906,1165.8836 3392.55,1166.0242 Q3391.9094,1166.1805 3391.2063,1166.1805 Q3388.7063,1166.1805 3387.3781,1164.5398 Q3386.0656,1162.8836 3386.0656,1159.7586 Q3386.0656,1156.6336 3387.3781,1154.9773 Q3388.7063,1153.3211 3391.2063,1153.3211 Q3391.9094,1153.3211 3392.55,1153.4773 Q3393.2063,1153.6336 3393.7688,1153.9305 L3393.7688,1156.6492 Q3393.1438,1156.0711 3392.55,1155.8055 Q3391.9563,1155.5242 3391.3313,1155.5242 Q3389.9875,1155.5242 3389.3,1156.6023 Q3388.6125,1157.6648 3388.6125,1159.7586 Q3388.6125,1161.8523 3389.3,1162.9305 Q3389.9875,1163.993 3391.3313,1163.993 Q3391.9563,1163.993 3392.55,1163.7273 Q3393.1438,1163.4461 3393.7688,1162.868 L3393.7688,1165.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="3463.7" y="1156.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="158" x="3409.2" y="1172.7742">RetrievalConfidenceChecker</text><line style="stroke:#424242;stroke-width:1.5;" x1="3357" x2="3589" y1="1181.2902" y2="1181.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="3362" y="1197.0491">-threshold: float</text><line style="stroke:#424242;stroke-width:1.5;" x1="3357" x2="3589" y1="1204.2721" y2="1204.2721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="3362" y="1220.031">+do_check(scores: ConfidenceScores): bool</text><!--MD5=[3deedfbbd90261a03fb594562f02d6d4]
+class GenerationConfidenceChecker--><rect codeLine="102" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="88.652" id="GenerationConfidenceChecker" style="stroke:#424242;stroke-width:1.5;" width="234" x="3393" y="1450.102"/><ellipse cx="3421.5" cy="1471.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M3424.4688,1477.0867 Q3423.8906,1477.3836 3423.25,1477.5242 Q3422.6094,1477.6805 3421.9063,1477.6805 Q3419.4063,1477.6805 3418.0781,1476.0398 Q3416.7656,1474.3836 3416.7656,1471.2586 Q3416.7656,1468.1336 3418.0781,1466.4773 Q3419.4063,1464.8211 3421.9063,1464.8211 Q3422.6094,1464.8211 3423.25,1464.9773 Q3423.9063,1465.1336 3424.4688,1465.4305 L3424.4688,1468.1492 Q3423.8438,1467.5711 3423.25,1467.3055 Q3422.6563,1467.0242 3422.0313,1467.0242 Q3420.6875,1467.0242 3420,1468.1023 Q3419.3125,1469.1648 3419.3125,1471.2586 Q3419.3125,1473.3523 3420,1474.4305 Q3420.6875,1475.493 3422.0313,1475.493 Q3422.6563,1475.493 3423.25,1475.2273 Q3423.8438,1474.9461 3424.4688,1474.368 L3424.4688,1477.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="3500" y="1467.9301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="172" x="3438.5" y="1484.2742">GenerationConfidenceChecker</text><line style="stroke:#424242;stroke-width:1.5;" x1="3394" x2="3626" y1="1492.7902" y2="1492.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="3399" y="1508.5491">-threshold: float</text><line style="stroke:#424242;stroke-width:1.5;" x1="3394" x2="3626" y1="1515.7721" y2="1515.7721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="3399" y="1531.531">+do_check(scores: ConfidenceScores): bool</text><!--MD5=[633a344fe5fe74f039781199e0b2e0e9]
+class OverallConfidenceChecker--><rect codeLine="107" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="88.652" id="OverallConfidenceChecker" style="stroke:#424242;stroke-width:1.5;" width="234" x="3470" y="1694.602"/><ellipse cx="3508.85" cy="1715.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M3511.8188,1721.5867 Q3511.2406,1721.8836 3510.6,1722.0242 Q3509.9594,1722.1805 3509.2563,1722.1805 Q3506.7563,1722.1805 3505.4281,1720.5398 Q3504.1156,1718.8836 3504.1156,1715.7586 Q3504.1156,1712.6336 3505.4281,1710.9773 Q3506.7563,1709.3211 3509.2563,1709.3211 Q3509.9594,1709.3211 3510.6,1709.4773 Q3511.2563,1709.6336 3511.8188,1709.9305 L3511.8188,1712.6492 Q3511.1938,1712.0711 3510.6,1711.8055 Q3510.0063,1711.5242 3509.3813,1711.5242 Q3508.0375,1711.5242 3507.35,1712.6023 Q3506.6625,1713.6648 3506.6625,1715.7586 Q3506.6625,1717.8523 3507.35,1718.9305 Q3508.0375,1719.993 3509.3813,1719.993 Q3510.0063,1719.993 3510.6,1719.7273 Q3511.1938,1719.4461 3511.8188,1718.868 L3511.8188,1721.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="3578.15" y="1712.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="149" x="3528.15" y="1728.7742">OverallConfidenceChecker</text><line style="stroke:#424242;stroke-width:1.5;" x1="3471" x2="3703" y1="1737.2902" y2="1737.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="3476" y="1753.0491">-threshold: float</text><line style="stroke:#424242;stroke-width:1.5;" x1="3471" x2="3703" y1="1760.2721" y2="1760.2721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="222" x="3476" y="1776.031">+do_check(scores: ConfidenceScores): bool</text><!--MD5=[6c3294ce43f5fb8beddece7c22387dc9]
+class ConfidenceScorer--><rect codeLine="112" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="178.5433" id="ConfidenceScorer" style="stroke:#424242;stroke-width:1.5;" width="565" x="2884.5" y="733.602"/><ellipse cx="3112.75" cy="754.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M3115.7188,760.5867 Q3115.1406,760.8836 3114.5,761.0242 Q3113.8594,761.1805 3113.1563,761.1805 Q3110.6563,761.1805 3109.3281,759.5398 Q3108.0156,757.8836 3108.0156,754.7586 Q3108.0156,751.6336 3109.3281,749.9773 Q3110.6563,748.3211 3113.1563,748.3211 Q3113.8594,748.3211 3114.5,748.4773 Q3115.1563,748.6336 3115.7188,748.9305 L3115.7188,751.6492 Q3115.0938,751.0711 3114.5,750.8055 Q3113.9063,750.5242 3113.2813,750.5242 Q3111.9375,750.5242 3111.25,751.6023 Q3110.5625,752.6648 3110.5625,754.7586 Q3110.5625,756.8523 3111.25,757.9305 Q3111.9375,758.993 3113.2813,758.993 Q3113.9063,758.993 3114.5,758.7273 Q3115.0938,758.4461 3115.7188,757.868 L3115.7188,760.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="3158.75" y="751.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="3133.25" y="767.7742">ConfidenceScorer</text><line style="stroke:#424242;stroke-width:1.5;" x1="2885.5" x2="3448.5" y1="776.2902" y2="776.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="221" x="2890.5" y="792.0491">-retrieval_weights: Tuple[float, float, float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="2890.5" y="807.031">-generation_weights: Tuple[float, float, float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="184" x="2890.5" y="822.0129">-checker_chain: ConfidenceChecker</text><line style="stroke:#424242;stroke-width:1.5;" x1="2885.5" x2="3448.5" y1="829.2359" y2="829.2359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="553" x="2890.5" y="844.9948">+score_retrieval(retrieval_scores: List[float], reranker_scores: List[float], metadata_consistency: float): float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="418" x="2890.5" y="859.9767">+score_generation(token_probs: List[float], response: str, chunks: List[str]): float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="377" x="2890.5" y="874.9586">+evaluate(retrieval_conf: float, generation_conf: float): ConfidenceResult</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="309" x="2890.5" y="889.9404">-_calculate_grounding(response: str, chunks: List[str]): float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="210" x="2890.5" y="904.9223">-_detect_uncertainty(response: str): float</text><!--MD5=[90b051c9d0af3deef153e3d18478175e]
+class ClarifyingQuestionsHandler--><rect codeLine="125" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="103.6339" id="ClarifyingQuestionsHandler" style="stroke:#424242;stroke-width:1.5;" width="369" x="2083.5" y="439.102"/><ellipse cx="2186.75" cy="460.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M2189.7188,466.0867 Q2189.1406,466.3836 2188.5,466.5242 Q2187.8594,466.6805 2187.1563,466.6805 Q2184.6563,466.6805 2183.3281,465.0398 Q2182.0156,463.3836 2182.0156,460.2586 Q2182.0156,457.1336 2183.3281,455.4773 Q2184.6563,453.8211 2187.1563,453.8211 Q2187.8594,453.8211 2188.5,453.9773 Q2189.1563,454.1336 2189.7188,454.4305 L2189.7188,457.1492 Q2189.0938,456.5711 2188.5,456.3055 Q2187.9063,456.0242 2187.2813,456.0242 Q2185.9375,456.0242 2185.25,457.1023 Q2184.5625,458.1648 2184.5625,460.2586 Q2184.5625,462.3523 2185.25,463.4305 Q2185.9375,464.493 2187.2813,464.493 Q2187.9063,464.493 2188.5,464.2273 Q2189.0938,463.9461 2189.7188,463.368 L2189.7188,466.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="2259.75" y="456.9301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="154" x="2207.25" y="473.2742">ClarifyingQuestionsHandler</text><line style="stroke:#424242;stroke-width:1.5;" x1="2084.5" x2="2451.5" y1="481.7902" y2="481.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="216" x="2089.5" y="497.5491">-question_generator: QuestionGenerator</text><line style="stroke:#424242;stroke-width:1.5;" x1="2084.5" x2="2451.5" y1="504.7721" y2="504.7721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="255" x="2089.5" y="520.531">+can_handle(confidence: ConfidenceResult): bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="357" x="2089.5" y="535.5129">+handle(query: str, confidence: ConfidenceResult): FallbackResponse</text><!--MD5=[d2fab8e2abe7b5d5a263119cff4f3da5]
+class ConversationManager--><rect codeLine="221" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="253.4528" id="ConversationManager" style="stroke:#424242;stroke-width:1.5;" width="347" x="2082.5" y="696.602"/><ellipse cx="2189.25" cy="717.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M2192.2188,723.5867 Q2191.6406,723.8836 2191,724.0242 Q2190.3594,724.1805 2189.6563,724.1805 Q2187.1563,724.1805 2185.8281,722.5398 Q2184.5156,720.8836 2184.5156,717.7586 Q2184.5156,714.6336 2185.8281,712.9773 Q2187.1563,711.3211 2189.6563,711.3211 Q2190.3594,711.3211 2191,711.4773 Q2191.6563,711.6336 2192.2188,711.9305 L2192.2188,714.6492 Q2191.5938,714.0711 2191,713.8055 Q2190.4063,713.5242 2189.7813,713.5242 Q2188.4375,713.5242 2187.75,714.6023 Q2187.0625,715.6648 2187.0625,717.7586 Q2187.0625,719.8523 2187.75,720.9305 Q2188.4375,721.993 2189.7813,721.993 Q2190.4063,721.993 2191,721.7273 Q2191.5938,721.4461 2192.2188,720.868 L2192.2188,723.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="2247.75" y="714.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="125" x="2209.75" y="730.7742">ConversationManager</text><line style="stroke:#424242;stroke-width:1.5;" x1="2083.5" x2="2428.5" y1="739.2902" y2="739.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="255" x="2088.5" y="755.0491">-conversation_repository: ConversationManager</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="205" x="2088.5" y="770.031">-summarizer: ConversationSummarizer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="2088.5" y="785.0129">-db: Database</text><line style="stroke:#424242;stroke-width:1.5;" x1="2083.5" x2="2428.5" y1="792.2359" y2="792.2359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="236" x="2088.5" y="807.9948">+get_conversation(user_id: str): Conversation</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="271" x="2088.5" y="822.9767">+add_message(user_id: str, message: Message): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="335" x="2088.5" y="837.9586">+summarize_long_conversation(conversation: Conversation): str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="297" x="2088.5" y="852.9404">+get_context_for_user(user_id: str): ConversationContext</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="299" x="2088.5" y="867.9223">+find_by_id(conversation_id: str): Optional[Conversation]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="303" x="2088.5" y="882.9042">+find_by_user_id(user_id: str, limit: int): List[Conversation]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="255" x="2088.5" y="897.8861">+save(conversation: Conversation): Conversation</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="269" x="2088.5" y="912.868">+update(conversation: Conversation): Conversation</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="2088.5" y="927.8499">+delete(conversation_id: str): bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="306" x="2088.5" y="942.8318">+get_recent_messages(user_id: str, limit: int): List[Message]</text><!--MD5=[462dab6fd6a5f10e4d1ccfe92d94a96c]
+class ResponseFormatter--><rect codeLine="141" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="103.6339" id="ResponseFormatter" style="stroke:#424242;stroke-width:1.5;" width="449" x="3840.5" y="771.102"/><ellipse cx="4005.75" cy="792.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4008.7188,798.0867 Q4008.1406,798.3836 4007.5,798.5242 Q4006.8594,798.6805 4006.1563,798.6805 Q4003.6563,798.6805 4002.3281,797.0398 Q4001.0156,795.3836 4001.0156,792.2586 Q4001.0156,789.1336 4002.3281,787.4773 Q4003.6563,785.8211 4006.1563,785.8211 Q4006.8594,785.8211 4007.5,785.9773 Q4008.1563,786.1336 4008.7188,786.4305 L4008.7188,789.1492 Q4008.0938,788.5711 4007.5,788.3055 Q4006.9063,788.0242 4006.2813,788.0242 Q4004.9375,788.0242 4004.25,789.1023 Q4003.5625,790.1648 4003.5625,792.2586 Q4003.5625,794.3523 4004.25,795.4305 Q4004.9375,796.493 4006.2813,796.493 Q4006.9063,796.493 4007.5,796.2273 Q4008.0938,795.9461 4008.7188,795.368 L4008.7188,798.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="4056.75" y="788.9301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="4026.25" y="805.2742">ResponseFormatter</text><line style="stroke:#424242;stroke-width:1.5;" x1="3841.5" x2="4288.5" y1="813.7902" y2="813.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="3846.5" y="829.5491">-sanitizer: ResponseSanitizer</text><line style="stroke:#424242;stroke-width:1.5;" x1="3841.5" x2="4288.5" y1="836.7721" y2="836.7721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="437" x="3846.5" y="852.531">+format_response(raw_response: str, sources: List[Document]): FormattedResponse</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="3846.5" y="867.5129">-_cleanup_html(response: str): str</text><!--MD5=[95aa8215bea76a27459077c74711e3e0]
+class RerankerModel--><rect codeLine="155" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="133.5977" id="RerankerModel" style="stroke:#424242;stroke-width:1.5;" width="399" x="4345.5" y="756.102"/><ellipse cx="4497.75" cy="777.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4500.7188,783.0867 Q4500.1406,783.3836 4499.5,783.5242 Q4498.8594,783.6805 4498.1563,783.6805 Q4495.6563,783.6805 4494.3281,782.0398 Q4493.0156,780.3836 4493.0156,777.2586 Q4493.0156,774.1336 4494.3281,772.4773 Q4495.6563,770.8211 4498.1563,770.8211 Q4498.8594,770.8211 4499.5,770.9773 Q4500.1563,771.1336 4500.7188,771.4305 L4500.7188,774.1492 Q4500.0938,773.5711 4499.5,773.3055 Q4498.9063,773.0242 4498.2813,773.0242 Q4496.9375,773.0242 4496.25,774.1023 Q4495.5625,775.1648 4495.5625,777.2586 Q4495.5625,779.3523 4496.25,780.4305 Q4496.9375,781.493 4498.2813,781.493 Q4498.9063,781.493 4499.5,781.2273 Q4500.0938,780.9461 4500.7188,780.368 L4500.7188,783.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="4536.75" y="773.9301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="86" x="4518.25" y="790.2742">RerankerModel</text><line style="stroke:#424242;stroke-width:1.5;" x1="4346.5" x2="4743.5" y1="798.7902" y2="798.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="4351.5" y="814.5491">-model_name: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="4351.5" y="829.531">-model: CrossEncoder</text><line style="stroke:#424242;stroke-width:1.5;" x1="4346.5" x2="4743.5" y1="836.754" y2="836.754"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="4351.5" y="852.5129">+predict(pairs: List[Tuple[str, str]]): List[float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="387" x="4351.5" y="867.4948">+rerank(query: str, candidates: List[Document], top_k: int): List[Document]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="250" x="4351.5" y="882.4767">-_normalize_scores(scores: List[float]): List[float]</text><!--MD5=[b729395d8bf66a7daa79b075ac5c26ef]
+class LLMOrchestrator--><rect codeLine="163" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="148.5796" id="LLMOrchestrator" style="stroke:#424242;stroke-width:1.5;" width="333" x="4779.5" y="748.602"/><ellipse cx="4894.25" cy="769.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4897.2188,775.5867 Q4896.6406,775.8836 4896,776.0242 Q4895.3594,776.1805 4894.6563,776.1805 Q4892.1563,776.1805 4890.8281,774.5398 Q4889.5156,772.8836 4889.5156,769.7586 Q4889.5156,766.6336 4890.8281,764.9773 Q4892.1563,763.3211 4894.6563,763.3211 Q4895.3594,763.3211 4896,763.4773 Q4896.6563,763.6336 4897.2188,763.9305 L4897.2188,766.6492 Q4896.5938,766.0711 4896,765.8055 Q4895.4063,765.5242 4894.7813,765.5242 Q4893.4375,765.5242 4892.75,766.6023 Q4892.0625,767.6648 4892.0625,769.7586 Q4892.0625,771.8523 4892.75,772.9305 Q4893.4375,773.993 4894.7813,773.993 Q4895.4063,773.993 4896,773.7273 Q4896.5938,773.4461 4897.2188,772.868 L4897.2188,775.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="4937.75" y="766.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="4914.75" y="782.7742">LLMOrchestrator</text><line style="stroke:#424242;stroke-width:1.5;" x1="4780.5" x2="5111.5" y1="791.2902" y2="791.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="4785.5" y="807.0491">-model_name: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="4785.5" y="822.031">-model: LLM</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="190" x="4785.5" y="837.0129">-sampling_params: SamplingParams</text><line style="stroke:#424242;stroke-width:1.5;" x1="4780.5" x2="5111.5" y1="844.2359" y2="844.2359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="321" x="4785.5" y="859.9948">+generate(prompt: str, enable_logprobs: bool): LLMResponse</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="288" x="4785.5" y="874.9767">+batch_generate(prompts: List[str]): List[LLMResponse]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="232" x="4785.5" y="889.9586">-_format_prompt(query: str, context: str): str</text><!--MD5=[b601b6c9096eaace16f68855357a1c2c]
+class RAGPipeline--><rect codeLine="173" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="178.5433" id="RAGPipeline" style="stroke:#424242;stroke-width:1.5;" width="399" x="4753.5" y="401.602"/><ellipse cx="4914.75" cy="422.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4917.7188,428.5867 Q4917.1406,428.8836 4916.5,429.0242 Q4915.8594,429.1805 4915.1563,429.1805 Q4912.6563,429.1805 4911.3281,427.5398 Q4910.0156,425.8836 4910.0156,422.7586 Q4910.0156,419.6336 4911.3281,417.9773 Q4912.6563,416.3211 4915.1563,416.3211 Q4915.8594,416.3211 4916.5,416.4773 Q4917.1563,416.6336 4917.7188,416.9305 L4917.7188,419.6492 Q4917.0938,419.0711 4916.5,418.8055 Q4915.9063,418.5242 4915.2813,418.5242 Q4913.9375,418.5242 4913.25,419.6023 Q4912.5625,420.6648 4912.5625,422.7586 Q4912.5625,424.8523 4913.25,425.9305 Q4913.9375,426.993 4915.2813,426.993 Q4915.9063,426.993 4916.5,426.7273 Q4917.0938,426.4461 4917.7188,425.868 L4917.7188,428.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="4944.75" y="419.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="4935.25" y="435.7742">RAGPipeline</text><line style="stroke:#424242;stroke-width:1.5;" x1="4754.5" x2="5151.5" y1="444.2902" y2="444.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="175" x="4759.5" y="460.0491">-vector_store: QdrantVectorStore</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="4759.5" y="475.031">-reranker: RerankerModel</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="4759.5" y="490.0129">-context_injector: ContextInjector</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="4759.5" y="504.9948">-llm: LLMOrchestrator</text><line style="stroke:#424242;stroke-width:1.5;" x1="4754.5" x2="5151.5" y1="512.2178" y2="512.2178"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="245" x="4759.5" y="527.9767">+retrieve(query: str, top_k: int): List[Document]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="387" x="4759.5" y="542.9586">+rerank(query: str, candidates: List[Document], top_k: int): List[Document]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="338" x="4759.5" y="557.9404">+generate(query: str, context: List[Document]): GenerationResult</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="232" x="4759.5" y="572.9223">+execute_full_pipeline(query: str): RAGResult</text><!--MD5=[321f9b9302f98bceb8fe7c546237d968]
+class RAGPipelineBuilder--><rect codeLine="184" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="133.5977" id="RAGPipelineBuilder" style="stroke:#424242;stroke-width:1.5;" width="358" x="4777" y="86.102"/><ellipse cx="4897.75" cy="107.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4900.7188,113.0867 Q4900.1406,113.3836 4899.5,113.5242 Q4898.8594,113.6805 4898.1563,113.6805 Q4895.6563,113.6805 4894.3281,112.0398 Q4893.0156,110.3836 4893.0156,107.2586 Q4893.0156,104.1336 4894.3281,102.4773 Q4895.6563,100.8211 4898.1563,100.8211 Q4898.8594,100.8211 4899.5,100.9773 Q4900.1563,101.1336 4900.7188,101.4305 L4900.7188,104.1492 Q4900.0938,103.5711 4899.5,103.3055 Q4898.9063,103.0242 4898.2813,103.0242 Q4896.9375,103.0242 4896.25,104.1023 Q4895.5625,105.1648 4895.5625,107.2586 Q4895.5625,109.3523 4896.25,110.4305 Q4896.9375,111.493 4898.2813,111.493 Q4898.9063,111.493 4899.5,111.2273 Q4900.0938,110.9461 4900.7188,110.368 L4900.7188,113.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="4947.75" y="103.9301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="4918.25" y="120.2742">RAGPipelineBuilder</text><line style="stroke:#424242;stroke-width:1.5;" x1="4778" x2="5134" y1="128.7902" y2="128.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="4783" y="144.5491">-pipeline: RAGPipeline</text><line style="stroke:#424242;stroke-width:1.5;" x1="4778" x2="5134" y1="151.7721" y2="151.7721"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="346" x="4783" y="167.531">+with_vector_store(store: QdrantVectorStore): RAGPipelineBuilder</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="327" x="4783" y="182.5129">+with_reranker(reranker: RerankerModel): RAGPipelineBuilder</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="276" x="4783" y="197.4948">+with_llm(llm: LLMOrchestrator): RAGPipelineBuilder</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="4783" y="212.4767">+build(): RAGPipeline</text><!--MD5=[cb96fc3a19c6407e89821c5a0a97261b]
+class ContextInjector--><rect codeLine="192" fill="#E1F5FE" filter="url(#f7dk2cw6ydaye)" height="148.5796" id="ContextInjector" style="stroke:#424242;stroke-width:1.5;" width="443" x="5147.5" y="748.602"/><ellipse cx="5321.75" cy="769.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M5324.7188,775.5867 Q5324.1406,775.8836 5323.5,776.0242 Q5322.8594,776.1805 5322.1563,776.1805 Q5319.6563,776.1805 5318.3281,774.5398 Q5317.0156,772.8836 5317.0156,769.7586 Q5317.0156,766.6336 5318.3281,764.9773 Q5319.6563,763.3211 5322.1563,763.3211 Q5322.8594,763.3211 5323.5,763.4773 Q5324.1563,763.6336 5324.7188,763.9305 L5324.7188,766.6492 Q5324.0938,766.0711 5323.5,765.8055 Q5322.9063,765.5242 5322.2813,765.5242 Q5320.9375,765.5242 5320.25,766.6023 Q5319.5625,767.6648 5319.5625,769.7586 Q5319.5625,771.8523 5320.25,772.9305 Q5320.9375,773.993 5322.2813,773.993 Q5322.9063,773.993 5323.5,773.7273 Q5324.0938,773.4461 5324.7188,772.868 L5324.7188,775.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="5360.75" y="766.4301">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="86" x="5342.25" y="782.7742">ContextInjector</text><line style="stroke:#424242;stroke-width:1.5;" x1="5148.5" x2="5589.5" y1="791.2902" y2="791.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="115" x="5153.5" y="807.0491">-prompt_template: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="181" x="5153.5" y="822.031">-few_shot_examples: List[Example]</text><line style="stroke:#424242;stroke-width:1.5;" x1="5148.5" x2="5589.5" y1="829.254" y2="829.254"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="431" x="5153.5" y="845.0129">+inject_context(query: str, retrieved_docs: List[Document], system_prompt: str): str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="326" x="5153.5" y="859.9948">+format_with_template(template_name: str, variables: Dict): str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="5153.5" y="874.9767">-_build_system_prompt(): str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="221" x="5153.5" y="889.9586">-_add_few_shot_examples(prompt: str): str</text><!--MD5=[dbac99f417acc245cee70c5e2322bd54]
+class QdrantVectorStore--><rect codeLine="202" fill="#F3E5F5" filter="url(#f7dk2cw6ydaye)" height="178.5433" id="QdrantVectorStore" style="stroke:#424242;stroke-width:1.5;" width="395" x="4346.5" y="63.602"/><ellipse cx="4487.25" cy="84.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4490.2188,90.5867 Q4489.6406,90.8836 4489,91.0242 Q4488.3594,91.1805 4487.6563,91.1805 Q4485.1563,91.1805 4483.8281,89.5398 Q4482.5156,87.8836 4482.5156,84.7586 Q4482.5156,81.6336 4483.8281,79.9773 Q4485.1563,78.3211 4487.6563,78.3211 Q4488.3594,78.3211 4489,78.4773 Q4489.6563,78.6336 4490.2188,78.9305 L4490.2188,81.6492 Q4489.5938,81.0711 4489,80.8055 Q4488.4063,80.5242 4487.7813,80.5242 Q4486.4375,80.5242 4485.75,81.6023 Q4485.0625,82.6648 4485.0625,84.7586 Q4485.0625,86.8523 4485.75,87.9305 Q4486.4375,88.993 4487.7813,88.993 Q4488.4063,88.993 4489,88.7273 Q4489.5938,88.4461 4490.2188,87.868 L4490.2188,90.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="69" x="4525.75" y="81.4301">«Repository»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="105" x="4507.75" y="97.7742">QdrantVectorStore</text><line style="stroke:#424242;stroke-width:1.5;" x1="4347.5" x2="4740.5" y1="106.2902" y2="106.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="4352.5" y="122.0491">-client: QdrantClient</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="4352.5" y="137.031">-collection_name: str</text><line style="stroke:#424242;stroke-width:1.5;" x1="4347.5" x2="4740.5" y1="144.254" y2="144.254"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="383" x="4352.5" y="160.0129">+search(query_vector: np.ndarray, top_k: int, filters: Dict): List[Document]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="351" x="4352.5" y="174.9948">+insert(documents: List[Document], embeddings: np.ndarray): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="344" x="4352.5" y="189.9767">+update(doc_id: str, embedding: np.ndarray, metadata: Dict): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="4352.5" y="204.9586">+delete(doc_id: str): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="199" x="4352.5" y="219.9404">-_build_filter(filters: Dict): QdrantFilter</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="318" x="4352.5" y="234.9223">-_convert_to_documents(search_results: List): List[Document]</text><polygon fill="#FFFFFF" filter="url(#f7dk2cw6ydaye)" points="3114,124.102,3244,124.102,3251,149.1699,3258,149.1699,3258,182.2378,3114,182.2378,3114,124.102" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="3114" x2="3251" y1="149.1699" y2="149.1699"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="124" x="3118" y="141.0679">Data Access Layer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="81" x="3149.5" y="166.1358">«Repository»</text><!--MD5=[fed95c11f4eac9af47f7e387aff308bb]
+class ConfidenceScores--><rect codeLine="241" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="178.5433" id="ConfidenceScores" style="stroke:#424242;stroke-width:1.5;" width="168" x="39" y="1093.602"/><ellipse cx="69.75" cy="1114.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M72.7188,1120.5867 Q72.1406,1120.8836 71.5,1121.0242 Q70.8594,1121.1805 70.1563,1121.1805 Q67.6563,1121.1805 66.3281,1119.5398 Q65.0156,1117.8836 65.0156,1114.7586 Q65.0156,1111.6336 66.3281,1109.9773 Q67.6563,1108.3211 70.1563,1108.3211 Q70.8594,1108.3211 71.5,1108.4773 Q72.1563,1108.6336 72.7188,1108.9305 L72.7188,1111.6492 Q72.0938,1111.0711 71.5,1110.8055 Q70.9063,1110.5242 70.2813,1110.5242 Q68.9375,1110.5242 68.25,1111.6023 Q67.5625,1112.6648 67.5625,1114.7586 Q67.5625,1116.8523 68.25,1117.9305 Q68.9375,1118.993 70.2813,1118.993 Q70.9063,1118.993 71.5,1118.7273 Q72.0938,1118.4461 72.7188,1117.868 L72.7188,1120.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="108.75" y="1111.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="87.25" y="1127.7742">ConfidenceScores</text><line style="stroke:#424242;stroke-width:1.5;" x1="40" x2="206" y1="1136.2902" y2="1136.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="45" y="1152.0491">+retrieval_confidence: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="156" x="45" y="1167.031">+generation_confidence: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="45" y="1182.0129">+overall_confidence: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="45" y="1196.9948">+metadata_consistency: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="45" y="1211.9767">+grounding_score: float</text><line style="stroke:#424242;stroke-width:1.0;" x1="40" x2="206" y1="1219.1996" y2="1219.1996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="45" y="1234.9586">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="45" y="1249.9404">+@field_validator('*')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="45" y="1264.9223">+model_dump(): Dict[str, Any]</text><!--MD5=[9b7fdd8d4af81ad9c04e3476f81a23a3]
+class ConfidenceResult--><rect codeLine="253" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="148.5796" id="ConfidenceResult" style="stroke:#424242;stroke-width:1.5;" width="167" x="39.5" y="748.602"/><ellipse cx="71.6" cy="769.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M74.5688,775.5867 Q73.9906,775.8836 73.35,776.0242 Q72.7094,776.1805 72.0063,776.1805 Q69.5063,776.1805 68.1781,774.5398 Q66.8656,772.8836 66.8656,769.7586 Q66.8656,766.6336 68.1781,764.9773 Q69.5063,763.3211 72.0063,763.3211 Q72.7094,763.3211 73.35,763.4773 Q74.0063,763.6336 74.5688,763.9305 L74.5688,766.6492 Q73.9438,766.0711 73.35,765.8055 Q72.7563,765.5242 72.1313,765.5242 Q70.7875,765.5242 70.1,766.6023 Q69.4125,767.6648 69.4125,769.7586 Q69.4125,771.8523 70.1,772.9305 Q70.7875,773.993 72.1313,773.993 Q72.7563,773.993 73.35,773.7273 Q73.9438,773.4461 74.5688,772.868 L74.5688,775.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="108.9" y="766.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="97" x="89.4" y="782.7742">ConfidenceResult</text><line style="stroke:#424242;stroke-width:1.5;" x1="40.5" x2="205.5" y1="791.2902" y2="791.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="45.5" y="807.0491">+scores: ConfidenceScores</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="45.5" y="822.031">+passed_threshold: bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="45.5" y="837.0129">+reason: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="88" x="45.5" y="851.9948">+stage_failed: str</text><line style="stroke:#424242;stroke-width:1.0;" x1="40.5" x2="205.5" y1="859.2178" y2="859.2178"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="45.5" y="874.9767">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="45.5" y="889.9586">+model_dump(): Dict[str, Any]</text><!--MD5=[37e433d9af03e832cbf19da0da484929]
+class Conversation--><rect codeLine="264" fill="#E8F5E9" filter="url(#f7dk2cw6ydaye)" height="193.5252" id="Conversation" style="stroke:#424242;stroke-width:1.5;" width="235" x="1231.5" y="1086.102"/><ellipse cx="1307.75" cy="1107.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M1310.7188,1113.0867 Q1310.1406,1113.3836 1309.5,1113.5242 Q1308.8594,1113.6805 1308.1563,1113.6805 Q1305.6563,1113.6805 1304.3281,1112.0398 Q1303.0156,1110.3836 1303.0156,1107.2586 Q1303.0156,1104.1336 1304.3281,1102.4773 Q1305.6563,1100.8211 1308.1563,1100.8211 Q1308.8594,1100.8211 1309.5,1100.9773 Q1310.1563,1101.1336 1310.7188,1101.4305 L1310.7188,1104.1492 Q1310.0938,1103.5711 1309.5,1103.3055 Q1308.9063,1103.0242 1308.2813,1103.0242 Q1306.9375,1103.0242 1306.25,1104.1023 Q1305.5625,1105.1648 1305.5625,1107.2586 Q1305.5625,1109.3523 1306.25,1110.4305 Q1306.9375,1111.493 1308.2813,1111.493 Q1308.9063,1111.493 1309.5,1111.2273 Q1310.0938,1110.9461 1310.7188,1110.368 L1310.7188,1113.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="42" x="1344.25" y="1103.9301">«Entity»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="74" x="1328.25" y="1120.2742">Conversation</text><line style="stroke:#424242;stroke-width:1.5;" x1="1232.5" x2="1465.5" y1="1128.7902" y2="1128.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="1237.5" y="1144.5491">+id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="1237.5" y="1159.531">+user_id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="1237.5" y="1174.5129">+messages: List[Message]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="1237.5" y="1189.4948">+created_at: datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="1237.5" y="1204.4767">+updated_at: datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="1237.5" y="1219.4586">+metadata: Dict[str, Any]</text><line style="stroke:#424242;stroke-width:1.5;" x1="1232.5" x2="1465.5" y1="1226.6815" y2="1226.6815"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="207" x="1237.5" y="1242.4404">+add_message(message: Message): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="223" x="1237.5" y="1257.4223">+get_last_n_messages(n: int): List[Message]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="140" x="1237.5" y="1272.4042">+get_context_window(): str</text><!--MD5=[bea5b0d46523efab5ea1c1d339f396f0]
+class Message--><rect codeLine="276" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="238.4709" id="Message" style="stroke:#424242;stroke-width:1.5;" width="216" x="1241" y="1375.602"/><ellipse cx="1317.75" cy="1396.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M1320.7188,1402.5867 Q1320.1406,1402.8836 1319.5,1403.0242 Q1318.8594,1403.1805 1318.1563,1403.1805 Q1315.6563,1403.1805 1314.3281,1401.5398 Q1313.0156,1399.8836 1313.0156,1396.7586 Q1313.0156,1393.6336 1314.3281,1391.9773 Q1315.6563,1390.3211 1318.1563,1390.3211 Q1318.8594,1390.3211 1319.5,1390.4773 Q1320.1563,1390.6336 1320.7188,1390.9305 L1320.7188,1393.6492 Q1320.0938,1393.0711 1319.5,1392.8055 Q1318.9063,1392.5242 1318.2813,1392.5242 Q1316.9375,1392.5242 1316.25,1393.6023 Q1315.5625,1394.6648 1315.5625,1396.7586 Q1315.5625,1398.8523 1316.25,1399.9305 Q1316.9375,1400.993 1318.2813,1400.993 Q1318.9063,1400.993 1319.5,1400.7273 Q1320.0938,1400.4461 1320.7188,1399.868 L1320.7188,1402.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="1336.25" y="1393.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="51" x="1339.75" y="1409.7742">Message</text><line style="stroke:#424242;stroke-width:1.5;" x1="1242" x2="1456" y1="1418.2902" y2="1418.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="1247" y="1434.0491">+id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="1247" y="1449.031">+conversation_id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="1247" y="1464.0129">+role: MessageRole</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="1247" y="1478.9948">+content: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="1247" y="1493.9767">+timestamp: datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="1247" y="1508.9586">+confidence: Optional[float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="1247" y="1523.9404">+sources: Optional[List[str]]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="1247" y="1538.9223">+metadata: Dict[str, Any]</text><line style="stroke:#424242;stroke-width:1.0;" x1="1242" x2="1456" y1="1546.1453" y2="1546.1453"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="1247" y="1561.9042">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="1247" y="1576.8861">+@field_validator('content')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="204" x="1247" y="1591.868">+@field_validator('id', 'conversation_id')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="1247" y="1606.8499">+model_dump(): Dict[str, Any]</text><!--MD5=[199d73e8070114c11cee6c6920626a55]
+class MessageRole--><rect codeLine="292" fill="#FEFECE" filter="url(#f7dk2cw6ydaye)" height="92.9457" id="MessageRole" style="stroke:#424242;stroke-width:1.5;" width="107" x="370.5" y="444.602"/><ellipse cx="385.5" cy="460.602" fill="#EB937F" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M389.6094,466.602 L381.8906,466.602 L381.8906,454.2114 L389.6094,454.2114 L389.6094,456.3676 L384.3438,456.3676 L384.3438,459.0395 L389.1094,459.0395 L389.1094,461.1957 L384.3438,461.1957 L384.3438,464.4457 L389.6094,464.4457 L389.6094,466.602 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="75" x="399.5" y="465.258">MessageRole</text><line style="stroke:#424242;stroke-width:1.5;" x1="371.5" x2="476.5" y1="476.602" y2="476.602"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="27" x="376.5" y="492.3609">USER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="56" x="376.5" y="507.3428">ASSISTANT</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="376.5" y="522.3247">SYSTEM</text><line style="stroke:#424242;stroke-width:1.5;" x1="371.5" x2="476.5" y1="529.5476" y2="529.5476"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="298" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="208.5071" id="User" style="stroke:#424242;stroke-width:1.5;" width="167" x="1188.5" y="718.602"/><ellipse cx="1240.75" cy="739.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M1243.7188,745.5867 Q1243.1406,745.8836 1242.5,746.0242 Q1241.8594,746.1805 1241.1563,746.1805 Q1238.6563,746.1805 1237.3281,744.5398 Q1236.0156,742.8836 1236.0156,739.7586 Q1236.0156,736.6336 1237.3281,734.9773 Q1238.6563,733.3211 1241.1563,733.3211 Q1241.8594,733.3211 1242.5,733.4773 Q1243.1563,733.6336 1243.7188,733.9305 L1243.7188,736.6492 Q1243.0938,736.0711 1242.5,735.8055 Q1241.9063,735.5242 1241.2813,735.5242 Q1239.9375,735.5242 1239.25,736.6023 Q1238.5625,737.6648 1238.5625,739.7586 Q1238.5625,741.8523 1239.25,742.9305 Q1239.9375,743.993 1241.2813,743.993 Q1241.9063,743.993 1242.5,743.7273 Q1243.0938,743.4461 1243.7188,742.868 L1243.7188,745.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="1259.25" y="736.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="1274.75" y="752.7742">User</text><line style="stroke:#424242;stroke-width:1.5;" x1="1189.5" x2="1354.5" y1="761.2902" y2="761.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="1194.5" y="777.0491">+id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="1194.5" y="792.031">+email: Optional[str]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="1194.5" y="807.0129">+user_type: UserType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="1194.5" y="821.9948">+created_at: datetime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="1194.5" y="836.9767">+last_active: datetime</text><line style="stroke:#424242;stroke-width:1.0;" x1="1189.5" x2="1354.5" y1="844.1996" y2="844.1996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="1194.5" y="859.9586">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="1194.5" y="874.9404">+@field_validator('email')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="1194.5" y="889.9223">+@field_validator('id')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="1194.5" y="904.9042">+update_last_active(): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="1194.5" y="919.8861">+model_dump(): Dict[str, Any]</text><!--MD5=[eff099f41b4ab245f31ecac80b8c4343]
+class UserType--><rect codeLine="312" fill="#FEFECE" filter="url(#f7dk2cw6ydaye)" height="77.9638" id="UserType" style="stroke:#424242;stroke-width:1.5;" width="86" x="249" y="452.102"/><ellipse cx="264" cy="468.102" fill="#EB937F" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M268.1094,474.102 L260.3906,474.102 L260.3906,461.7114 L268.1094,461.7114 L268.1094,463.8676 L262.8438,463.8676 L262.8438,466.5395 L267.6094,466.5395 L267.6094,468.6957 L262.8438,468.6957 L262.8438,471.9457 L268.1094,471.9457 L268.1094,474.102 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="54" x="278" y="472.758">UserType</text><line style="stroke:#424242;stroke-width:1.5;" x1="250" x2="334" y1="484.102" y2="484.102"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="255" y="499.8609">REGISTERED</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="255" y="514.8428">GUEST</text><line style="stroke:#424242;stroke-width:1.5;" x1="250" x2="334" y1="522.0658" y2="522.0658"/><!--MD5=[59b530d44ae785dc18db921986a9c15c]
+class Document--><rect codeLine="317" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="223.489" id="Document" style="stroke:#424242;stroke-width:1.5;" width="197" x="345.5" y="711.602"/><ellipse cx="410.75" cy="732.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M413.7188,738.5867 Q413.1406,738.8836 412.5,739.0242 Q411.8594,739.1805 411.1563,739.1805 Q408.6563,739.1805 407.3281,737.5398 Q406.0156,735.8836 406.0156,732.7586 Q406.0156,729.6336 407.3281,727.9773 Q408.6563,726.3211 411.1563,726.3211 Q411.8594,726.3211 412.5,726.4773 Q413.1563,726.6336 413.7188,726.9305 L413.7188,729.6492 Q413.0938,729.0711 412.5,728.8055 Q411.9063,728.5242 411.2813,728.5242 Q409.9375,728.5242 409.25,729.6023 Q408.5625,730.6648 408.5625,732.7586 Q408.5625,734.8523 409.25,735.9305 Q409.9375,736.993 411.2813,736.993 Q411.9063,736.993 412.5,736.7273 Q413.0938,736.4461 413.7188,735.868 L413.7188,738.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="431.25" y="729.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="431.25" y="745.7742">Document</text><line style="stroke:#424242;stroke-width:1.5;" x1="346.5" x2="541.5" y1="754.2902" y2="754.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="36" x="351.5" y="770.0491">+id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="351.5" y="785.031">+content: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="351.5" y="800.0129">+metadata: DocumentMetadata</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="351.5" y="814.9948">+embedding: Optional[np.ndarray]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="351.5" y="829.9767">+score: Optional[float]</text><line style="stroke:#424242;stroke-width:1.0;" x1="346.5" x2="541.5" y1="837.1996" y2="837.1996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="351.5" y="852.9586">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="351.5" y="867.9404">+@field_validator('content')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="351.5" y="882.9223">+@field_validator('score')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="89" x="351.5" y="897.9042">+get_source(): str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="351.5" y="912.8861">+get_chunk_index(): int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="351.5" y="927.868">+model_dump(): Dict[str, Any]</text><!--MD5=[a06c79745ff964cbec6433c250adbb1c]
+class DocumentMetadata--><rect codeLine="332" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="163.5614" id="DocumentMetadata" style="stroke:#424242;stroke-width:1.5;" width="167" x="360.5" y="1101.102"/><ellipse cx="385.85" cy="1122.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M388.8188,1128.0867 Q388.2406,1128.3836 387.6,1128.5242 Q386.9594,1128.6805 386.2563,1128.6805 Q383.7563,1128.6805 382.4281,1127.0398 Q381.1156,1125.3836 381.1156,1122.2586 Q381.1156,1119.1336 382.4281,1117.4773 Q383.7563,1115.8211 386.2563,1115.8211 Q386.9594,1115.8211 387.6,1115.9773 Q388.2563,1116.1336 388.8188,1116.4305 L388.8188,1119.1492 Q388.1938,1118.5711 387.6,1118.3055 Q387.0063,1118.0242 386.3813,1118.0242 Q385.0375,1118.0242 384.35,1119.1023 Q383.6625,1120.1648 383.6625,1122.2586 Q383.6625,1124.3523 384.35,1125.4305 Q385.0375,1126.493 386.3813,1126.493 Q387.0063,1126.493 387.6,1126.2273 Q388.1938,1125.9461 388.8188,1125.368 L388.8188,1128.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="429.15" y="1118.9301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="112" x="402.15" y="1135.2742">DocumentMetadata</text><line style="stroke:#424242;stroke-width:1.5;" x1="361.5" x2="526.5" y1="1143.7902" y2="1143.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="366.5" y="1159.5491">+source_file: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="366.5" y="1174.531">+document_type: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="366.5" y="1189.5129">+country: Optional[str]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="366.5" y="1204.4948">+visa_type: Optional[str]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="366.5" y="1219.4767">+last_modified: datetime</text><line style="stroke:#424242;stroke-width:1.0;" x1="361.5" x2="526.5" y1="1226.6996" y2="1226.6996"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="366.5" y="1242.4586">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="366.5" y="1257.4404">+model_dump(): Dict[str, Any]</text><!--MD5=[44f26c4ed5821045c9feddab6ce48f68]
+class RAGResult--><rect codeLine="343" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="223.489" id="RAGResult" style="stroke:#424242;stroke-width:1.5;" width="181" x="32.5" y="379.602"/><ellipse cx="89.75" cy="400.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M92.7188,406.5867 Q92.1406,406.8836 91.5,407.0242 Q90.8594,407.1805 90.1563,407.1805 Q87.6563,407.1805 86.3281,405.5398 Q85.0156,403.8836 85.0156,400.7586 Q85.0156,397.6336 86.3281,395.9773 Q87.6563,394.3211 90.1563,394.3211 Q90.8594,394.3211 91.5,394.4773 Q92.1563,394.6336 92.7188,394.9305 L92.7188,397.6492 Q92.0938,397.0711 91.5,396.8055 Q90.9063,396.5242 90.2813,396.5242 Q88.9375,396.5242 88.25,397.6023 Q87.5625,398.6648 87.5625,400.7586 Q87.5625,402.8523 88.25,403.9305 Q88.9375,404.993 90.2813,404.993 Q90.9063,404.993 91.5,404.7273 Q92.0938,404.4461 92.7188,403.868 L92.7188,406.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="110.25" y="397.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="110.25" y="413.7742">RAGResult</text><line style="stroke:#424242;stroke-width:1.5;" x1="33.5" x2="212.5" y1="422.2902" y2="422.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="38.5" y="438.0491">+query: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="38.5" y="453.031">+retrieved_docs: List[Document]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="38.5" y="468.0129">+reranked_docs: List[Document]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="38.5" y="482.9948">+generated_response: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="160" x="38.5" y="497.9767">+confidence: ConfidenceResult</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="38.5" y="512.9586">+token_probs: List[float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="38.5" y="527.9404">+latency_ms: float</text><line style="stroke:#424242;stroke-width:1.0;" x1="33.5" x2="212.5" y1="535.1634" y2="535.1634"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="38.5" y="550.9223">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="38.5" y="565.9042">+@field_validator('query')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="38.5" y="580.8861">+@field_validator('latency_ms')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="38.5" y="595.868">+model_dump(): Dict[str, Any]</text><!--MD5=[a962490a6424e5bab966ab46e90ea4e8]
+class ChatRequest--><rect codeLine="358" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="193.5252" id="ChatRequest" style="stroke:#424242;stroke-width:1.5;" width="220" x="1015" y="394.102"/><ellipse cx="1085.25" cy="415.4461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M1088.2188,421.0867 Q1087.6406,421.3836 1087,421.5242 Q1086.3594,421.6805 1085.6563,421.6805 Q1083.1563,421.6805 1081.8281,420.0398 Q1080.5156,418.3836 1080.5156,415.2586 Q1080.5156,412.1336 1081.8281,410.4773 Q1083.1563,408.8211 1085.6563,408.8211 Q1086.3594,408.8211 1087,408.9773 Q1087.6563,409.1336 1088.2188,409.4305 L1088.2188,412.1492 Q1087.5938,411.5711 1087,411.3055 Q1086.4063,411.0242 1085.7813,411.0242 Q1084.4375,411.0242 1083.75,412.1023 Q1083.0625,413.1648 1083.0625,415.2586 Q1083.0625,417.3523 1083.75,418.4305 Q1084.4375,419.493 1085.7813,419.493 Q1086.4063,419.493 1087,419.2273 Q1087.5938,418.9461 1088.2188,418.368 L1088.2188,421.0867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="1112.25" y="411.9301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="1105.75" y="428.2742">ChatRequest</text><line style="stroke:#424242;stroke-width:1.5;" x1="1016" x2="1234" y1="436.7902" y2="436.7902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="71" x="1021" y="452.5491">+message: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="1021" y="467.531">+user_id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="163" x="1021" y="482.5129">+conversation_id: Optional[str]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="1021" y="497.4948">+metadata: Dict[str, Any]</text><line style="stroke:#424242;stroke-width:1.0;" x1="1016" x2="1234" y1="504.7178" y2="504.7178"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="208" x="1021" y="520.4767">+model_config: ConfigDict(frozen=True)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="1021" y="535.4586">+@field_validator('message')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="150" x="1021" y="550.4404">+@field_validator('metadata')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="1021" y="565.4223">+model_dump(): Dict[str, Any]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="206" x="1021" y="580.4042">+model_validate(obj: Any): ChatRequest</text><!--MD5=[67470eb783822c140783cc0969fb50f4]
+class ChatResponse--><rect codeLine="371" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="253.4528" id="ChatResponse" style="stroke:#424242;stroke-width:1.5;" width="226" x="513" y="364.602"/><ellipse cx="581.75" cy="385.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M584.7188,391.5867 Q584.1406,391.8836 583.5,392.0242 Q582.8594,392.1805 582.1563,392.1805 Q579.6563,392.1805 578.3281,390.5398 Q577.0156,388.8836 577.0156,385.7586 Q577.0156,382.6336 578.3281,380.9773 Q579.6563,379.3211 582.1563,379.3211 Q582.8594,379.3211 583.5,379.4773 Q584.1563,379.6336 584.7188,379.9305 L584.7188,382.6492 Q584.0938,382.0711 583.5,381.8055 Q582.9063,381.5242 582.2813,381.5242 Q580.9375,381.5242 580.25,382.6023 Q579.5625,383.6648 579.5625,385.7586 Q579.5625,387.8523 580.25,388.9305 Q580.9375,389.993 582.2813,389.993 Q582.9063,389.993 583.5,389.7273 Q584.0938,389.4461 584.7188,388.868 L584.7188,391.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="613.25" y="382.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="602.25" y="398.7742">ChatResponse</text><line style="stroke:#424242;stroke-width:1.5;" x1="514" x2="738" y1="407.2902" y2="407.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="519" y="423.0491">+response: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="519" y="438.031">+confidence: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="519" y="453.0129">+sources: List[str]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="519" y="467.9948">+conversation_id: str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="519" y="482.9767">+suggestions: Optional[List[str]]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="519" y="497.9586">+requires_clarification: bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="519" y="512.9404">+timestamp: datetime</text><line style="stroke:#424242;stroke-width:1.0;" x1="514" x2="738" y1="520.1634" y2="520.1634"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="208" x="519" y="535.9223">+model_config: ConfigDict(frozen=True)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="519" y="550.9042">+@field_validator('response')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="158" x="519" y="565.8861">+@field_validator('confidence')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="519" y="580.868">+@field_validator('suggestions')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="519" y="595.8499">+model_dump(): Dict[str, Any]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="214" x="519" y="610.8318">+model_validate(obj: Any): ChatResponse</text><path d="M1270.5,433.102 L1270.5,487.102 L1235,491.102 L1270.5,495.102 L1270.5,549.3381 A0,0 0 0 0 1270.5,549.3381 L1491.5,549.3381 A0,0 0 0 0 1491.5,549.3381 L1491.5,443.102 L1481.5,433.102 L1270.5,433.102 A0,0 0 0 0 1270.5,433.102 " fill="#FBFB77" filter="url(#f7dk2cw6ydaye)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1481.5,433.102 L1481.5,443.102 L1491.5,443.102 L1481.5,433.102 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="131" x="1276.5" y="451.999">Pydantic BaseModel</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="192" x="1276.5" y="469.705">• Auto-validates on instantiation</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="190" x="1276.5" y="487.411">• Raises ValidationError if invalid</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="200" x="1276.5" y="505.117">• Frozen (immutable) value object</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="1276.5" y="522.8231">• Integrates with FastAPI</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="121" x="1276.5" y="540.5291">• Sanitizes metadata</text><path d="M774,433.102 L774,487.102 L739.24,491.102 L774,495.102 L774,549.3381 A0,0 0 0 0 774,549.3381 L980,549.3381 A0,0 0 0 0 980,549.3381 L980,443.102 L970,433.102 L774,433.102 A0,0 0 0 0 774,433.102 " fill="#FBFB77" filter="url(#f7dk2cw6ydaye)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M970,433.102 L970,443.102 L980,443.102 L970,433.102 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="131" x="780" y="451.999">Pydantic BaseModel</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="166" x="780" y="469.705">• Ensures confidence ∈ [0, 1]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="780" y="487.411">• Sanitizes response text</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="780" y="505.117">• Auto-generates timestamp</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="780" y="522.8231">• Serializes to JSON for API</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="185" x="780" y="540.5291">• Immutable response contract</text><!--MD5=[0769f2a8b5359ee11074a03bb6dfae41]
+class SamplingParams--><rect codeLine="414" fill="#FFF3E0" filter="url(#f7dk2cw6ydaye)" height="223.489" id="SamplingParams" style="stroke:#424242;stroke-width:1.5;" width="179" x="4856.5" y="1071.602"/><ellipse cx="4894.9" cy="1092.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4897.8688,1098.5867 Q4897.2906,1098.8836 4896.65,1099.0242 Q4896.0094,1099.1805 4895.3063,1099.1805 Q4892.8063,1099.1805 4891.4781,1097.5398 Q4890.1656,1095.8836 4890.1656,1092.7586 Q4890.1656,1089.6336 4891.4781,1087.9773 Q4892.8063,1086.3211 4895.3063,1086.3211 Q4896.0094,1086.3211 4896.65,1086.4773 Q4897.3063,1086.6336 4897.8688,1086.9305 L4897.8688,1089.6492 Q4897.2438,1089.0711 4896.65,1088.8055 Q4896.0563,1088.5242 4895.4313,1088.5242 Q4894.0875,1088.5242 4893.4,1089.6023 Q4892.7125,1090.6648 4892.7125,1092.7586 Q4892.7125,1094.8523 4893.4,1095.9305 Q4894.0875,1096.993 4895.4313,1096.993 Q4896.0563,1096.993 4896.65,1096.7273 Q4897.2438,1096.4461 4897.8688,1095.868 L4897.8688,1098.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="4932.6" y="1089.4301">«Pydantic»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="4914.1" y="1105.7742">SamplingParams</text><line style="stroke:#424242;stroke-width:1.5;" x1="4857.5" x2="5034.5" y1="1114.2902" y2="1114.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="4862.5" y="1130.0491">+temperature: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="4862.5" y="1145.031">+top_p: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="4862.5" y="1160.0129">+top_k: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="88" x="4862.5" y="1174.9948">+max_tokens: int</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="4862.5" y="1189.9767">+repetition_penalty: float</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="4862.5" y="1204.9586">+stop_sequences: List[str]</text><line style="stroke:#424242;stroke-width:1.0;" x1="4857.5" x2="5034.5" y1="1212.1815" y2="1212.1815"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="4862.5" y="1227.9404">+model_config: ConfigDict</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="167" x="4862.5" y="1242.9223">+@field_validator('temperature')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="131" x="4862.5" y="1257.9042">+@field_validator('top_p')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="163" x="4862.5" y="1272.8861">+@field_validator('max_tokens')</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="4862.5" y="1287.868">+model_dump(): Dict[str, Any]</text><!--MD5=[bf99134f91bcd247bf74cf8a9fb54fef]
+class ResponseSanitizer--><rect codeLine="441" fill="#FFE0B2" filter="url(#f7dk2cw6ydaye)" height="148.5796" id="ResponseSanitizer" style="stroke:#424242;stroke-width:1.5;" width="202" x="4597" y="1108.602"/><ellipse cx="4642.25" cy="1129.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4645.2188,1135.5867 Q4644.6406,1135.8836 4644,1136.0242 Q4643.3594,1136.1805 4642.6563,1136.1805 Q4640.1563,1136.1805 4638.8281,1134.5398 Q4637.5156,1132.8836 4637.5156,1129.7586 Q4637.5156,1126.6336 4638.8281,1124.9773 Q4640.1563,1123.3211 4642.6563,1123.3211 Q4643.3594,1123.3211 4644,1123.4773 Q4644.6563,1123.6336 4645.2188,1123.9305 L4645.2188,1126.6492 Q4644.5938,1126.0711 4644,1125.8055 Q4643.4063,1125.5242 4642.7813,1125.5242 Q4641.4375,1125.5242 4640.75,1126.6023 Q4640.0625,1127.6648 4640.0625,1129.7586 Q4640.0625,1131.8523 4640.75,1132.9305 Q4641.4375,1133.993 4642.7813,1133.993 Q4643.4063,1133.993 4644,1133.7273 Q4644.5938,1133.4461 4645.2188,1132.868 L4645.2188,1135.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="4692.75" y="1126.4301">«Utility»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="103" x="4662.75" y="1142.7742">ResponseSanitizer</text><line style="stroke:#424242;stroke-width:1.5;" x1="4598" x2="4798" y1="1151.2902" y2="1151.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="4603" y="1167.0491">-allowed_tags: List[str]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="4603" y="1182.031">-url_validator: URLValidator</text><line style="stroke:#424242;stroke-width:1.5;" x1="4598" x2="4798" y1="1189.254" y2="1189.254"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="144" x="4603" y="1205.0129">+sanitize_html(html: str): str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="190" x="4603" y="1219.9948">+remove_sensitive_data(text: str): str</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="4603" y="1234.9767">+validate_url(url: str): bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="142" x="4603" y="1249.9586">-_strip_scripts(html: str): str</text><!--MD5=[3a7fe7319741571c6adbfde7d91eb3e2]
+class ConfigurationManager--><rect codeLine="450" fill="#FFE0B2" filter="url(#f7dk2cw6ydaye)" height="148.5796" id="ConfigurationManager" style="stroke:#424242;stroke-width:1.5;" width="216" x="4346" y="1108.602"/><ellipse cx="4386.65" cy="1129.9461" fill="#ADD1B2" rx="11" ry="11" style="stroke:#424242;stroke-width:1.0;"/><path d="M4389.6188,1135.5867 Q4389.0406,1135.8836 4388.4,1136.0242 Q4387.7594,1136.1805 4387.0563,1136.1805 Q4384.5563,1136.1805 4383.2281,1134.5398 Q4381.9156,1132.8836 4381.9156,1129.7586 Q4381.9156,1126.6336 4383.2281,1124.9773 Q4384.5563,1123.3211 4387.0563,1123.3211 Q4387.7594,1123.3211 4388.4,1123.4773 Q4389.0563,1123.6336 4389.6188,1123.9305 L4389.6188,1126.6492 Q4388.9938,1126.0711 4388.4,1125.8055 Q4387.8063,1125.5242 4387.1813,1125.5242 Q4385.8375,1125.5242 4385.15,1126.6023 Q4384.4625,1127.6648 4384.4625,1129.7586 Q4384.4625,1131.8523 4385.15,1132.9305 Q4385.8375,1133.993 4387.1813,1133.993 Q4387.8063,1133.993 4388.4,1133.7273 Q4388.9938,1133.4461 4389.6188,1132.868 L4389.6188,1135.5867 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="4448.35" y="1126.4301">«Utility»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="4406.35" y="1142.7742">ConfigurationManager</text><line style="stroke:#424242;stroke-width:1.5;" x1="4347" x2="4561" y1="1151.2902" y2="1151.2902"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="174" x="4352" y="1167.0491">-instance: ConfigurationManager</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="4352" y="1182.031">-config: Dict[str, Any]</text><line style="stroke:#424242;stroke-width:1.5;" x1="4347" x2="4561" y1="1189.254" y2="1189.254"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="204" x="4352" y="1205.0129">+get_instance(): ConfigurationManager</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="162" x="4352" y="1219.9948">+get(key: str, default: Any): Any</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="4352" y="1234.9767">+set(key: str, value: Any): void</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="4352" y="1249.9586">+reload(): void</text><!--MD5=[8fd678e951d90abaf1555bd686343125]
+reverse link ConfidenceChecker to RetrievalConfidenceChecker--><path d="M3608.08,900.942 C3573.24,973.472 3522.23,1079.632 3493.91,1138.582 " fill="none" id="ConfidenceChecker-backto-RetrievalConfidenceChecker" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="none" points="3601.82,897.812,3616.79,882.822,3614.44,903.872,3601.82,897.812" style="stroke:#424242;stroke-width:1.0;"/><!--MD5=[d037a805220584abc94b92710bea7e9e]
+reverse link ConfidenceChecker to GenerationConfidenceChecker--><path d="M3649.15,902.952 C3652.08,1002.142 3649.57,1176.692 3607,1318.602 C3592.63,1366.512 3563.73,1415.892 3541.2,1449.932 " fill="none" id="ConfidenceChecker-backto-GenerationConfidenceChecker" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="none" points="3642.15,902.902,3648.44,882.672,3656.14,902.412,3642.15,902.902" style="stroke:#424242;stroke-width:1.0;"/><!--MD5=[e5e9023cf46c28038c967608471bfe34]
+reverse link ConfidenceChecker to OverallConfidenceChecker--><path d="M3652.85,902.672 C3654.96,927.272 3656.95,954.542 3658,979.602 C3658.35,988.042 3658.09,990.162 3658,998.602 C3654.89,1282.652 3719.47,1363.742 3644,1637.602 C3638.56,1657.322 3628.41,1677.292 3618.16,1694.162 " fill="none" id="ConfidenceChecker-backto-OverallConfidenceChecker" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="none" points="3645.88,903.282,3651.06,882.732,3659.82,902.032,3645.88,903.282" style="stroke:#424242;stroke-width:1.0;"/><!--MD5=[3e7973e6f4b6306424091747f3525d68]
+link LLMOrchestrator to SamplingParams--><path codeLine="431" d="M4946,897.842 C4946,946.332 4946,1010.792 4946,1066.062 " fill="none" id="LLMOrchestrator-to-SamplingParams" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="4946,1071.382,4950,1062.382,4946,1066.382,4942,1062.382,4946,1071.382" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="4947" y="994.499">uses</text><!--MD5=[a598cd9647d609c975cf8985588a9049]
+link ChatController to ChatService--><path codeLine="465" d="M2027.21,171.462 C2154.88,189.802 2330.84,226.702 2470,299.602 C2520.74,326.182 2568.95,367.682 2606.53,405.162 " fill="none" id="ChatController-to-ChatService" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="2610.13,408.782,2606.613,399.5825,2606.6016,405.2393,2600.9448,405.2279,2610.13,408.782" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="2441" y="287.499">uses</text><!--MD5=[611c2acf8c03ebba99949f20f8c6820e]
+link ChatController to AuthMiddleware--><path codeLine="466" d="M1776.15,242.912 C1761.08,261.112 1746,280.552 1733,299.602 C1701.61,345.612 1672.32,402.322 1653.26,441.852 " fill="none" id="ChatController-to-AuthMiddleware" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="1650.98,446.592,1658.4859,440.2154,1653.1474,442.0861,1651.2766,436.7476,1650.98,446.592" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="1753" y="287.499">uses</text><!--MD5=[df81219423068d9c170dd72501fa57d1]
+link ChatController to WebSocketManager--><path codeLine="467" d="M1865.45,242.822 C1870.19,292.632 1876.09,354.512 1880.79,403.912 " fill="none" id="ChatController-to-WebSocketManager" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="1881.27,408.952,1884.4025,399.6146,1880.798,403.9743,1876.4382,400.3698,1881.27,408.952" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="1871" y="287.499">uses</text><!--MD5=[25d063f886a493f8b2c00807e73ffae3]
+link ChatService to QueryOrchestrator--><path codeLine="470" d="M2675.85,573.252 C2671.52,630.382 2665.81,705.772 2661.82,758.542 " fill="none" id="ChatService-to-QueryOrchestrator" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="2661.43,763.572,2666.1123,754.9073,2661.8157,758.5869,2658.1361,754.2903,2661.43,763.572" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="2671" y="662.499">delegates to</text><!--MD5=[8b1c02918bbfbd356a748d32d929c974]
+link ChatService to ConversationManager--><path codeLine="471" d="M2577.24,573.252 C2530.54,609.432 2474.39,652.932 2422.18,693.372 " fill="none" id="ChatService-to-ConversationManager" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="2418.11,696.522,2427.6735,694.1683,2422.0614,693.4582,2422.7715,687.8461,2418.11,696.522" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="2470" y="662.499">uses</text><!--MD5=[84122b8ac3c07cf9d04acf392b5110ed]
+link ChatService to ConfidenceScorer--><path codeLine="472" d="M2801.27,573.252 C2871.25,620.872 2959.89,681.182 3032.38,730.502 " fill="none" id="ChatService-to-ConfidenceScorer" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="3036.69,733.442,3031.5064,725.0676,3032.5586,730.6257,3027.0004,731.6779,3036.69,733.442" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="2926" y="662.499">uses</text><!--MD5=[62f231ea2d180651e4e50655953dfbca]
+link ChatService to ResponseFormatter--><path codeLine="473" d="M2876.72,509.012 C3107.48,533.112 3501.25,587.152 3823,696.602 C3876.39,714.762 3932.51,743.212 3977.25,768.432 " fill="none" id="ChatService-to-ResponseFormatter" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="3981.82,771.012,3975.9763,763.0841,3977.4744,768.539,3972.0195,770.0371,3981.82,771.012" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="3705" y="662.499">uses</text><!--MD5=[06548da19dcfa6af6f73cc01ab514ede]
+link ConfidenceScorer to RetrievalConfidenceChecker--><path codeLine="476" d="M3243.03,913.052 C3302.84,983.032 3383.87,1077.822 3432.06,1134.202 " fill="none" id="ConfidenceScorer-to-RetrievalConfidenceChecker" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="3435.47,1138.192,3432.6499,1128.7555,3432.216,1134.3957,3426.5759,1133.9618,3435.47,1138.192" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="3312" y="994.499">uses</text><!--MD5=[f16c860be1be0709cc918525f1bad751]
+link RetrievalConfidenceChecker to GenerationConfidenceChecker--><path codeLine="477" d="M3478.22,1227.792 C3485.06,1284.962 3497,1384.902 3504.14,1444.592 " fill="none" id="RetrievalConfidenceChecker-to-GenerationConfidenceChecker" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="3504.77,1449.892,3507.6628,1440.4775,3504.1709,1444.928,3499.7204,1441.4361,3504.77,1449.892" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="3493" y="1341.499">chains</text><!--MD5=[2616bfbf8d366465ae5e0fd11f9e436b]
+link GenerationConfidenceChecker to OverallConfidenceChecker--><path codeLine="478" d="M3523.85,1539.232 C3537.28,1581.512 3557.6,1645.512 3571.54,1689.422 " fill="none" id="GenerationConfidenceChecker-to-OverallConfidenceChecker" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="3573.13,1694.412,3574.2117,1684.6227,3571.6134,1689.6475,3566.5886,1687.0493,3573.13,1694.412" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="3564" y="1660.499">chains</text><!--MD5=[d466d343deaa8a4f668465d681606435]
+link RAGPipeline to RerankerModel--><path codeLine="484" d="M4843.4,580.752 C4776.65,634.742 4692.6,702.722 4630.73,752.762 " fill="none" id="RAGPipeline-to-RerankerModel" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="4626.69,756.032,4636.2076,753.4993,4630.5832,752.8946,4631.1878,747.2702,4626.69,756.032" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="4750" y="662.499">uses</text><!--MD5=[91e6a330814f8dbb243e550a11ebc0f3]
+link RAGPipeline to ContextInjector--><path codeLine="485" d="M5064.75,580.752 C5129.51,632.122 5210.24,696.162 5272.27,745.362 " fill="none" id="RAGPipeline-to-ContextInjector" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="5276.32,748.582,5271.7326,739.8667,5272.3949,745.4847,5266.7769,746.147,5276.32,748.582" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="5162" y="662.499">uses</text><!--MD5=[e6d6c09a355912aa2228477cfd37a67f]
+link RAGPipeline to LLMOrchestrator--><path codeLine="486" d="M4951.11,580.972 C4950.04,631.532 4948.71,694.302 4947.68,743.132 " fill="none" id="RAGPipeline-to-LLMOrchestrator" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="4947.56,748.412,4951.7646,739.5057,4947.6743,743.4133,4943.7667,739.3229,4947.56,748.412" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="4950" y="662.499">uses</text><!--MD5=[7a52277d9f45ee5a755dd050d968ffba]
+link RAGPipelineBuilder to RAGPipeline--><path codeLine="488" d="M4955.41,220.482 C4954.96,270.792 4954.34,340.582 4953.84,396.552 " fill="none" id="RAGPipelineBuilder-to-RAGPipeline" style="stroke:#424242;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#424242" points="4953.79,401.582,4957.867,392.6166,4953.8329,396.5822,4949.8673,392.548,4953.79,401.582" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="4955" y="287.499">creates</text><!--MD5=[75d9f1c669e79b5c3ac75d0f710c9a12]
+link ConversationManager to Conversation--><path codeLine="494" d="M2082.46,892.602 C1903.63,963.182 1629.4,1071.422 1471.84,1133.612 " fill="none" id="ConversationManager-to-Conversation" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="1466.75,1135.622,1476.5893,1136.056,1471.4041,1133.7946,1473.6655,1128.6094,1466.75,1135.622" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="1858" y="994.499">manages</text><!--MD5=[bf440fe0d074412bf986e082747df2dc]
+reverse link Conversation to Message--><path codeLine="498" d="M1349,1293.572 C1349,1320.062 1349,1348.492 1349,1375.352 " fill="none" id="Conversation-backto-Message" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="1349,1280.332,1345,1286.332,1349,1292.332,1353,1286.332,1349,1280.332" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="1350" y="1341.499">contains</text><!--MD5=[468d38a9ec90dd6a648fd3025a18f119]
+link User to Conversation--><path codeLine="499" d="M1294.27,927.652 C1305,977.522 1317.78,1036.962 1328.3,1085.842 " fill="none" id="User-Conversation" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="1310" y="994.499">has</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="1288.4725" y="948.8297">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="1291.2958" y="1074.3583">many</text><!--MD5=[04db10f17c845920eaa253ea0dde6ab0]
+reverse link Document to DocumentMetadata--><path codeLine="500" d="M444,948.002 C444,998.672 444,1055.882 444,1101.062 " fill="none" id="Document-backto-DocumentMetadata" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="444,934.922,440,940.922,444,946.922,448,940.922,444,934.922" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="445" y="994.499">contains</text><!--MD5=[da704ca9f4ffb0bf31ae6a3695d63fc9]
+reverse link RAGResult to Document--><path codeLine="501" d="M222.62,608.652 C225.43,611.682 228.22,614.672 231,617.602 C267.22,655.852 308.68,696.332 345.33,731.102 " fill="none" id="RAGResult-backto-Document" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="213.64,598.862,214.7453,605.9879,221.7481,607.7084,220.6428,600.5825,213.64,598.862" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="278" y="662.499">contains</text><!--MD5=[15b8333db7246f2e27e0cb1de4d3a9e0]
+reverse link RAGResult to ConfidenceResult--><path codeLine="502" d="M123,615.982 C123,660.592 123,709.482 123,748.452 " fill="none" id="RAGResult-backto-ConfidenceResult" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="123,602.902,119,608.902,123,614.902,127,608.902,123,602.902" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="124" y="662.499">contains</text><!--MD5=[0d195dad3247dddcd956ec2475346160]
+reverse link ConfidenceResult to ConfidenceScores--><path codeLine="503" d="M123,911.192 C123,966.532 123,1037.962 123,1093.582 " fill="none" id="ConfidenceResult-backto-ConfidenceScores" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="123,897.842,119,903.842,123,909.842,127,903.842,123,897.842" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="124" y="994.499">contains</text><!--MD5=[0efe4d82221b81e885575640b4aac30f]
+link ChatRequest to User--><path codeLine="504" d="M1167.91,588.442 C1185.38,627.652 1205.65,673.162 1223.64,713.542 " fill="none" id="ChatRequest-to-User" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="1225.82,718.442,1225.8,708.5931,1223.78,713.8771,1218.4961,711.8571,1225.82,718.442" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="1200" y="662.499">references</text><!--MD5=[f1aee0b5d8ae6ffcf34049a0e0154c15]
+link ChatResponse to Document--><path codeLine="505" d="M556.67,617.802 C540.51,647.112 523.38,678.172 507.49,706.992 " fill="none" id="ChatResponse-to-Document" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="504.95,711.592,512.8026,705.6475,507.3673,707.2151,505.7996,701.7798,504.95,711.592" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="536" y="662.499">references</text><!--MD5=[c4bf235b8d5341c6c1aa0a8668831da0]
+link ResponseFormatter to ResponseSanitizer--><path codeLine="508" d="M4159.8,875.182 C4209.41,900.312 4271.79,929.452 4330,949.602 C4437.69,986.882 4486.04,942.112 4580,1006.602 C4615.2,1030.762 4642.77,1069.182 4662.37,1103.922 " fill="none" id="ResponseFormatter-to-ResponseSanitizer" style="stroke:#424242;stroke-width:1.0;"/><polygon fill="#424242" points="4664.97,1108.582,4664.0822,1098.7732,4662.5357,1104.2146,4657.0944,1102.6681,4664.97,1108.582" style="stroke:#424242;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="27" x="4564" y="994.499">uses</text><!--MD5=[1fc4e6dbca3c155c50605ad41288508a]
+@startuml Schengen_Visa_RAG_Chatbot_LLD
+
+' ========================================
+' SCHENGEN VISA RAG CHATBOT - LOW LEVEL DESIGN
+' Class Diagrams with SOLID Principles & Design Patterns
+' ========================================
+
+!define ENTITY_COLOR #E8F5E9
+!define SERVICE_COLOR #E1F5FE
+!define CONTROLLER_COLOR #FFF9C4
+!define REPOSITORY_COLOR #F3E5F5
+!define UTIL_COLOR #FFE0B2
+!define INTERFACE_COLOR #E0E0E0
+!define PYDANTIC_COLOR #FFF3E0
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor<<Entity>> ENTITY_COLOR
+    BackgroundColor<<Service>> SERVICE_COLOR
+    BackgroundColor<<Controller>> CONTROLLER_COLOR
+    BackgroundColor<<Repository>> REPOSITORY_COLOR
+    BackgroundColor<<Utility>> UTIL_COLOR
+    BackgroundColor<<Interface>> INTERFACE_COLOR
+    BackgroundColor<<Pydantic>> PYDANTIC_COLOR
+    BorderColor #424242
+    ArrowColor #424242
+}
+
+' ========================================
+' PACKAGE 1: API LAYER (Controllers)
+' ========================================
+
+package "API Layer" <<Controller>> {
+    
+    class ChatController <<Controller>> {
+        - chat_service: ChatService
+        - auth_middleware: AuthMiddleware
+        + __init__(chat_service, auth_middleware)
+        + send_message(request: ChatRequest): ChatResponse
+        + get_conversation_history(user_id: str, limit: int): List[Message]
+        + websocket_handler(websocket: WebSocket): void
+        - _validate_request(request: ChatRequest): bool
+        - _log_request(request: ChatRequest): void
+    }
+    
+    class AuthMiddleware <<Controller>> {
+        - jwt_secret: str
+        + authenticate(token: str): User
+    }
+
+    class WebSocketManager <<Controller>> {
+        - active_connections: Dict[str, WebSocket]
+        - connection_repository: ConnectionRepository
+        + connect(websocket: WebSocket, user_id: str): void
+        + disconnect(user_id: str): void
+        + send_message(user_id: str, message: str): void
+        + broadcast(message: str): void
+        - _handle_reconnection(user_id: str): void
+    }
+}
+
+' ========================================
+' PACKAGE 2: CORE BUSINESS LOGIC (Services)
+' ========================================
+
+package "Business Logic Layer" <<Service>> {
+
+    ' Strategy Pattern for Query Classification
+    
+    
+    ' Facade Pattern for Chat Service (simplifies complex subsystem)
+    class ChatService <<Service>> {
+        - query_orchestrator: QueryOrchestrator
+        - conversation_manager: ConversationManager
+        - confidence_scorer: ConfidenceScorer
+        - response_formatter: ResponseFormatter
+        + process_message(message: ChatMessage, user: User): ChatResponse
+        - _build_context(user: User): ConversationContext
+        - _log_interaction(message: ChatMessage, response: ChatResponse): void
+    }
+    
+    ' Template Method Pattern for Query Processing
+    class QueryOrchestrator <<Service>> {
+        # rag_pipeline: RAGPipeline
+        + process_query(query: str, context: ConversationContext): QueryResult
+        + validate_query(query: str): bool
+        + enhance_query(query: str, context: ConversationContext): str
+    }
+    
+    ' Chain of Responsibility Pattern for Confidence Scoring
+    abstract class ConfidenceChecker <<Service>> {
+        # next_checker: ConfidenceChecker
+        + set_next(checker: ConfidenceChecker): ConfidenceChecker
+        + check(scores: ConfidenceScores): ConfidenceResult
+        # {abstract} do_check(scores: ConfidenceScores): bool
+    }
+    
+    class RetrievalConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class GenerationConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class OverallConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class ConfidenceScorer <<Service>> {
+        - retrieval_weights: Tuple[float, float, float]
+        - generation_weights: Tuple[float, float, float]
+        - checker_chain: ConfidenceChecker
+        + score_retrieval(retrieval_scores: List[float], reranker_scores: List[float], metadata_consistency: float): float
+        + score_generation(token_probs: List[float], response: str, chunks: List[str]): float
+        + evaluate(retrieval_conf: float, generation_conf: float): ConfidenceResult
+        - _calculate_grounding(response: str, chunks: List[str]): float
+        - _detect_uncertainty(response: str): float
+    }
+    
+    ' Strategy Pattern for Fallback Handling
+    
+    class ClarifyingQuestionsHandler <<Service>> {
+        - question_generator: QuestionGenerator
+        + can_handle(confidence: ConfidenceResult): bool
+        + handle(query: str, confidence: ConfidenceResult): FallbackResponse
+    }
+    
+    
+    class ConversationManager <<Service>> {
+        - conversation_repository: ConversationManager
+        - summarizer: ConversationSummarizer
+        + get_conversation(user_id: str): Conversation
+        + add_message(user_id: str, message: Message): void
+        + summarize_long_conversation(conversation: Conversation): str
+        + get_context_for_user(user_id: str): ConversationContext
+    }
+    
+    class ResponseFormatter <<Service>> {
+        - sanitizer: ResponseSanitizer
+        + format_response(raw_response: str, sources: List[Document]): FormattedResponse
+        - _cleanup_html(response: str): str
+    }
+}
+
+' ========================================
+' PACKAGE 3: RAG PIPELINE (Core AI Logic)
+' ========================================
+
+package "RAG Pipeline" <<Service>> {
+    
+    ' Singleton Pattern for Model Management
+    class RerankerModel <<Service>> {
+        - model_name: str
+        - model: CrossEncoder
+        + predict(pairs: List[Tuple[str, str]]): List[float]
+        + rerank(query: str, candidates: List[Document], top_k: int): List[Document]
+        - _normalize_scores(scores: List[float]): List[float]
+    }
+    
+    class LLMOrchestrator <<Service>> {
+        - model_name: str
+        - model: LLM
+        - sampling_params: SamplingParams
+        + generate(prompt: str, enable_logprobs: bool): LLMResponse
+        + batch_generate(prompts: List[str]): List[LLMResponse]
+        - _format_prompt(query: str, context: str): str
+    }
+    
+    ' Builder Pattern for RAG Pipeline Construction
+    class RAGPipeline <<Service>> {
+        - vector_store: QdrantVectorStore
+        - reranker: RerankerModel
+        - context_injector: ContextInjector
+        - llm: LLMOrchestrator
+        + retrieve(query: str, top_k: int): List[Document]
+        + rerank(query: str, candidates: List[Document], top_k: int): List[Document]
+        + generate(query: str, context: List[Document]): GenerationResult
+        + execute_full_pipeline(query: str): RAGResult
+    }
+    
+    class RAGPipelineBuilder <<Service>> {
+        - pipeline: RAGPipeline
+        + with_vector_store(store: QdrantVectorStore): RAGPipelineBuilder
+        + with_reranker(reranker: RerankerModel): RAGPipelineBuilder
+        + with_llm(llm: LLMOrchestrator): RAGPipelineBuilder
+        + build(): RAGPipeline
+    }
+    
+    class ContextInjector <<Service>> {
+        - prompt_template: str
+        - few_shot_examples: List[Example]
+        + inject_context(query: str, retrieved_docs: List[Document], system_prompt: str): str
+        + format_with_template(template_name: str, variables: Dict): str
+        - _build_system_prompt(): str
+        - _add_few_shot_examples(prompt: str): str
+    }
+    
+    ' Repository Pattern for Vector Store
+    class QdrantVectorStore <<Repository>> {
+        - client: QdrantClient
+        - collection_name: str
+        + search(query_vector: np.ndarray, top_k: int, filters: Dict): List[Document]
+        + insert(documents: List[Document], embeddings: np.ndarray): void
+        + update(doc_id: str, embedding: np.ndarray, metadata: Dict): void
+        + delete(doc_id: str): void
+        - _build_filter(filters: Dict): QdrantFilter
+        - _convert_to_documents(search_results: List): List[Document]
+    }
+    
+}
+
+' ========================================
+' PACKAGE 4: DATA ACCESS LAYER (Repositories)
+' ========================================
+
+package "Data Access Layer" <<Repository>> {
+    
+    class ConversationManager {
+        - db: Database
+        + find_by_id(conversation_id: str): Optional[Conversation]
+        + find_by_user_id(user_id: str, limit: int): List[Conversation]
+        + save(conversation: Conversation): Conversation
+        + update(conversation: Conversation): Conversation
+        + delete(conversation_id: str): bool
+        + get_recent_messages(user_id: str, limit: int): List[Message]
+    }
+    
+}
+
+' ========================================
+' PACKAGE 5: DOMAIN MODELS (Entities)
+' ========================================
+
+package "Domain Models" <<Entity>> {
+    
+    ' Value Objects (Immutable) - Pydantic Models
+    
+    class ConfidenceScores <<Pydantic>> {
+        + retrieval_confidence: float
+        + generation_confidence: float
+        + overall_confidence: float
+        + metadata_consistency: float
+        + grounding_score: float
+        - -
+        + model_config: ConfigDict
+        + @field_validator('*')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class ConfidenceResult <<Pydantic>> {
+        + scores: ConfidenceScores
+        + passed_threshold: bool
+        + reason: str
+        + stage_failed: str
+        - -
+        + model_config: ConfigDict
+        + model_dump(): Dict[str, Any]
+    }
+    
+    ' Aggregate Root
+    class Conversation <<Entity>> {
+        + id: str
+        + user_id: str
+        + messages: List[Message]
+        + created_at: datetime
+        + updated_at: datetime
+        + metadata: Dict[str, Any]
+        + add_message(message: Message): void
+        + get_last_n_messages(n: int): List[Message]
+        + get_context_window(): str
+    }
+    
+    class Message <<Pydantic>> {
+        + id: str
+        + conversation_id: str
+        + role: MessageRole
+        + content: str
+        + timestamp: datetime
+        + confidence: Optional[float]
+        + sources: Optional[List[str]]
+        + metadata: Dict[str, Any]
+        - -
+        + model_config: ConfigDict
+        + @field_validator('content')
+        + @field_validator('id', 'conversation_id')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    enum MessageRole {
+        USER
+        ASSISTANT
+        SYSTEM
+    }
+    
+    class User <<Pydantic>> {
+        + id: str
+        + email: Optional[str]
+        + user_type: UserType
+        + created_at: datetime
+        + last_active: datetime
+        - -
+        + model_config: ConfigDict
+        + @field_validator('email')
+        + @field_validator('id')
+        + update_last_active(): void
+        + model_dump(): Dict[str, Any]
+    }
+    
+    enum UserType {
+        REGISTERED
+        GUEST
+    }
+    
+    class Document <<Pydantic>> {
+        + id: str
+        + content: str
+        + metadata: DocumentMetadata
+        + embedding: Optional[np.ndarray]
+        + score: Optional[float]
+        - -
+        + model_config: ConfigDict
+        + @field_validator('content')
+        + @field_validator('score')
+        + get_source(): str
+        + get_chunk_index(): int
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class DocumentMetadata <<Pydantic>> {
+        + source_file: str
+        + document_type: str
+        + country: Optional[str]
+        + visa_type: Optional[str]
+        + last_modified: datetime
+        - -
+        + model_config: ConfigDict
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class RAGResult <<Pydantic>> {
+        + query: str
+        + retrieved_docs: List[Document]
+        + reranked_docs: List[Document]
+        + generated_response: str
+        + confidence: ConfidenceResult
+        + token_probs: List[float]
+        + latency_ms: float
+        - -
+        + model_config: ConfigDict
+        + @field_validator('query')
+        + @field_validator('latency_ms')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class ChatRequest <<Pydantic>> {
+        + message: str
+        + user_id: str
+        + conversation_id: Optional[str]
+        + metadata: Dict[str, Any]
+        - -
+        + model_config: ConfigDict(frozen=True)
+        + @field_validator('message')
+        + @field_validator('metadata')
+        + model_dump(): Dict[str, Any]
+        + model_validate(obj: Any): ChatRequest
+    }
+    
+    class ChatResponse <<Pydantic>> {
+        + response: str
+        + confidence: float
+        + sources: List[str]
+        + conversation_id: str
+        + suggestions: Optional[List[str]]
+        + requires_clarification: bool
+        + timestamp: datetime
+        - -
+        + model_config: ConfigDict(frozen=True)
+        + @field_validator('response')
+        + @field_validator('confidence')
+        + @field_validator('suggestions')
+        + model_dump(): Dict[str, Any]
+        + model_validate(obj: Any): ChatResponse
+    }
+    
+    note right of ChatRequest
+        **Pydantic BaseModel**
+        • Auto-validates on instantiation
+        • Raises ValidationError if invalid
+        • Frozen (immutable) value object
+        • Integrates with FastAPI
+        • Sanitizes metadata
+    end note
+    
+    note right of ChatResponse
+        **Pydantic BaseModel**
+        • Ensures confidence ∈ [0, 1]
+        • Sanitizes response text
+        • Auto-generates timestamp
+        • Serializes to JSON for API
+        • Immutable response contract
+    end note
+}
+
+
+' ========================================
+' PACKAGE 5B: CONFIGURATION MODELS (Pydantic)
+' ========================================
+
+package "Configuration Models" <<Pydantic>> {
+    
+    class SamplingParams <<Pydantic>> {
+        + temperature: float
+        + top_p: float
+        + top_k: int
+        + max_tokens: int
+        + repetition_penalty: float
+        + stop_sequences: List[str]
+        - -
+        + model_config: ConfigDict
+        + @field_validator('temperature')
+        + @field_validator('top_p')
+        + @field_validator('max_tokens')
+        + model_dump(): Dict[str, Any]
+    }
+}
+
+' Link configuration models to their users
+LLMOrchestrator - -> SamplingParams : uses
+
+' ========================================
+' PACKAGE 7: UTILITIES & HELPERS
+' ========================================
+
+package "Utilities" <<Utility>> {
+    
+    
+    
+    class ResponseSanitizer <<Utility>> {
+        - allowed_tags: List[str]
+        - url_validator: URLValidator
+        + sanitize_html(html: str): str
+        + remove_sensitive_data(text: str): str
+        + validate_url(url: str): bool
+        - _strip_scripts(html: str): str
+    }
+    
+    class ConfigurationManager <<Utility>> {
+        - {static} instance: ConfigurationManager
+        - config: Dict[str, Any]
+        + {static} get_instance(): ConfigurationManager
+        + get(key: str, default: Any): Any
+        + set(key: str, value: Any): void
+        + reload(): void
+    }
+}
+
+' ========================================
+' RELATIONSHIPS & DEPENDENCIES
+' ========================================
+
+' API Layer Dependencies
+ChatController - -> ChatService : uses
+ChatController - -> AuthMiddleware : uses
+ChatController - -> WebSocketManager : uses
+
+' Business Logic Dependencies
+ChatService - -> QueryOrchestrator : delegates to
+ChatService - -> ConversationManager : uses
+ChatService - -> ConfidenceScorer : uses
+ChatService - -> ResponseFormatter : uses
+
+
+ConfidenceScorer - -> RetrievalConfidenceChecker : uses
+RetrievalConfidenceChecker - -> GenerationConfidenceChecker : chains
+GenerationConfidenceChecker - -> OverallConfidenceChecker : chains
+
+
+
+
+' RAG Pipeline Dependencies
+RAGPipeline - -> RerankerModel : uses
+RAGPipeline - -> ContextInjector : uses
+RAGPipeline - -> LLMOrchestrator : uses
+
+RAGPipelineBuilder ..> RAGPipeline : creates
+
+
+
+
+' Repository Dependencies
+ConversationManager - -> Conversation : manages
+
+
+' Entity Relationships
+Conversation *- - Message : contains
+User "1" - - "many" Conversation : has
+Document *- - DocumentMetadata : contains
+RAGResult *- - Document : contains
+RAGResult *- - ConfidenceResult : contains
+ConfidenceResult *- - ConfidenceScores : contains
+ChatRequest - -> User : references
+ChatResponse - -> Document : references
+
+' Utility Dependencies
+ResponseFormatter - -> ResponseSanitizer : uses
+
+@enduml
+
+@startuml Schengen_Visa_RAG_Chatbot_LLD
+
+
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor<<Entity>> #E8F5E9
+    BackgroundColor<<Service>> #E1F5FE
+    BackgroundColor<<Controller>> #FFF9C4
+    BackgroundColor<<Repository>> #F3E5F5
+    BackgroundColor<<Utility>> #FFE0B2
+    BackgroundColor<<Interface>> #E0E0E0
+    BackgroundColor<<Pydantic>> #FFF3E0
+    BorderColor #424242
+    ArrowColor #424242
+}
+
+
+package "API Layer" <<Controller>> {
+    
+    class ChatController <<Controller>> {
+        - chat_service: ChatService
+        - auth_middleware: AuthMiddleware
+        + __init__(chat_service, auth_middleware)
+        + send_message(request: ChatRequest): ChatResponse
+        + get_conversation_history(user_id: str, limit: int): List[Message]
+        + websocket_handler(websocket: WebSocket): void
+        - _validate_request(request: ChatRequest): bool
+        - _log_request(request: ChatRequest): void
+    }
+    
+    class AuthMiddleware <<Controller>> {
+        - jwt_secret: str
+        + authenticate(token: str): User
+    }
+
+    class WebSocketManager <<Controller>> {
+        - active_connections: Dict[str, WebSocket]
+        - connection_repository: ConnectionRepository
+        + connect(websocket: WebSocket, user_id: str): void
+        + disconnect(user_id: str): void
+        + send_message(user_id: str, message: str): void
+        + broadcast(message: str): void
+        - _handle_reconnection(user_id: str): void
+    }
+}
+
+
+package "Business Logic Layer" <<Service>> {
+
+    
+    
+    class ChatService <<Service>> {
+        - query_orchestrator: QueryOrchestrator
+        - conversation_manager: ConversationManager
+        - confidence_scorer: ConfidenceScorer
+        - response_formatter: ResponseFormatter
+        + process_message(message: ChatMessage, user: User): ChatResponse
+        - _build_context(user: User): ConversationContext
+        - _log_interaction(message: ChatMessage, response: ChatResponse): void
+    }
+    
+    class QueryOrchestrator <<Service>> {
+        # rag_pipeline: RAGPipeline
+        + process_query(query: str, context: ConversationContext): QueryResult
+        + validate_query(query: str): bool
+        + enhance_query(query: str, context: ConversationContext): str
+    }
+    
+    abstract class ConfidenceChecker <<Service>> {
+        # next_checker: ConfidenceChecker
+        + set_next(checker: ConfidenceChecker): ConfidenceChecker
+        + check(scores: ConfidenceScores): ConfidenceResult
+        # {abstract} do_check(scores: ConfidenceScores): bool
+    }
+    
+    class RetrievalConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class GenerationConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class OverallConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class ConfidenceScorer <<Service>> {
+        - retrieval_weights: Tuple[float, float, float]
+        - generation_weights: Tuple[float, float, float]
+        - checker_chain: ConfidenceChecker
+        + score_retrieval(retrieval_scores: List[float], reranker_scores: List[float], metadata_consistency: float): float
+        + score_generation(token_probs: List[float], response: str, chunks: List[str]): float
+        + evaluate(retrieval_conf: float, generation_conf: float): ConfidenceResult
+        - _calculate_grounding(response: str, chunks: List[str]): float
+        - _detect_uncertainty(response: str): float
+    }
+    
+    
+    class ClarifyingQuestionsHandler <<Service>> {
+        - question_generator: QuestionGenerator
+        + can_handle(confidence: ConfidenceResult): bool
+        + handle(query: str, confidence: ConfidenceResult): FallbackResponse
+    }
+    
+    
+    class ConversationManager <<Service>> {
+        - conversation_repository: ConversationManager
+        - summarizer: ConversationSummarizer
+        + get_conversation(user_id: str): Conversation
+        + add_message(user_id: str, message: Message): void
+        + summarize_long_conversation(conversation: Conversation): str
+        + get_context_for_user(user_id: str): ConversationContext
+    }
+    
+    class ResponseFormatter <<Service>> {
+        - sanitizer: ResponseSanitizer
+        + format_response(raw_response: str, sources: List[Document]): FormattedResponse
+        - _cleanup_html(response: str): str
+    }
+}
+
+
+package "RAG Pipeline" <<Service>> {
+    
+    class RerankerModel <<Service>> {
+        - model_name: str
+        - model: CrossEncoder
+        + predict(pairs: List[Tuple[str, str]]): List[float]
+        + rerank(query: str, candidates: List[Document], top_k: int): List[Document]
+        - _normalize_scores(scores: List[float]): List[float]
+    }
+    
+    class LLMOrchestrator <<Service>> {
+        - model_name: str
+        - model: LLM
+        - sampling_params: SamplingParams
+        + generate(prompt: str, enable_logprobs: bool): LLMResponse
+        + batch_generate(prompts: List[str]): List[LLMResponse]
+        - _format_prompt(query: str, context: str): str
+    }
+    
+    class RAGPipeline <<Service>> {
+        - vector_store: QdrantVectorStore
+        - reranker: RerankerModel
+        - context_injector: ContextInjector
+        - llm: LLMOrchestrator
+        + retrieve(query: str, top_k: int): List[Document]
+        + rerank(query: str, candidates: List[Document], top_k: int): List[Document]
+        + generate(query: str, context: List[Document]): GenerationResult
+        + execute_full_pipeline(query: str): RAGResult
+    }
+    
+    class RAGPipelineBuilder <<Service>> {
+        - pipeline: RAGPipeline
+        + with_vector_store(store: QdrantVectorStore): RAGPipelineBuilder
+        + with_reranker(reranker: RerankerModel): RAGPipelineBuilder
+        + with_llm(llm: LLMOrchestrator): RAGPipelineBuilder
+        + build(): RAGPipeline
+    }
+    
+    class ContextInjector <<Service>> {
+        - prompt_template: str
+        - few_shot_examples: List[Example]
+        + inject_context(query: str, retrieved_docs: List[Document], system_prompt: str): str
+        + format_with_template(template_name: str, variables: Dict): str
+        - _build_system_prompt(): str
+        - _add_few_shot_examples(prompt: str): str
+    }
+    
+    class QdrantVectorStore <<Repository>> {
+        - client: QdrantClient
+        - collection_name: str
+        + search(query_vector: np.ndarray, top_k: int, filters: Dict): List[Document]
+        + insert(documents: List[Document], embeddings: np.ndarray): void
+        + update(doc_id: str, embedding: np.ndarray, metadata: Dict): void
+        + delete(doc_id: str): void
+        - _build_filter(filters: Dict): QdrantFilter
+        - _convert_to_documents(search_results: List): List[Document]
+    }
+    
+}
+
+
+package "Data Access Layer" <<Repository>> {
+    
+    class ConversationManager {
+        - db: Database
+        + find_by_id(conversation_id: str): Optional[Conversation]
+        + find_by_user_id(user_id: str, limit: int): List[Conversation]
+        + save(conversation: Conversation): Conversation
+        + update(conversation: Conversation): Conversation
+        + delete(conversation_id: str): bool
+        + get_recent_messages(user_id: str, limit: int): List[Message]
+    }
+    
+}
+
+
+package "Domain Models" <<Entity>> {
+    
+    
+    class ConfidenceScores <<Pydantic>> {
+        + retrieval_confidence: float
+        + generation_confidence: float
+        + overall_confidence: float
+        + metadata_consistency: float
+        + grounding_score: float
+        - -
+        + model_config: ConfigDict
+        + @field_validator('*')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class ConfidenceResult <<Pydantic>> {
+        + scores: ConfidenceScores
+        + passed_threshold: bool
+        + reason: str
+        + stage_failed: str
+        - -
+        + model_config: ConfigDict
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class Conversation <<Entity>> {
+        + id: str
+        + user_id: str
+        + messages: List[Message]
+        + created_at: datetime
+        + updated_at: datetime
+        + metadata: Dict[str, Any]
+        + add_message(message: Message): void
+        + get_last_n_messages(n: int): List[Message]
+        + get_context_window(): str
+    }
+    
+    class Message <<Pydantic>> {
+        + id: str
+        + conversation_id: str
+        + role: MessageRole
+        + content: str
+        + timestamp: datetime
+        + confidence: Optional[float]
+        + sources: Optional[List[str]]
+        + metadata: Dict[str, Any]
+        - -
+        + model_config: ConfigDict
+        + @field_validator('content')
+        + @field_validator('id', 'conversation_id')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    enum MessageRole {
+        USER
+        ASSISTANT
+        SYSTEM
+    }
+    
+    class User <<Pydantic>> {
+        + id: str
+        + email: Optional[str]
+        + user_type: UserType
+        + created_at: datetime
+        + last_active: datetime
+        - -
+        + model_config: ConfigDict
+        + @field_validator('email')
+        + @field_validator('id')
+        + update_last_active(): void
+        + model_dump(): Dict[str, Any]
+    }
+    
+    enum UserType {
+        REGISTERED
+        GUEST
+    }
+    
+    class Document <<Pydantic>> {
+        + id: str
+        + content: str
+        + metadata: DocumentMetadata
+        + embedding: Optional[np.ndarray]
+        + score: Optional[float]
+        - -
+        + model_config: ConfigDict
+        + @field_validator('content')
+        + @field_validator('score')
+        + get_source(): str
+        + get_chunk_index(): int
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class DocumentMetadata <<Pydantic>> {
+        + source_file: str
+        + document_type: str
+        + country: Optional[str]
+        + visa_type: Optional[str]
+        + last_modified: datetime
+        - -
+        + model_config: ConfigDict
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class RAGResult <<Pydantic>> {
+        + query: str
+        + retrieved_docs: List[Document]
+        + reranked_docs: List[Document]
+        + generated_response: str
+        + confidence: ConfidenceResult
+        + token_probs: List[float]
+        + latency_ms: float
+        - -
+        + model_config: ConfigDict
+        + @field_validator('query')
+        + @field_validator('latency_ms')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class ChatRequest <<Pydantic>> {
+        + message: str
+        + user_id: str
+        + conversation_id: Optional[str]
+        + metadata: Dict[str, Any]
+        - -
+        + model_config: ConfigDict(frozen=True)
+        + @field_validator('message')
+        + @field_validator('metadata')
+        + model_dump(): Dict[str, Any]
+        + model_validate(obj: Any): ChatRequest
+    }
+    
+    class ChatResponse <<Pydantic>> {
+        + response: str
+        + confidence: float
+        + sources: List[str]
+        + conversation_id: str
+        + suggestions: Optional[List[str]]
+        + requires_clarification: bool
+        + timestamp: datetime
+        - -
+        + model_config: ConfigDict(frozen=True)
+        + @field_validator('response')
+        + @field_validator('confidence')
+        + @field_validator('suggestions')
+        + model_dump(): Dict[str, Any]
+        + model_validate(obj: Any): ChatResponse
+    }
+    
+    note right of ChatRequest
+        **Pydantic BaseModel**
+        • Auto-validates on instantiation
+        • Raises ValidationError if invalid
+        • Frozen (immutable) value object
+        • Integrates with FastAPI
+        • Sanitizes metadata
+    end note
+    
+    note right of ChatResponse
+        **Pydantic BaseModel**
+        • Ensures confidence ∈ [0, 1]
+        • Sanitizes response text
+        • Auto-generates timestamp
+        • Serializes to JSON for API
+        • Immutable response contract
+    end note
+}
+
+
+
+package "Configuration Models" <<Pydantic>> {
+    
+    class SamplingParams <<Pydantic>> {
+        + temperature: float
+        + top_p: float
+        + top_k: int
+        + max_tokens: int
+        + repetition_penalty: float
+        + stop_sequences: List[str]
+        - -
+        + model_config: ConfigDict
+        + @field_validator('temperature')
+        + @field_validator('top_p')
+        + @field_validator('max_tokens')
+        + model_dump(): Dict[str, Any]
+    }
+}
+
+LLMOrchestrator - -> SamplingParams : uses
+
+
+package "Utilities" <<Utility>> {
+    
+    
+    
+    class ResponseSanitizer <<Utility>> {
+        - allowed_tags: List[str]
+        - url_validator: URLValidator
+        + sanitize_html(html: str): str
+        + remove_sensitive_data(text: str): str
+        + validate_url(url: str): bool
+        - _strip_scripts(html: str): str
+    }
+    
+    class ConfigurationManager <<Utility>> {
+        - {static} instance: ConfigurationManager
+        - config: Dict[str, Any]
+        + {static} get_instance(): ConfigurationManager
+        + get(key: str, default: Any): Any
+        + set(key: str, value: Any): void
+        + reload(): void
+    }
+}
+
+
+ChatController - -> ChatService : uses
+ChatController - -> AuthMiddleware : uses
+ChatController - -> WebSocketManager : uses
+
+ChatService - -> QueryOrchestrator : delegates to
+ChatService - -> ConversationManager : uses
+ChatService - -> ConfidenceScorer : uses
+ChatService - -> ResponseFormatter : uses
+
+
+ConfidenceScorer - -> RetrievalConfidenceChecker : uses
+RetrievalConfidenceChecker - -> GenerationConfidenceChecker : chains
+GenerationConfidenceChecker - -> OverallConfidenceChecker : chains
+
+
+
+
+RAGPipeline - -> RerankerModel : uses
+RAGPipeline - -> ContextInjector : uses
+RAGPipeline - -> LLMOrchestrator : uses
+
+RAGPipelineBuilder ..> RAGPipeline : creates
+
+
+
+
+ConversationManager - -> Conversation : manages
+
+
+Conversation *- - Message : contains
+User "1" - - "many" Conversation : has
+Document *- - DocumentMetadata : contains
+RAGResult *- - Document : contains
+RAGResult *- - ConfidenceResult : contains
+ConfidenceResult *- - ConfidenceScores : contains
+ChatRequest - -> User : references
+ChatResponse - -> Document : references
+
+ResponseFormatter - -> ResponseSanitizer : uses
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 15:55:05 IST 2021)
+(MIT source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

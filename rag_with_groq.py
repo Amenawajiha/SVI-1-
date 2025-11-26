@@ -58,6 +58,8 @@ Answer:"""
 
 def main():
     test_questions = [
+        "How are you today ?",
+        "abcdgel",
         "Do you think rescheduling is possible my visa appointment got postponed?",
         "How is the weather like in New York in December?",
         "What is the earliest I need to get to the airport before my flight?",
@@ -78,7 +80,7 @@ def main():
         print("\nGenerating response...")
         response = query_groq(question, context)
 
-        print("\nGroq's Response:")
+        print("\nResponse:")
         print(response)
         print("\n" + "=" * 80)
 

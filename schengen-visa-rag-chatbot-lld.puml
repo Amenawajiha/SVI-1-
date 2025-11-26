@@ -1,0 +1,509 @@
+@startuml Schengen_Visa_RAG_Chatbot_LLD
+
+' ========================================
+' SCHENGEN VISA RAG CHATBOT - LOW LEVEL DESIGN
+' Class Diagrams with SOLID Principles & Design Patterns
+' ========================================
+
+!define ENTITY_COLOR #E8F5E9
+!define SERVICE_COLOR #E1F5FE
+!define CONTROLLER_COLOR #FFF9C4
+!define REPOSITORY_COLOR #F3E5F5
+!define UTIL_COLOR #FFE0B2
+!define INTERFACE_COLOR #E0E0E0
+!define PYDANTIC_COLOR #FFF3E0
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor<<Entity>> ENTITY_COLOR
+    BackgroundColor<<Service>> SERVICE_COLOR
+    BackgroundColor<<Controller>> CONTROLLER_COLOR
+    BackgroundColor<<Repository>> REPOSITORY_COLOR
+    BackgroundColor<<Utility>> UTIL_COLOR
+    BackgroundColor<<Interface>> INTERFACE_COLOR
+    BackgroundColor<<Pydantic>> PYDANTIC_COLOR
+    BorderColor #424242
+    ArrowColor #424242
+}
+
+' ========================================
+' PACKAGE 1: API LAYER (Controllers)
+' ========================================
+
+package "API Layer" <<Controller>> {
+    
+    class ChatController <<Controller>> {
+        - chat_service: ChatService
+        - auth_middleware: AuthMiddleware
+        + __init__(chat_service, auth_middleware)
+        + send_message(request: ChatRequest): ChatResponse
+        + get_conversation_history(user_id: str, limit: int): List[Message]
+        + websocket_handler(websocket: WebSocket): void
+        - _validate_request(request: ChatRequest): bool
+        - _log_request(request: ChatRequest): void
+    }
+    
+    class AuthMiddleware <<Controller>> {
+        - jwt_secret: str
+        + authenticate(token: str): User
+    }
+
+    class WebSocketManager <<Controller>> {
+        - active_connections: Dict[str, WebSocket]
+        - connection_repository: ConnectionRepository
+        + connect(websocket: WebSocket, user_id: str): void
+        + disconnect(user_id: str): void
+        + send_message(user_id: str, message: str): void
+        + broadcast(message: str): void
+        - _handle_reconnection(user_id: str): void
+    }
+}
+
+' ========================================
+' PACKAGE 2: CORE BUSINESS LOGIC (Services)
+' ========================================
+
+package "Business Logic Layer" <<Service>> {
+
+    ' Strategy Pattern for Query Classification
+    
+    
+    ' Facade Pattern for Chat Service (simplifies complex subsystem)
+    class ChatService <<Service>> {
+        - query_orchestrator: QueryOrchestrator
+        - conversation_manager: ConversationManager
+        - confidence_scorer: ConfidenceScorer
+        - response_formatter: ResponseFormatter
+        + process_message(message: ChatMessage, user: User): ChatResponse
+        - _build_context(user: User): ConversationContext
+        - _log_interaction(message: ChatMessage, response: ChatResponse): void
+    }
+    
+    ' Template Method Pattern for Query Processing
+    class QueryOrchestrator <<Service>> {
+        # rag_pipeline: RAGPipeline
+        + process_query(query: str, context: ConversationContext): QueryResult
+        + validate_query(query: str): bool
+        + enhance_query(query: str, context: ConversationContext): str
+    }
+    
+    ' Chain of Responsibility Pattern for Confidence Scoring
+    abstract class ConfidenceChecker <<Service>> {
+        # next_checker: ConfidenceChecker
+        + set_next(checker: ConfidenceChecker): ConfidenceChecker
+        + check(scores: ConfidenceScores): ConfidenceResult
+        # {abstract} do_check(scores: ConfidenceScores): bool
+    }
+    
+    class RetrievalConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class GenerationConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class OverallConfidenceChecker <<Service>> extends ConfidenceChecker {
+        - threshold: float
+        + do_check(scores: ConfidenceScores): bool
+    }
+    
+    class ConfidenceScorer <<Service>> {
+        - retrieval_weights: Tuple[float, float, float]
+        - generation_weights: Tuple[float, float, float]
+        - checker_chain: ConfidenceChecker
+        + score_retrieval(retrieval_scores: List[float], reranker_scores: List[float], metadata_consistency: float): float
+        + score_generation(token_probs: List[float], response: str, chunks: List[str]): float
+        + evaluate(retrieval_conf: float, generation_conf: float): ConfidenceResult
+        - _calculate_grounding(response: str, chunks: List[str]): float
+        - _detect_uncertainty(response: str): float
+    }
+    
+    class ClarifyingQuestionsHandler <<Service>> {
+        - question_generator: QuestionGenerator
+        + can_handle(confidence: ConfidenceResult): bool
+        + handle(query: str, confidence: ConfidenceResult): str
+    }
+    
+    
+    class ConversationManager <<Service>> {
+        - conversation_repository: ConversationManager
+        - summarizer: ConversationSummarizer
+        + get_conversation(user_id: str): Conversation
+        + add_message(user_id: str, message: Message): void
+        + summarize_long_conversation(conversation: Conversation): str
+        + get_context_for_user(user_id: str): ConversationContext
+    }
+    
+    class ResponseFormatter <<Service>> {
+        - sanitizer: ResponseSanitizer
+        + format_response(raw_response: str, sources: List[Document]): FormattedResponse
+        - _cleanup_html(response: str): str
+    }
+}
+
+' ========================================
+' PACKAGE 3: RAG PIPELINE (Core AI Logic)
+' ========================================
+
+package "RAG Pipeline" <<Service>> {
+    
+    ' Singleton Pattern for Model Management
+    class RerankerModel <<Service>> {
+        - model_name: str
+        - model: CrossEncoder
+        + predict(pairs: List[Tuple[str, str]]): List[float]
+        + rerank(query: str, candidates: List[Document], top_k: int): List[Document]
+        - _normalize_scores(scores: List[float]): List[float]
+    }
+    
+    class LLMOrchestrator <<Service>> {
+        - model_name: str
+        - model: LLM
+        - sampling_params: SamplingParams
+        + generate(prompt: str, enable_logprobs: bool): LLMResponse
+        + batch_generate(prompts: List[str]): List[LLMResponse]
+        - _format_prompt(query: str, context: str): str
+    }
+    
+    ' Builder Pattern for RAG Pipeline Construction
+    class RAGPipeline <<Service>> {
+        - vector_store: QdrantVectorStore
+        - reranker: RerankerModel
+        - context_injector: ContextInjector
+        - llm: LLMOrchestrator
+        + retrieve(query: str, top_k: int): List[Document]
+        + rerank(query: str, candidates: List[Document], top_k: int): List[Document]
+        + generate(query: str, context: List[Document]): GenerationResult
+        + execute_full_pipeline(query: str): RAGResult
+    }
+    
+    class RAGPipelineBuilder <<Service>> {
+        - pipeline: RAGPipeline
+        + with_vector_store(store: QdrantVectorStore): RAGPipelineBuilder
+        + with_reranker(reranker: RerankerModel): RAGPipelineBuilder
+        + with_llm(llm: LLMOrchestrator): RAGPipelineBuilder
+        + build(): RAGPipeline
+    }
+    
+    class ContextInjector <<Service>> {
+        - prompt_template: str
+        - few_shot_examples: List[Example]
+        + inject_context(query: str, retrieved_docs: List[Document], system_prompt: str): str
+        + format_with_template(template_name: str, variables: Dict): str
+        - _build_system_prompt(): str
+        - _add_few_shot_examples(prompt: str): str
+    }
+    
+    ' Repository Pattern for Vector Store
+    class QdrantVectorStore <<Repository>> {
+        - client: QdrantClient
+        - collection_name: str
+        + search(query_vector: np.ndarray, top_k: int, filters: Dict): List[Document]
+        + insert(documents: List[Document], embeddings: np.ndarray): void
+        + update(doc_id: str, embedding: np.ndarray, metadata: Dict): void
+        + delete(doc_id: str): void
+        - _build_filter(filters: Dict): QdrantFilter
+        - _convert_to_documents(search_results: List): List[Document]
+    }
+    
+}
+
+' ========================================
+' PACKAGE 4: DATA ACCESS LAYER (Repositories)
+' ========================================
+
+package "Data Access Layer" <<Repository>> {
+    
+    class ConversationManager {
+        - db: Database
+        + find_by_id(conversation_id: str): Optional[Conversation]
+        + find_by_user_id(user_id: str, limit: int): List[Conversation]
+        + save(conversation: Conversation): Conversation
+        + update(conversation: Conversation): Conversation
+        + delete(conversation_id: str): bool
+        + get_recent_messages(user_id: str, limit: int): List[Message]
+    }
+    
+}
+
+' ========================================
+' PACKAGE 5: DOMAIN MODELS (Entities)
+' ========================================
+
+package "Domain Models" <<Entity>> {
+    
+    ' Value Objects (Immutable) - Pydantic Models
+    
+    class ConfidenceScores <<Pydantic>> {
+        + retrieval_confidence: float
+        + generation_confidence: float
+        + overall_confidence: float
+        + metadata_consistency: float
+        + grounding_score: float
+        --
+        + model_config: ConfigDict
+        + @field_validator('*')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class ConfidenceResult <<Pydantic>> {
+        + scores: ConfidenceScores
+        + passed_threshold: bool
+        + reason: str
+        + stage_failed: str
+        --
+        + model_config: ConfigDict
+        + model_dump(): Dict[str, Any]
+    }
+    
+    ' Aggregate Root
+    class Conversation <<Entity>> {
+        + id: str
+        + user_id: str
+        + messages: List[Message]
+        + created_at: datetime
+        + updated_at: datetime
+        + metadata: Dict[str, Any]
+        + add_message(message: Message): void
+        + get_last_n_messages(n: int): List[Message]
+        + get_context_window(): str
+    }
+    
+    class Message <<Pydantic>> {
+        + id: str
+        + conversation_id: str
+        + role: MessageRole
+        + content: str
+        + timestamp: datetime
+        + confidence: Optional[float]
+        + sources: Optional[List[str]]
+        + metadata: Dict[str, Any]
+        --
+        + model_config: ConfigDict
+        + @field_validator('content')
+        + @field_validator('id', 'conversation_id')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    enum MessageRole {
+        USER
+        ASSISTANT
+        SYSTEM
+    }
+    
+    class User <<Pydantic>> {
+        + id: str
+        + email: Optional[str]
+        + user_type: UserType
+        + created_at: datetime
+        + last_active: datetime
+        --
+        + model_config: ConfigDict
+        + @field_validator('email')
+        + @field_validator('id')
+        + update_last_active(): void
+        + model_dump(): Dict[str, Any]
+    }
+    
+    enum UserType {
+        REGISTERED
+        GUEST
+    }
+    
+    class Document <<Pydantic>> {
+        + id: str
+        + content: str
+        + metadata: DocumentMetadata
+        + embedding: Optional[np.ndarray]
+        + score: Optional[float]
+        --
+        + model_config: ConfigDict
+        + @field_validator('content')
+        + @field_validator('score')
+        + get_source(): str
+        + get_chunk_index(): int
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class DocumentMetadata <<Pydantic>> {
+        + source_file: str
+        + document_type: str
+        + country: Optional[str]
+        + visa_type: Optional[str]
+        + last_modified: datetime
+        --
+        + model_config: ConfigDict
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class RAGResult <<Pydantic>> {
+        + query: str
+        + retrieved_docs: List[Document]
+        + reranked_docs: List[Document]
+        + generated_response: str
+        + confidence: ConfidenceResult
+        + token_probs: List[float]
+        + latency_ms: float
+        --
+        + model_config: ConfigDict
+        + @field_validator('query')
+        + @field_validator('latency_ms')
+        + model_dump(): Dict[str, Any]
+    }
+    
+    class ChatRequest <<Pydantic>> {
+        + message: str
+        + user_id: str
+        + conversation_id: Optional[str]
+        + metadata: Dict[str, Any]
+        --
+        + model_config: ConfigDict(frozen=True)
+        + @field_validator('message')
+        + @field_validator('metadata')
+        + model_dump(): Dict[str, Any]
+        + model_validate(obj: Any): ChatRequest
+    }
+    
+    class ChatResponse <<Pydantic>> {
+        + response: str
+        + confidence: float
+        + sources: List[str]
+        + conversation_id: str
+        + suggestions: Optional[List[str]]
+        + requires_clarification: bool
+        + timestamp: datetime
+        --
+        + model_config: ConfigDict(frozen=True)
+        + @field_validator('response')
+        + @field_validator('confidence')
+        + @field_validator('suggestions')
+        + model_dump(): Dict[str, Any]
+        + model_validate(obj: Any): ChatResponse
+    }
+    
+    note right of ChatRequest
+        **Pydantic BaseModel**
+        • Auto-validates on instantiation
+        • Raises ValidationError if invalid
+        • Frozen (immutable) value object
+        • Integrates with FastAPI
+        • Sanitizes metadata
+    end note
+    
+    note right of ChatResponse
+        **Pydantic BaseModel**
+        • Ensures confidence ∈ [0, 1]
+        • Sanitizes response text
+        • Auto-generates timestamp
+        • Serializes to JSON for API
+        • Immutable response contract
+    end note
+}
+
+
+' ========================================
+' PACKAGE 5B: CONFIGURATION MODELS (Pydantic)
+' ========================================
+
+package "Configuration Models" <<Pydantic>> {
+    
+    class SamplingParams <<Pydantic>> {
+        + temperature: float
+        + top_p: float
+        + top_k: int
+        + max_tokens: int
+        + repetition_penalty: float
+        + stop_sequences: List[str]
+        --
+        + model_config: ConfigDict
+        + @field_validator('temperature')
+        + @field_validator('top_p')
+        + @field_validator('max_tokens')
+        + model_dump(): Dict[str, Any]
+    }
+}
+
+' Link configuration models to their users
+LLMOrchestrator --> SamplingParams : uses
+
+' ========================================
+' PACKAGE 7: UTILITIES & HELPERS
+' ========================================
+
+package "Utilities" <<Utility>> {
+    
+    
+    
+    class ResponseSanitizer <<Utility>> {
+        - allowed_tags: List[str]
+        - url_validator: URLValidator
+        + sanitize_html(html: str): str
+        + remove_sensitive_data(text: str): str
+        + validate_url(url: str): bool
+        - _strip_scripts(html: str): str
+    }
+    
+    class ConfigurationManager <<Utility>> {
+        - {static} instance: ConfigurationManager
+        - config: Dict[str, Any]
+        + {static} get_instance(): ConfigurationManager
+        + get(key: str, default: Any): Any
+        + set(key: str, value: Any): void
+        + reload(): void
+    }
+}
+
+' ========================================
+' RELATIONSHIPS & DEPENDENCIES
+' ========================================
+
+' API Layer Dependencies
+ChatController --> ChatService : uses
+ChatController --> AuthMiddleware : uses
+ChatController --> WebSocketManager : uses
+
+' Business Logic Dependencies
+ChatService --> QueryOrchestrator : delegates to
+ChatService --> ConversationManager : uses
+ChatService --> ConfidenceScorer : uses
+ChatService --> ResponseFormatter : uses
+
+
+ConfidenceScorer --> RetrievalConfidenceChecker : uses
+RetrievalConfidenceChecker --> GenerationConfidenceChecker : chains
+GenerationConfidenceChecker --> OverallConfidenceChecker : chains
+
+
+
+
+' RAG Pipeline Dependencies
+RAGPipeline --> RerankerModel : uses
+RAGPipeline --> ContextInjector : uses
+RAGPipeline --> LLMOrchestrator : uses
+
+RAGPipelineBuilder ..> RAGPipeline : creates
+
+
+
+
+' Repository Dependencies
+ConversationManager --> Conversation : manages
+
+
+' Entity Relationships
+Conversation *-- Message : contains
+User "1" -- "many" Conversation : has
+Document *-- DocumentMetadata : contains
+RAGResult *-- Document : contains
+RAGResult *-- ConfidenceResult : contains
+ConfidenceResult *-- ConfidenceScores : contains
+ChatRequest --> User : references
+ChatResponse --> Document : references
+
+' Utility Dependencies
+ResponseFormatter --> ResponseSanitizer : uses
+
+@enduml
