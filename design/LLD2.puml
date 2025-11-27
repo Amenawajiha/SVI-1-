@@ -1,0 +1,360 @@
+@startuml SchengenVisaRAGChatbotLLD2
+skinparam backgroundColor white
+
+
+class "main.py" as Main <<Script>> {
+    + app: FastAPI
+    + start()
+}
+
+class "routes.py" as Routes <<Module>> {
+    + websocket_endpoint(websocket: WebSocket, user_id: str)
+    + health_check() -> dict
+}
+
+class "dependencies.py" as Dependencies <<Module>> {
+    + get_response_manager() -> ResponseManager
+    + get_vector_retriever() -> VectorRetriever
+    + get_llm_orchestrator() -> LLMOrchestrator
+}
+
+class ResponseManager {
+    ' - RAG Pipeline Orchestrator
+    - websocket: WebSocket
+    - vector_retriever: VectorRetriever
+    - llm_orchestrator: LLMOrchestrator
+    - confidence_scorer: ConfidenceScorer
+    - clarification_manager: ClarificationManager
+    - conversation_manager: ConversationManager
+    + __init__(websocket: WebSocket, vector_retriever: VectorRetriever, llm_orchestrator: LLMOrchestrator, confidence_scorer: ConfidenceScorer, clarification_manager: ClarificationManager, conversation_manager: ConversationManager)
+    
+    + handle_query(user_id: str, query: str, is_logged_in: bool) -> None
+    ' Main entry point
+    ' Orchestrates the entire RAG pipeline
+    ' Handles conversation persistence based on login status
+    ' Decides whether to clarify or answer
+
+    + process_rag_pipeline(query: str) -> tuple[str, ConfidenceResult]
+    ' Core RAG logic
+    ' Returns: (response, confidence_result)
+    ' Coordinates: retrieve → generate → score
+
+    + send_response(response: str) -> None
+    ' Send final answer via WebSocket
+
+    + send_clarifying_question(question: str) -> None
+    ' Send clarifying question via WebSocket
+
+    - retrieve_context(query: str) -> List[RetrievalResult]
+    ' Calls vector_retriever.retrieve_with_reranking()
+    ' Returns List[RetrievalResult]
+
+    - generate_response(query: str, context: List[RetrievalResult]) -> str
+    ' Calls llm_orchestrator.generate_response()
+    ' Returns generated answer
+
+    - evaluate_confidence(query: str, context: List[RetrievalResult], response: str) -> ConfidenceResult
+    ' Calls confidence_scorer.calculate_confidence()
+    ' Returns ConfidenceResult
+
+    ' Design Pattern: Facade Pattern
+    ' ResponseManager acts as a Facade that simplifies the complex interactions between multiple subsystems.
+
+    ' Dependencies (All Injected)
+    ' VectorRetriever - Fetch top-k chunks
+    ' LLMOrchestrator - Generate responses
+    ' ConfidenceScorer - Evaluate answer quality
+    ' ClarificationManager - Handle clarifying questions
+    ' ConversationManager - Store conversation history
+    ' WebSocket - Send responses to user
+
+    ' 🔄 Complete Flow
+    ' # Main RAG Pipeline Flow
+    ' async def handle_query(user_id, query, is_logged_in):
+    '     # 1. Retrieve context
+    '     context = self.retrieve_context(query)
+        
+    '     # 2. Generate response
+    '     response = self.generate_response(query, context)
+        
+    '     # 3. Evaluate confidence
+    '     confidence = self.evaluate_confidence(query, context, response)
+        
+    '     # 4. Decide: clarify or answer?
+    '     if self.clarification_manager.should_clarify(user_id, confidence.overall_confidence):
+    '         # Generate clarifying question
+    '         clarifying_q = self.clarification_manager.generate_clarifying_question(
+    '             query, context, confidence
+    '         )
+    '         self.send_clarifying_question(clarifying_q)
+    '     else:
+    '         # Send final answer
+    '         self.send_response(response)
+            
+    '         # Save conversation if logged in
+    '         if is_logged_in:
+    '             self.conversation_manager.add_message(user_id, user_msg, True)
+    '             self.conversation_manager.add_message(user_id, assistant_msg, True)
+}
+class VectorRetriever {
+    - client: ChromaDBClient
+    - collection_name: str
+    - top_k: int
+    - reranker: Reranker
+    + __init__(client: ChromaDBClient, collection_name: str, top_k: int = 3, reranker: Reranker = None)
+    + retrieve(query: str) -> List[RetrievalResult]
+    + retrieve_with_reranking(query: str, initial_k: int = 10) -> List[RetrievalResult]
+}
+
+class ChromaDBClient {
+    - db_path: str
+    - embedding_function: EmbeddingFunction
+    + __init__(db_path: str, embedding_function: EmbeddingFunction)
+    + get_collection(name: str) -> Collection
+    + query_collection(collection_name: str, query: str, n_results: int) -> QueryResult
+}
+
+class RetrievalResult <<Pydantic>> {
+    + content: str
+    + metadata: dict
+    + relevance_score: float
+}
+
+class Message <<Pydantic>> {
+    + content: str
+    
+    ' Either "user" or "assistant" (follows OpenAI chat format)
+    + role: str
+    
+    + timestamp: datetime
+    + user_id: str
+    
+    'Optional dict for additional data (default empty dict)
+    + metadata: dict = {} 
+}
+
+class Reranker {
+    - model_name: str
+    - model: Any
+    - top_k: int
+    + __init__(model_name: str = "BAAI/bge-reranker-v2-m3", top_k: int = 3)
+    + rerank(query: str, results: List[RetrievalResult]) -> List[RetrievalResult]
+    + calculate_rerank_scores(query: str, documents: List[str]) -> List[float]
+    - load_model() -> None
+
+    ' How It Works
+    ' # Without reranking
+    ' retriever = VectorRetriever(client, "flight_info", top_k=3)
+    ' results = retriever.retrieve(query)  # Direct ChromaDB results
+
+    ' # With reranking (improved accuracy)
+    ' reranker = Reranker(model_name="BAAI/bge-reranker-v2-m3", top_k=3)
+    ' retriever = VectorRetriever(client, "flight_info", reranker=reranker)
+    ' results = retriever.retrieve_with_reranking(query, initial_k=10)
+    ' # Flow: Fetch 10 → Rerank with BGE → Return top 3
+
+    ' Benefits:
+    ' Optional: Reranker is optional (dependency injection), can use without it
+    ' Improved Quality: BGE reranking improves relevance of top-k chunks
+    ' Two-stage retrieval: Fetch more candidates, then refine with powerful reranker
+}
+class LLMOrchestrator {
+    - api_key: str
+    - base_url: str
+    - model_name: str
+    - prompt_builder: PromptBuilder
+    + __init__(api_key: str, model_name: str = "openai/gpt-oss-20b", prompt_builder: PromptBuilder)
+    + send_message(prompt: str) -> str
+    + send_message_stream(prompt: str) -> AsyncIterator[str]
+    + generate_response(query: str, context: List[RetrievalResult]) -> str
+    + generate_response_stream(query: str, context: List[RetrievalResult]) -> AsyncIterator[str]
+}
+
+class PromptBuilder {
+    - template: PromptTemplate
+    + __init__(template: PromptTemplate)
+    + build_prompt(query: str, context: List[RetrievalResult]) -> str
+    + format_context(results: List[RetrievalResult]) -> str
+}
+
+class PromptTemplate <<Pydantic>> {
+    + system_instruction: str
+    + instructions: List[str]
+    + context_format: str
+}
+
+class ConversationManager {
+    - repository: ConversationRepository
+    - summarizer: ConversationSummarizer
+    - enable_summarization: bool
+    + __init__(repository: ConversationRepository, summarizer: ConversationSummarizer = None, enable_summarization: bool = False)
+    + add_message(user_id: str, message: Message, is_logged_in: bool) -> None
+    + get_conversation_history(user_id: str, limit: int = 20) -> List[Message]
+    + get_context_for_llm(user_id: str, max_tokens: int = 2000) -> str
+    + clear_conversation(user_id: str) -> None
+}
+
+interface ConversationRepository {
+    + save_message(user_id: str, message: Message) -> None
+    + get_messages(user_id: str, limit: int) -> List[Message]
+    + delete_conversation(user_id: str) -> None
+}
+
+class DatabaseConversationRepository {
+    - db_helper: PostgreSQLHelper
+    + __init__(db_helper: PostgreSQLHelper)
+    + save_message(user_id: str, message: Message) -> None
+    + get_messages(user_id: str, limit: int) -> List[Message]
+    + delete_conversation(user_id: str) -> None
+}
+
+class FileConversationRepository {
+    - storage_path: str
+    + __init__(storage_path: str = "./conversations")
+    + save_message(user_id: str, message: Message) -> None
+    + get_messages(user_id: str, limit: int) -> List[Message]
+    + delete_conversation(user_id: str) -> None
+}
+
+class ConversationSummarizer {
+    - llm_orchestrator: LLMOrchestrator
+    - storage_summary_threshold: int
+    - retrieval_summary_threshold: int
+    + __init__(llm_orchestrator: LLMOrchestrator, storage_threshold: int = 50, retrieval_threshold: int = 20)
+    
+    ' Purpose: Compress old conversations to save DB space
+    ' When: Triggered when message count > 50
+    ' How: Summarize messages 1-45, keep last 5 as-is
+    ' Output: Single summary Message that replaces old messages in DB
+    ' Example: "User asked about visa fees (€80), flight requirements, and cancellation policy..."
+    + summarize_for_storage(messages: List[Message]) -> Message
+
+    ' Purpose: Reduce tokens when sending context to LLM
+    ' When: Called by get_context_for_llm() when > 20 messages
+    ' How: Summarize older messages, keep recent 5 in full detail
+    ' Output: String formatted for LLM prompt
+    ' Example: "Previous topics: visa fees, cancellations.\n[Recent 5 messages in full]"
+    + summarize_for_retrieval(messages: List[Message], recent_count: int = 5) -> str
+
+    ' Returns True if count > storage_threshold (50)
+    + should_summarize_storage(message_count: int) -> bool
+
+    ' Returns True if count > retrieval_threshold (20)
+    + should_summarize_retrieval(message_count: int) -> bool
+}
+
+
+interface IDatabase {
+    + disconnect()
+    + fetch_data(query: str, params: tuple) -> List
+    + execute_query(query: str, params: tuple, commit: bool = True) -> int
+    + commit_transactions()
+}
+
+class PostgreSQLHelper {
+    - db_schema: str
+    - env: str
+    - connection: AsyncConnection
+    - cursor: AsyncCursor
+    + __init__(db_schema: str, env: str = "PROD")
+    + disconnect() -> None
+    + fetch_data(query: str, params: tuple) -> List
+    + execute_query(query: str, params: tuple, commit: bool = True) -> int
+    + commit_transactions() -> None
+    - __get_conn_str() -> dict
+    + __enter__() -> PostgreSQLHelper
+    + __exit__(exc_type, exc_value, traceback) -> None
+}
+
+
+class ClarificationManager {
+    - llm_orchestrator: LLMOrchestrator
+    - confidence_threshold: float
+    - max_attempts: int
+    - attempt_tracker: dict
+    + __init__(llm_orchestrator: LLMOrchestrator, confidence_threshold: float = 0.7, max_attempts: int = 2)
+    + should_clarify(user_id: str, confidence: float) -> bool
+    + generate_clarifying_question(query: str, context: List[RetrievalResult], confidence_result: ConfidenceResult) -> str
+    + increment_attempt(user_id: str) -> int
+    + reset_attempts(user_id: str) -> None
+    + get_attempts(user_id: str) -> int
+}
+class ConfidenceScorer {
+    - retrieval_scorer: RetrievalConfidenceScorer
+    - llm_scorer: LLMConfidenceScorer
+    - weights: ScoringWeights
+    + __init__(retrieval_scorer: RetrievalConfidenceScorer, llm_scorer: LLMConfidenceScorer, weights: ScoringWeights)
+    + calculate_confidence(retrieval_results: List[RetrievalResult], llm_response: str, query: str) -> ConfidenceResult
+    + get_overall_score(confidence_result: ConfidenceResult) -> float
+}
+
+class RetrievalConfidenceScorer {
+    - min_relevance_threshold: float
+    + __init__(min_relevance_threshold: float = 0.7)
+    + score(retrieval_results: List[RetrievalResult]) -> float
+    + calculate_avg_relevance(results: List[RetrievalResult]) -> float
+    + check_coverage(results: List[RetrievalResult]) -> bool
+}
+
+class LLMConfidenceScorer {
+    + score(response: str, query: str, context: List[RetrievalResult]) -> float
+    + check_response_quality(response: str) -> float
+    + check_grounding(response: str, context: List[RetrievalResult]) -> float
+}
+
+class ConfidenceResult <<Pydantic>> {
+    + retrieval_confidence: float
+    + llm_confidence: float
+    + overall_confidence: float
+    + is_confident: bool
+    + confidence_breakdown: dict
+}
+
+class ScoringWeights <<Pydantic>> {
+    + retrieval_weight: float = 0.4
+    + llm_weight: float = 0.6
+}
+class DocumentEncoder {
+    + encode(documents: List[str]) -> List[str]
+}
+
+Main --> Routes : includes
+Routes --> Dependencies : uses
+Dependencies --> ResponseManager : creates
+Dependencies --> VectorRetriever : creates
+Dependencies --> LLMOrchestrator : creates
+Dependencies --> ConfidenceScorer : creates
+Dependencies --> ClarificationManager : creates
+Dependencies --> ConversationManager : creates
+
+ResponseManager --> VectorRetriever : uses
+ResponseManager --> LLMOrchestrator : uses
+ResponseManager --> ConfidenceScorer : uses
+ResponseManager --> ClarificationManager : uses
+ResponseManager --> ConversationManager : uses
+
+VectorRetriever --> ChromaDBClient : uses
+VectorRetriever --> RetrievalResult : returns
+VectorRetriever --> Reranker : uses (optional)
+Reranker --> RetrievalResult : reranks
+LLMOrchestrator --> PromptBuilder : uses
+PromptBuilder --> PromptTemplate : uses
+
+ConfidenceScorer --> RetrievalConfidenceScorer : uses
+ConfidenceScorer --> LLMConfidenceScorer : uses
+ConfidenceScorer --> ScoringWeights : uses
+ConfidenceScorer --> ConfidenceResult : returns
+
+ClarificationManager --> LLMOrchestrator : uses
+ClarificationManager --> ConfidenceResult : uses
+
+PostgreSQLHelper ..|> IDatabase : implements
+
+ConversationManager --> ConversationRepository : uses
+ConversationManager --> ConversationSummarizer : uses
+DatabaseConversationRepository ..|> ConversationRepository : implements
+FileConversationRepository ..|> ConversationRepository : implements
+DatabaseConversationRepository --> PostgreSQLHelper : uses
+ConversationSummarizer --> LLMOrchestrator : uses 
+
+@enduml
