@@ -1,0 +1,72 @@
+{
+  "name": "Travel RAG Evaluation Dataset",
+  "description": "Test queries for flight and hotel booking assistant",
+  "test_cases": [
+    {
+      "id": "test_001",
+      "category": "flight_booking",
+      "query": "What documents do I need for a flight booking for visa?",
+      "expected_topics": ["documents", "visa", "flight"],
+      "expected_answer_contains": ["passport", "visa application"],
+      "ambiguous": false
+    },
+    {
+      "id": "test_002",
+      "category": "hotel_booking",
+      "query": "How long is a hotel reservation valid for visa application?",
+      "expected_topics": ["validity", "hotel", "visa"],
+      "expected_answer_contains": ["valid", "days"],
+      "ambiguous": false
+    },
+    {
+      "id": "test_003",
+      "category": "cancellation",
+      "query": "What are the cancellation charges for flights?",
+      "expected_topics": ["cancellation", "charges", "flight"],
+      "expected_answer_contains": ["charges", "refund"],
+      "ambiguous": false
+    },
+    {
+      "id": "test_004",
+      "category": "ambiguous",
+      "query": "I need a booking",
+      "expected_topics": [],
+      "expected_answer_contains": [],
+      "ambiguous": true,
+      "should_request_clarification": true
+    },
+    {
+      "id": "test_005",
+      "category": "policy",
+      "query": "Can I reschedule my flight booking?",
+      "expected_topics": ["reschedule", "flight", "policy"],
+      "expected_answer_contains": ["reschedule", "charges"],
+      "ambiguous": false
+    },
+    {
+      "id": "test_006",
+      "category": "payment",
+      "query": "What payment methods do you accept?",
+      "expected_topics": ["payment", "methods"],
+      "expected_answer_contains": ["payment"],
+      "ambiguous": false
+    },
+    {
+      "id": "test_007",
+      "category": "ambiguous",
+      "query": "Can I book a hotel?",
+      "expected_topics": [],
+      "expected_answer_contains": [],
+      "ambiguous": true,
+      "should_request_clarification": true
+    },
+    {
+      "id": "test_008",
+      "category": "specific",
+      "query": "I need a hotel reservation for my Germany visa application",
+      "expected_topics": ["hotel", "visa", "reservation"],
+      "expected_answer_contains": ["hotel", "visa"],
+      "ambiguous": false
+    }
+  ]
+}
