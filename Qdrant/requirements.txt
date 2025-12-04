@@ -13,3 +13,12 @@ python-dotenv>=1.0.0
 # Step 4: Text Processing Dependencies
 langchain>=0.1.0
 langchain-text-splitters>=0.0.1
+
+# Step 5: API Dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+
+# Testing
+requests>=2.31.0
