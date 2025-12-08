@@ -192,7 +192,7 @@ class QdrantManager:
     self,
     collection_name: str,
     query: str,
-    top_k: int = 5,
+    top_k: int = 10,
     score_threshold: float = 0.5,
     filter_conditions: Optional[Dict] = None
     ) -> List[Dict]:

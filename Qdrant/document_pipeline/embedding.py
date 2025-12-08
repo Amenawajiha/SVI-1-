@@ -3,9 +3,25 @@ E5-base-v2 Embedding Module
 Handles text-to-vector conversion with proper prefixes
 """
 
-from typing import List, Union
+from typing import List, Protocol
 from sentence_transformers import SentenceTransformer
-import numpy as np
+
+
+class EmbeddingProvider(Protocol):
+    """Interface for all embedding providers."""
+
+    @property
+    def dimension(self) -> int:
+        """Return embedding dimension"""
+        ...
+
+    def embed_query(self, text: str) -> List[float]:
+        """Embed a search query"""
+        ...
+
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        """Embed documents for storage"""
+        ...
 
 
 class E5Embeddings:
@@ -15,6 +31,8 @@ class E5Embeddings:
     E5 models require specific prefixes:
     - "passage: " for documents/chunks to be stored
     - "query: " for search queries
+    
+    Implements EmbeddingProvider protocol.
     """
     
     def __init__(self, model_name: str = "intfloat/e5-base-v2", device: str = "cpu"):
@@ -27,14 +45,24 @@ class E5Embeddings:
         """
         print(f"Loading E5 model: {model_name}...")
         self.model = SentenceTransformer(model_name, device=device)
-        self.dimension = 768  # E5-base-v2 output dimension
-        self.max_seq_length = 512  # Maximum token length
-        print(f"Model loaded successfully (dimension: {self.dimension})")
+        self._dimension = 768  # Private attribute
+        self._max_seq_length = 512
+        print(f"Model loaded successfully (dimension: {self._dimension})")
+    
+    @property
+    def dimension(self) -> int:
+        """Return embedding dimension (implements EmbeddingProvider)"""
+        return self._dimension
+    
+    @property
+    def max_seq_length(self) -> int:
+        """Return maximum sequence length"""
+        return self._max_seq_length
     
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         """
-        Embed documents/passages for storage
-        Adds "passage: " prefix to each text
+        Embed documents/passages for storage.
+        Adds "passage: " prefix to each text.
         
         Args:
             texts: List of text strings to embed
@@ -45,23 +73,20 @@ class E5Embeddings:
         if not texts:
             return []
         
-        # Add passage prefix
         prefixed_texts = [f"passage: {text}" for text in texts]
         
-        # Generate embeddings
         embeddings = self.model.encode(
             prefixed_texts,
-            normalize_embeddings=True,  # Normalize for cosine similarity
-            show_progress_bar=len(texts) > 10  # Show progress for large batches
+            normalize_embeddings=True,
+            show_progress_bar=len(texts) > 10
         )
         
-        # Convert to list of lists
         return embeddings.tolist()
     
     def embed_query(self, query: str) -> List[float]:
         """
-        Embed a search query
-        Adds "query: " prefix
+        Embed a search query.
+        Adds "query: " prefix.
         
         Args:
             query: Search query string
@@ -77,25 +102,16 @@ class E5Embeddings:
         )
         
         return embedding.tolist()
-    
-    def get_dimension(self) -> int:
-        """Return embedding dimension"""
-        return self.dimension
-    
-    def get_max_length(self) -> int:
-        """Return maximum sequence length"""
-        return self.max_seq_length
 
 
-# Convenience function for quick usage
-def create_embeddings(device: str = "cpu") -> E5Embeddings:
+def create_embeddings(device: str = "cpu") -> EmbeddingProvider:
     """
-    Factory function to create E5Embeddings instance
+    Factory function to create embedding instance.
     
     Args:
         device: 'cpu' or 'cuda'
         
     Returns:
-        Initialized E5Embeddings instance
+        EmbeddingProvider implementation
     """
     return E5Embeddings(device=device)

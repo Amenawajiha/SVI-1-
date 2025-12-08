@@ -20,7 +20,7 @@ class SearchRequest(BaseModel):
     """Request for semantic search"""
     query: str = Field(..., description="Search query text", min_length=1)
     collection_name: str = Field(..., description="Collection to search in")
-    top_k: int = Field(5, description="Number of results to return", ge=1, le=20)
+    top_k: int = Field(10, description="Number of results to return", ge=1, le=20)
     score_threshold: float = Field(0.3, description="Minimum similarity score", ge=0.0, le=1.0)
     filters: Optional[Dict[str, Any]] = Field(None, description="Optional metadata filters")
 

@@ -195,7 +195,7 @@ class DocumentPipelineCLI:
         self,
         query: str,
         collection_name: str = "cli_documents",
-        top_k: int = 5,
+        top_k: int = 10,
         score_threshold: float = 0.3
     ):
         """
@@ -336,6 +336,7 @@ Examples:
     
     if not args.command:
         parser.print_help()
+        print("\nError: No command specified. Choose 'upload' or 'search'")
         sys.exit(1)
     
     # Initialize CLI
